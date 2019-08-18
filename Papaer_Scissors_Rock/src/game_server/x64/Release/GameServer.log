@@ -1,0 +1,63 @@
+﻿  abs_config.cpp
+..\common\abs_config.cpp(7): warning C4005: 'FILENAME_MAX': macro redefinition
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(58): note: see previous definition of 'FILENAME_MAX'
+  client.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  client_networker.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  event_queue.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  message.pb.cc
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  message_handler.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  message_sender.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  message_types.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  networker.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  main.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+C:\Program Files (x86)\Windows Kits\8.1\Include\um\DbgHelp.h(1544): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+C:\Program Files (x86)\Windows Kits\8.1\Include\um\DbgHelp.h(3190): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  server.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+server.cpp(101): warning C4101: 'addr': unreferenced local variable
+  super_node.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+  super_node_cfg.cpp
+  super_node_observer.cpp
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/io/coded_stream.h(869): warning C4800: 'google::protobuf::internal::Atomic64': forcing value to bool 'true' or 'false' (performance warning)
+H:\wrkspc\Papaer_Scissors_Rock\src\protobuf\install\include\google/protobuf/generated_message_util.h(160): warning C4800: 'google::protobuf::uint32': forcing value to bool 'true' or 'false' (performance warning)
+abs_config.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl google::LogMessage::stream(void)" (__imp_?stream@LogMessage@google@@QEAAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@XZ)
+abs_config.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl google::LogMessage::~LogMessage(void)" (__imp_??1LogMessage@google@@QEAA@XZ)
+abs_config.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl google::LogMessage::LogMessage(char const *,int)" (__imp_??0LogMessage@google@@QEAA@PEBDH@Z)
+abs_config.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl google::LogMessage::LogMessage(char const *,int,int)" (__imp_??0LogMessage@google@@QEAA@PEBDHH@Z)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & fLS::FLAGS_log_dir" (__imp_?FLAGS_log_dir@fLS@@3AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@EA)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) int fLI::FLAGS_logbufsecs" (__imp_?FLAGS_logbufsecs@fLI@@3HA)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) int fLI::FLAGS_max_log_size" (__imp_?FLAGS_max_log_size@fLI@@3HA)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl google::InitGoogleLogging(char const *)" (__imp_?InitGoogleLogging@google@@YAXPEBD@Z)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl google::SetStderrLogging(int)" (__imp_?SetStderrLogging@google@@YAXH@Z)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl google::SetLogFilenameExtension(char const *)" (__imp_?SetLogFilenameExtension@google@@YAXPEBD@Z)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl google::ShutdownGoogleLogging(void)" (__imp_?ShutdownGoogleLogging@google@@YAXXZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) bool fLB::FLAGS_alsologtostderr" (__imp_?FLAGS_alsologtostderr@fLB@@3_NA)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) bool fLB::FLAGS_stop_logging_if_full_disk" (__imp_?FLAGS_stop_logging_if_full_disk@fLB@@3_NA)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) bool fLB::FLAGS_colorlogtostderr" (__imp_?FLAGS_colorlogtostderr@fLB@@3_NA)
+super_node.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl PUMA::Kernel::SuperNode::OnInvokeResponse(int,bool)" (?OnInvokeResponse@SuperNode@Kernel@PUMA@@UEAAXH_N@Z)
+super_node.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl PUMA::Kernel::SuperNode::OnInvokeRequest(void)" (?OnInvokeRequest@SuperNode@Kernel@PUMA@@UEAAXXZ)
+super_node.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl PUMA::Kernel::SuperNode::OnTransferResponse(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)" (?OnTransferResponse@SuperNode@Kernel@PUMA@@UEAAXHHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z)
+super_node.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl PUMA::Kernel::SuperNode::OnStatusRequest(void)" (?OnStatusRequest@SuperNode@Kernel@PUMA@@UEAAXXZ)
+super_node.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl PUMA::Kernel::SuperNode::OnTransferRequest(void)" (?OnTransferRequest@SuperNode@Kernel@PUMA@@UEAAXXZ)
+H:\wrkspc\Papaer_Scissors_Rock\x64\Release\GameServer.exe : fatal error LNK1120: 19 unresolved externals

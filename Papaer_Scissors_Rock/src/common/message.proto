@@ -1,0 +1,116 @@
+// See README.txt for information and build instructions.
+//
+// Note: START and END tags are used in comments to define sections used in
+// tutorials.  They are not part of the syntax for Protocol Buffers.
+//
+// To get an in-depth walkthrough of this file and the related examples, see:
+// https://developers.google.com/protocol-buffers/docs/tutorials
+
+// [START declaration]
+syntax = "proto3";
+
+package PUMA.Kernel;
+
+option optimize_for = LITE_RUNTIME;
+
+/* Message Type Definitions
+ * Message ID: xyzz
+ * x:  Kernel/User/App/Cmd = 0/1/2/3
+ * y:  Req/Rsp/Cmd/Ind  = 1/2/3/4
+ * zz: Message Category = 00-99
+ */
+enum MSG
+{
+    unknown_message = 0;
+
+    Register_Request  = 101;
+    Register_Response = 201;
+
+    Unregister_Request  = 102;
+    Unregister_Response = 202;
+
+    Heartbeat_Request = 118;
+    Heartbeat_Response = 218;
+    Heartbeat_Indication = 419;
+}
+
+message RegisterRequest
+{
+    bytes name = 1;
+    bytes user_id = 2;
+    bytes address = 3;
+    bytes version = 4;
+    bytes timestamp = 5;
+}
+
+message UnregisterRequest
+{
+    bytes name = 1;
+    string address = 2;
+    bytes version = 3;
+    string timestamp = 4;
+    string reason = 5;
+}
+
+message RegisterResponse
+{
+    int32 kernel_id = 1;
+}
+
+message UnregisterResponse
+{
+    int32 kernel_id = 1;
+}
+
+message HeartbeatIndication
+{
+    int32 kernel_id = 1;
+    int64 ts = 2;
+}
+
+message HeartbeatRequest
+{
+    int32 kernel_id = 1;
+    int64 ts = 2;
+}
+
+message HeartbeatResponse
+{
+    int32 kernel_id = 1;
+}
+message Request
+{
+    int32 user_id = 1;
+    int32 kernel_id = 2;
+    int32 app_id = 3;
+
+    RegisterRequest register = 11;
+    UnregisterRequest unregister = 12;
+    HeartbeatRequest heart_beat = 17;
+}
+
+message Response
+{
+    int32 user_id = 1;
+    int32 kernel_id = 2;
+    int32 app_id = 3;
+
+    bool result = 6;
+    bytes error_describe = 7;
+    
+    RegisterResponse  register  = 11;
+    UnregisterResponse unregister = 12;
+    HeartbeatResponse heart_beat = 17;
+}
+
+message Message
+{
+    MSG type = 1;
+    fixed32 sequence = 2;
+    string description = 3;
+
+    Request    request = 6;
+    Response   response = 7;
+}
+
+// [END messages]
