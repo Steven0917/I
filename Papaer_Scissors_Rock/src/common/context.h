@@ -2,23 +2,27 @@
 
 #include "message.pb.h"
 #include "network_handler.h"
+#include "message_sender.h"
 #include <memory>
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class Context
 {
 public:
-	Context();
+    Context();
 	Context(Networker& networker);
 
     virtual ~Context();
     virtual void Process();
 
+    void SetNetworker(Networker& networker);
 //protected:
-	unique_ptr<NetworkHandler> mpHandler;
+	NetworkHandler mMsgHandler;
+    MessageSender  mMsgSender;
+
 };
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

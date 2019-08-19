@@ -6,10 +6,10 @@
 #include "glog/logging.h"
 #include <google/protobuf/message.h>
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
-Client::Client(void) : mStop(true)
+Client::Client(void) : mStop(true), mNetworker()
 {
 }
 
@@ -29,30 +29,31 @@ Client::~Client(void)
 
 bool Client::Start(void)
 {
-	if (mNetworker.InitClient() != NW_OK)
+	if (mNetworker.InitClient() == NW_OK)
     {
-        LOG(ERROR) << "Failed to establish connection to server.";
-        return false;
+        LOG(INFO) << "Connected to server.";
+        SetNetworker(mNetworker);
+	    mStop = false;
+	    return true;
     }
 
-	mStop = false;
-	return true;
+    LOG(ERROR) << "Failed to establish connection to server.";
+    return false;
 }
 
 void Client::Run(void)
 {
-	unique_ptr<NetworkHandler> handler(new NetworkHandler(mNetworker));
-	mpHandler = move(handler);
-    while (!mStop && mpHandler)
+    while (!mStop)
     {
-		shared_ptr<Message> msg = mpHandler->RecvMsg();
+		shared_ptr<Message> msg = mMsgHandler.RecvMsg();
 		if (msg)
 		{
 			MessageHandler::Execute(*msg.get(), *this);
 		}
+        this_thread::sleep_for(chrono::milliseconds(200));
     }
 }
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

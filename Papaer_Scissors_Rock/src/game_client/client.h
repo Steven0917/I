@@ -7,8 +7,8 @@
 
 using namespace std;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class Client : public Context
 {
@@ -29,5 +29,5 @@ private:
 };
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

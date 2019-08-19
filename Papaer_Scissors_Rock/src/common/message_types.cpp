@@ -1,8 +1,8 @@
 #include "message_types.h"
 
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 std::map<MSG, std::string> MSG_TYPE = {
     { unknown_message, "unknown_message" },
@@ -15,5 +15,5 @@ std::string MessageTypes::GetType(MSG type)
     return MSG_TYPE[type];
 }
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

@@ -74,8 +74,8 @@ inline void InitDefaults() {
   InitDefaultsMessage();
 }
 }  // namespace protobuf_message_2eproto
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 class HeartbeatIndication;
 class HeartbeatIndicationDefaultTypeInternal;
 extern HeartbeatIndicationDefaultTypeInternal _HeartbeatIndication_default_instance_;
@@ -106,10 +106,10 @@ extern UnregisterRequestDefaultTypeInternal _UnregisterRequest_default_instance_
 class UnregisterResponse;
 class UnregisterResponseDefaultTypeInternal;
 extern UnregisterResponseDefaultTypeInternal _UnregisterResponse_default_instance_;
-}  // namespace Kernel
-}  // namespace PUMA
-namespace PUMA {
-namespace Kernel {
+}  // namespace PSR
+}  // namespace Game
+namespace Game {
+namespace PSR {
 
 enum MSG {
   unknown_message = 0,
@@ -130,7 +130,7 @@ const int MSG_ARRAYSIZE = MSG_MAX + 1;
 
 // ===================================================================
 
-class RegisterRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.RegisterRequest) */ {
+class RegisterRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.RegisterRequest) */ {
  public:
   RegisterRequest();
   virtual ~RegisterRequest();
@@ -280,7 +280,7 @@ class RegisterRequest : public ::google::protobuf::MessageLite /* @@protoc_inser
   ::std::string* release_timestamp();
   void set_allocated_timestamp(::std::string* timestamp);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(class_scope:Game.PSR.RegisterRequest)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -295,7 +295,7 @@ class RegisterRequest : public ::google::protobuf::MessageLite /* @@protoc_inser
 };
 // -------------------------------------------------------------------
 
-class UnregisterRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.UnregisterRequest) */ {
+class UnregisterRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.UnregisterRequest) */ {
  public:
   UnregisterRequest();
   virtual ~UnregisterRequest();
@@ -445,7 +445,7 @@ class UnregisterRequest : public ::google::protobuf::MessageLite /* @@protoc_ins
   ::std::string* release_reason();
   void set_allocated_reason(::std::string* reason);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(class_scope:Game.PSR.UnregisterRequest)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -460,7 +460,7 @@ class UnregisterRequest : public ::google::protobuf::MessageLite /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
-class RegisterResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.RegisterResponse) */ {
+class RegisterResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.RegisterResponse) */ {
  public:
   RegisterResponse();
   virtual ~RegisterResponse();
@@ -546,7 +546,7 @@ class RegisterResponse : public ::google::protobuf::MessageLite /* @@protoc_inse
   ::google::protobuf::int32 kernel_id() const;
   void set_kernel_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(class_scope:Game.PSR.RegisterResponse)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -557,7 +557,7 @@ class RegisterResponse : public ::google::protobuf::MessageLite /* @@protoc_inse
 };
 // -------------------------------------------------------------------
 
-class UnregisterResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.UnregisterResponse) */ {
+class UnregisterResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.UnregisterResponse) */ {
  public:
   UnregisterResponse();
   virtual ~UnregisterResponse();
@@ -643,7 +643,7 @@ class UnregisterResponse : public ::google::protobuf::MessageLite /* @@protoc_in
   ::google::protobuf::int32 kernel_id() const;
   void set_kernel_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(class_scope:Game.PSR.UnregisterResponse)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -654,7 +654,7 @@ class UnregisterResponse : public ::google::protobuf::MessageLite /* @@protoc_in
 };
 // -------------------------------------------------------------------
 
-class HeartbeatIndication : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.HeartbeatIndication) */ {
+class HeartbeatIndication : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.HeartbeatIndication) */ {
  public:
   HeartbeatIndication();
   virtual ~HeartbeatIndication();
@@ -746,7 +746,7 @@ class HeartbeatIndication : public ::google::protobuf::MessageLite /* @@protoc_i
   ::google::protobuf::int32 kernel_id() const;
   void set_kernel_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(class_scope:Game.PSR.HeartbeatIndication)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -758,7 +758,7 @@ class HeartbeatIndication : public ::google::protobuf::MessageLite /* @@protoc_i
 };
 // -------------------------------------------------------------------
 
-class HeartbeatRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.HeartbeatRequest) */ {
+class HeartbeatRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.HeartbeatRequest) */ {
  public:
   HeartbeatRequest();
   virtual ~HeartbeatRequest();
@@ -850,7 +850,7 @@ class HeartbeatRequest : public ::google::protobuf::MessageLite /* @@protoc_inse
   ::google::protobuf::int32 kernel_id() const;
   void set_kernel_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(class_scope:Game.PSR.HeartbeatRequest)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -862,7 +862,7 @@ class HeartbeatRequest : public ::google::protobuf::MessageLite /* @@protoc_inse
 };
 // -------------------------------------------------------------------
 
-class HeartbeatResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.HeartbeatResponse) */ {
+class HeartbeatResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.HeartbeatResponse) */ {
  public:
   HeartbeatResponse();
   virtual ~HeartbeatResponse();
@@ -948,7 +948,7 @@ class HeartbeatResponse : public ::google::protobuf::MessageLite /* @@protoc_ins
   ::google::protobuf::int32 kernel_id() const;
   void set_kernel_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(class_scope:Game.PSR.HeartbeatResponse)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -959,7 +959,7 @@ class HeartbeatResponse : public ::google::protobuf::MessageLite /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
-class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.Request) */ {
+class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.Request) */ {
  public:
   Request();
   virtual ~Request();
@@ -1039,32 +1039,32 @@ class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 
   // accessors -------------------------------------------------------
 
-  // .PUMA.Kernel.RegisterRequest register = 11;
+  // .Game.PSR.RegisterRequest register = 11;
   bool has_register_() const;
   void clear_register_();
   static const int kRegisterFieldNumber = 11;
-  const ::PUMA::Kernel::RegisterRequest& register_() const;
-  ::PUMA::Kernel::RegisterRequest* release_register_();
-  ::PUMA::Kernel::RegisterRequest* mutable_register_();
-  void set_allocated_register_(::PUMA::Kernel::RegisterRequest* register_);
+  const ::Game::PSR::RegisterRequest& register_() const;
+  ::Game::PSR::RegisterRequest* release_register_();
+  ::Game::PSR::RegisterRequest* mutable_register_();
+  void set_allocated_register_(::Game::PSR::RegisterRequest* register_);
 
-  // .PUMA.Kernel.UnregisterRequest unregister = 12;
+  // .Game.PSR.UnregisterRequest unregister = 12;
   bool has_unregister() const;
   void clear_unregister();
   static const int kUnregisterFieldNumber = 12;
-  const ::PUMA::Kernel::UnregisterRequest& unregister() const;
-  ::PUMA::Kernel::UnregisterRequest* release_unregister();
-  ::PUMA::Kernel::UnregisterRequest* mutable_unregister();
-  void set_allocated_unregister(::PUMA::Kernel::UnregisterRequest* unregister);
+  const ::Game::PSR::UnregisterRequest& unregister() const;
+  ::Game::PSR::UnregisterRequest* release_unregister();
+  ::Game::PSR::UnregisterRequest* mutable_unregister();
+  void set_allocated_unregister(::Game::PSR::UnregisterRequest* unregister);
 
-  // .PUMA.Kernel.HeartbeatRequest heart_beat = 17;
+  // .Game.PSR.HeartbeatRequest heart_beat = 17;
   bool has_heart_beat() const;
   void clear_heart_beat();
   static const int kHeartBeatFieldNumber = 17;
-  const ::PUMA::Kernel::HeartbeatRequest& heart_beat() const;
-  ::PUMA::Kernel::HeartbeatRequest* release_heart_beat();
-  ::PUMA::Kernel::HeartbeatRequest* mutable_heart_beat();
-  void set_allocated_heart_beat(::PUMA::Kernel::HeartbeatRequest* heart_beat);
+  const ::Game::PSR::HeartbeatRequest& heart_beat() const;
+  ::Game::PSR::HeartbeatRequest* release_heart_beat();
+  ::Game::PSR::HeartbeatRequest* mutable_heart_beat();
+  void set_allocated_heart_beat(::Game::PSR::HeartbeatRequest* heart_beat);
 
   // int32 user_id = 1;
   void clear_user_id();
@@ -1084,13 +1084,13 @@ class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   ::google::protobuf::int32 app_id() const;
   void set_app_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(class_scope:Game.PSR.Request)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
-  ::PUMA::Kernel::RegisterRequest* register__;
-  ::PUMA::Kernel::UnregisterRequest* unregister_;
-  ::PUMA::Kernel::HeartbeatRequest* heart_beat_;
+  ::Game::PSR::RegisterRequest* register__;
+  ::Game::PSR::UnregisterRequest* unregister_;
+  ::Game::PSR::HeartbeatRequest* heart_beat_;
   ::google::protobuf::int32 user_id_;
   ::google::protobuf::int32 kernel_id_;
   ::google::protobuf::int32 app_id_;
@@ -1100,7 +1100,7 @@ class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 };
 // -------------------------------------------------------------------
 
-class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.Response) */ {
+class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.Response) */ {
  public:
   Response();
   virtual ~Response();
@@ -1194,32 +1194,32 @@ class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_po
   ::std::string* release_error_describe();
   void set_allocated_error_describe(::std::string* error_describe);
 
-  // .PUMA.Kernel.RegisterResponse register = 11;
+  // .Game.PSR.RegisterResponse register = 11;
   bool has_register_() const;
   void clear_register_();
   static const int kRegisterFieldNumber = 11;
-  const ::PUMA::Kernel::RegisterResponse& register_() const;
-  ::PUMA::Kernel::RegisterResponse* release_register_();
-  ::PUMA::Kernel::RegisterResponse* mutable_register_();
-  void set_allocated_register_(::PUMA::Kernel::RegisterResponse* register_);
+  const ::Game::PSR::RegisterResponse& register_() const;
+  ::Game::PSR::RegisterResponse* release_register_();
+  ::Game::PSR::RegisterResponse* mutable_register_();
+  void set_allocated_register_(::Game::PSR::RegisterResponse* register_);
 
-  // .PUMA.Kernel.UnregisterResponse unregister = 12;
+  // .Game.PSR.UnregisterResponse unregister = 12;
   bool has_unregister() const;
   void clear_unregister();
   static const int kUnregisterFieldNumber = 12;
-  const ::PUMA::Kernel::UnregisterResponse& unregister() const;
-  ::PUMA::Kernel::UnregisterResponse* release_unregister();
-  ::PUMA::Kernel::UnregisterResponse* mutable_unregister();
-  void set_allocated_unregister(::PUMA::Kernel::UnregisterResponse* unregister);
+  const ::Game::PSR::UnregisterResponse& unregister() const;
+  ::Game::PSR::UnregisterResponse* release_unregister();
+  ::Game::PSR::UnregisterResponse* mutable_unregister();
+  void set_allocated_unregister(::Game::PSR::UnregisterResponse* unregister);
 
-  // .PUMA.Kernel.HeartbeatResponse heart_beat = 17;
+  // .Game.PSR.HeartbeatResponse heart_beat = 17;
   bool has_heart_beat() const;
   void clear_heart_beat();
   static const int kHeartBeatFieldNumber = 17;
-  const ::PUMA::Kernel::HeartbeatResponse& heart_beat() const;
-  ::PUMA::Kernel::HeartbeatResponse* release_heart_beat();
-  ::PUMA::Kernel::HeartbeatResponse* mutable_heart_beat();
-  void set_allocated_heart_beat(::PUMA::Kernel::HeartbeatResponse* heart_beat);
+  const ::Game::PSR::HeartbeatResponse& heart_beat() const;
+  ::Game::PSR::HeartbeatResponse* release_heart_beat();
+  ::Game::PSR::HeartbeatResponse* mutable_heart_beat();
+  void set_allocated_heart_beat(::Game::PSR::HeartbeatResponse* heart_beat);
 
   // int32 user_id = 1;
   void clear_user_id();
@@ -1245,14 +1245,14 @@ class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_po
   bool result() const;
   void set_result(bool value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(class_scope:Game.PSR.Response)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr error_describe_;
-  ::PUMA::Kernel::RegisterResponse* register__;
-  ::PUMA::Kernel::UnregisterResponse* unregister_;
-  ::PUMA::Kernel::HeartbeatResponse* heart_beat_;
+  ::Game::PSR::RegisterResponse* register__;
+  ::Game::PSR::UnregisterResponse* unregister_;
+  ::Game::PSR::HeartbeatResponse* heart_beat_;
   ::google::protobuf::int32 user_id_;
   ::google::protobuf::int32 kernel_id_;
   ::google::protobuf::int32 app_id_;
@@ -1263,7 +1263,7 @@ class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:PUMA.Kernel.Message) */ {
+class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.Message) */ {
  public:
   Message();
   virtual ~Message();
@@ -1357,29 +1357,29 @@ class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   ::std::string* release_description();
   void set_allocated_description(::std::string* description);
 
-  // .PUMA.Kernel.Request request = 6;
+  // .Game.PSR.Request request = 6;
   bool has_request() const;
   void clear_request();
   static const int kRequestFieldNumber = 6;
-  const ::PUMA::Kernel::Request& request() const;
-  ::PUMA::Kernel::Request* release_request();
-  ::PUMA::Kernel::Request* mutable_request();
-  void set_allocated_request(::PUMA::Kernel::Request* request);
+  const ::Game::PSR::Request& request() const;
+  ::Game::PSR::Request* release_request();
+  ::Game::PSR::Request* mutable_request();
+  void set_allocated_request(::Game::PSR::Request* request);
 
-  // .PUMA.Kernel.Response response = 7;
+  // .Game.PSR.Response response = 7;
   bool has_response() const;
   void clear_response();
   static const int kResponseFieldNumber = 7;
-  const ::PUMA::Kernel::Response& response() const;
-  ::PUMA::Kernel::Response* release_response();
-  ::PUMA::Kernel::Response* mutable_response();
-  void set_allocated_response(::PUMA::Kernel::Response* response);
+  const ::Game::PSR::Response& response() const;
+  ::Game::PSR::Response* release_response();
+  ::Game::PSR::Response* mutable_response();
+  void set_allocated_response(::Game::PSR::Response* response);
 
-  // .PUMA.Kernel.MSG type = 1;
+  // .Game.PSR.MSG type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
-  ::PUMA::Kernel::MSG type() const;
-  void set_type(::PUMA::Kernel::MSG value);
+  ::Game::PSR::MSG type() const;
+  void set_type(::Game::PSR::MSG value);
 
   // fixed32 sequence = 2;
   void clear_sequence();
@@ -1387,13 +1387,13 @@ class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   ::google::protobuf::uint32 sequence() const;
   void set_sequence(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(class_scope:Game.PSR.Message)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr description_;
-  ::PUMA::Kernel::Request* request_;
-  ::PUMA::Kernel::Response* response_;
+  ::Game::PSR::Request* request_;
+  ::Game::PSR::Response* response_;
   int type_;
   ::google::protobuf::uint32 sequence_;
   mutable int _cached_size_;
@@ -1416,41 +1416,41 @@ inline void RegisterRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RegisterRequest::name() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_get:Game.PSR.RegisterRequest.name)
   return name_.GetNoArena();
 }
 inline void RegisterRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_set:Game.PSR.RegisterRequest.name)
 }
 #if LANG_CXX11
 inline void RegisterRequest::set_name(::std::string&& value) {
   
   name_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.RegisterRequest.name)
 }
 #endif
 inline void RegisterRequest::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.RegisterRequest.name)
 }
 inline void RegisterRequest::set_name(const void* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.RegisterRequest.name)
 }
 inline ::std::string* RegisterRequest::mutable_name() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.RegisterRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RegisterRequest::release_name() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_release:Game.PSR.RegisterRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1461,7 +1461,7 @@ inline void RegisterRequest::set_allocated_name(::std::string* name) {
     
   }
   name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.RegisterRequest.name)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.RegisterRequest.name)
 }
 
 // bytes user_id = 2;
@@ -1469,41 +1469,41 @@ inline void RegisterRequest::clear_user_id() {
   user_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RegisterRequest::user_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.RegisterRequest.user_id)
   return user_id_.GetNoArena();
 }
 inline void RegisterRequest::set_user_id(const ::std::string& value) {
   
   user_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.RegisterRequest.user_id)
 }
 #if LANG_CXX11
 inline void RegisterRequest::set_user_id(::std::string&& value) {
   
   user_id_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.RegisterRequest.user_id)
 }
 #endif
 inline void RegisterRequest::set_user_id(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   user_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.RegisterRequest.user_id)
 }
 inline void RegisterRequest::set_user_id(const void* value, size_t size) {
   
   user_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.RegisterRequest.user_id)
 }
 inline ::std::string* RegisterRequest::mutable_user_id() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.RegisterRequest.user_id)
   return user_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RegisterRequest::release_user_id() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_release:Game.PSR.RegisterRequest.user_id)
   
   return user_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1514,7 +1514,7 @@ inline void RegisterRequest::set_allocated_user_id(::std::string* user_id) {
     
   }
   user_id_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), user_id);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.RegisterRequest.user_id)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.RegisterRequest.user_id)
 }
 
 // bytes address = 3;
@@ -1522,41 +1522,41 @@ inline void RegisterRequest::clear_address() {
   address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RegisterRequest::address() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_get:Game.PSR.RegisterRequest.address)
   return address_.GetNoArena();
 }
 inline void RegisterRequest::set_address(const ::std::string& value) {
   
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_set:Game.PSR.RegisterRequest.address)
 }
 #if LANG_CXX11
 inline void RegisterRequest::set_address(::std::string&& value) {
   
   address_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.RegisterRequest.address)
 }
 #endif
 inline void RegisterRequest::set_address(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.RegisterRequest.address)
 }
 inline void RegisterRequest::set_address(const void* value, size_t size) {
   
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.RegisterRequest.address)
 }
 inline ::std::string* RegisterRequest::mutable_address() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.RegisterRequest.address)
   return address_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RegisterRequest::release_address() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_release:Game.PSR.RegisterRequest.address)
   
   return address_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1567,7 +1567,7 @@ inline void RegisterRequest::set_allocated_address(::std::string* address) {
     
   }
   address_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), address);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.RegisterRequest.address)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.RegisterRequest.address)
 }
 
 // bytes version = 4;
@@ -1575,41 +1575,41 @@ inline void RegisterRequest::clear_version() {
   version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RegisterRequest::version() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_get:Game.PSR.RegisterRequest.version)
   return version_.GetNoArena();
 }
 inline void RegisterRequest::set_version(const ::std::string& value) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_set:Game.PSR.RegisterRequest.version)
 }
 #if LANG_CXX11
 inline void RegisterRequest::set_version(::std::string&& value) {
   
   version_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.RegisterRequest.version)
 }
 #endif
 inline void RegisterRequest::set_version(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.RegisterRequest.version)
 }
 inline void RegisterRequest::set_version(const void* value, size_t size) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.RegisterRequest.version)
 }
 inline ::std::string* RegisterRequest::mutable_version() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.RegisterRequest.version)
   return version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RegisterRequest::release_version() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_release:Game.PSR.RegisterRequest.version)
   
   return version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1620,7 +1620,7 @@ inline void RegisterRequest::set_allocated_version(::std::string* version) {
     
   }
   version_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), version);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.RegisterRequest.version)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.RegisterRequest.version)
 }
 
 // bytes timestamp = 5;
@@ -1628,41 +1628,41 @@ inline void RegisterRequest::clear_timestamp() {
   timestamp_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RegisterRequest::timestamp() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_get:Game.PSR.RegisterRequest.timestamp)
   return timestamp_.GetNoArena();
 }
 inline void RegisterRequest::set_timestamp(const ::std::string& value) {
   
   timestamp_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set:Game.PSR.RegisterRequest.timestamp)
 }
 #if LANG_CXX11
 inline void RegisterRequest::set_timestamp(::std::string&& value) {
   
   timestamp_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.RegisterRequest.timestamp)
 }
 #endif
 inline void RegisterRequest::set_timestamp(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   timestamp_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.RegisterRequest.timestamp)
 }
 inline void RegisterRequest::set_timestamp(const void* value, size_t size) {
   
   timestamp_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.RegisterRequest.timestamp)
 }
 inline ::std::string* RegisterRequest::mutable_timestamp() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.RegisterRequest.timestamp)
   return timestamp_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RegisterRequest::release_timestamp() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_release:Game.PSR.RegisterRequest.timestamp)
   
   return timestamp_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1673,7 +1673,7 @@ inline void RegisterRequest::set_allocated_timestamp(::std::string* timestamp) {
     
   }
   timestamp_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), timestamp);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.RegisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.RegisterRequest.timestamp)
 }
 
 // -------------------------------------------------------------------
@@ -1685,41 +1685,41 @@ inline void UnregisterRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UnregisterRequest::name() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_get:Game.PSR.UnregisterRequest.name)
   return name_.GetNoArena();
 }
 inline void UnregisterRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_set:Game.PSR.UnregisterRequest.name)
 }
 #if LANG_CXX11
 inline void UnregisterRequest::set_name(::std::string&& value) {
   
   name_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.UnregisterRequest.name)
 }
 #endif
 inline void UnregisterRequest::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.UnregisterRequest.name)
 }
 inline void UnregisterRequest::set_name(const void* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.UnregisterRequest.name)
 }
 inline ::std::string* UnregisterRequest::mutable_name() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.UnregisterRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* UnregisterRequest::release_name() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_release:Game.PSR.UnregisterRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1730,7 +1730,7 @@ inline void UnregisterRequest::set_allocated_name(::std::string* name) {
     
   }
   name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.UnregisterRequest.name)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.UnregisterRequest.name)
 }
 
 // string address = 2;
@@ -1738,41 +1738,41 @@ inline void UnregisterRequest::clear_address() {
   address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UnregisterRequest::address() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_get:Game.PSR.UnregisterRequest.address)
   return address_.GetNoArena();
 }
 inline void UnregisterRequest::set_address(const ::std::string& value) {
   
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_set:Game.PSR.UnregisterRequest.address)
 }
 #if LANG_CXX11
 inline void UnregisterRequest::set_address(::std::string&& value) {
   
   address_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.UnregisterRequest.address)
 }
 #endif
 inline void UnregisterRequest::set_address(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.UnregisterRequest.address)
 }
 inline void UnregisterRequest::set_address(const char* value, size_t size) {
   
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.UnregisterRequest.address)
 }
 inline ::std::string* UnregisterRequest::mutable_address() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.UnregisterRequest.address)
   return address_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* UnregisterRequest::release_address() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_release:Game.PSR.UnregisterRequest.address)
   
   return address_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1783,7 +1783,7 @@ inline void UnregisterRequest::set_allocated_address(::std::string* address) {
     
   }
   address_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), address);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.UnregisterRequest.address)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.UnregisterRequest.address)
 }
 
 // bytes version = 3;
@@ -1791,41 +1791,41 @@ inline void UnregisterRequest::clear_version() {
   version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UnregisterRequest::version() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_get:Game.PSR.UnregisterRequest.version)
   return version_.GetNoArena();
 }
 inline void UnregisterRequest::set_version(const ::std::string& value) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_set:Game.PSR.UnregisterRequest.version)
 }
 #if LANG_CXX11
 inline void UnregisterRequest::set_version(::std::string&& value) {
   
   version_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.UnregisterRequest.version)
 }
 #endif
 inline void UnregisterRequest::set_version(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.UnregisterRequest.version)
 }
 inline void UnregisterRequest::set_version(const void* value, size_t size) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.UnregisterRequest.version)
 }
 inline ::std::string* UnregisterRequest::mutable_version() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.UnregisterRequest.version)
   return version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* UnregisterRequest::release_version() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_release:Game.PSR.UnregisterRequest.version)
   
   return version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1836,7 +1836,7 @@ inline void UnregisterRequest::set_allocated_version(::std::string* version) {
     
   }
   version_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), version);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.UnregisterRequest.version)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.UnregisterRequest.version)
 }
 
 // string timestamp = 4;
@@ -1844,41 +1844,41 @@ inline void UnregisterRequest::clear_timestamp() {
   timestamp_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UnregisterRequest::timestamp() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_get:Game.PSR.UnregisterRequest.timestamp)
   return timestamp_.GetNoArena();
 }
 inline void UnregisterRequest::set_timestamp(const ::std::string& value) {
   
   timestamp_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set:Game.PSR.UnregisterRequest.timestamp)
 }
 #if LANG_CXX11
 inline void UnregisterRequest::set_timestamp(::std::string&& value) {
   
   timestamp_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.UnregisterRequest.timestamp)
 }
 #endif
 inline void UnregisterRequest::set_timestamp(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   timestamp_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.UnregisterRequest.timestamp)
 }
 inline void UnregisterRequest::set_timestamp(const char* value, size_t size) {
   
   timestamp_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.UnregisterRequest.timestamp)
 }
 inline ::std::string* UnregisterRequest::mutable_timestamp() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.UnregisterRequest.timestamp)
   return timestamp_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* UnregisterRequest::release_timestamp() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_release:Game.PSR.UnregisterRequest.timestamp)
   
   return timestamp_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1889,7 +1889,7 @@ inline void UnregisterRequest::set_allocated_timestamp(::std::string* timestamp)
     
   }
   timestamp_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), timestamp);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.UnregisterRequest.timestamp)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.UnregisterRequest.timestamp)
 }
 
 // string reason = 5;
@@ -1897,41 +1897,41 @@ inline void UnregisterRequest::clear_reason() {
   reason_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UnregisterRequest::reason() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_get:Game.PSR.UnregisterRequest.reason)
   return reason_.GetNoArena();
 }
 inline void UnregisterRequest::set_reason(const ::std::string& value) {
   
   reason_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_set:Game.PSR.UnregisterRequest.reason)
 }
 #if LANG_CXX11
 inline void UnregisterRequest::set_reason(::std::string&& value) {
   
   reason_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.UnregisterRequest.reason)
 }
 #endif
 inline void UnregisterRequest::set_reason(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   reason_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.UnregisterRequest.reason)
 }
 inline void UnregisterRequest::set_reason(const char* value, size_t size) {
   
   reason_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.UnregisterRequest.reason)
 }
 inline ::std::string* UnregisterRequest::mutable_reason() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.UnregisterRequest.reason)
   return reason_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* UnregisterRequest::release_reason() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_release:Game.PSR.UnregisterRequest.reason)
   
   return reason_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1942,7 +1942,7 @@ inline void UnregisterRequest::set_allocated_reason(::std::string* reason) {
     
   }
   reason_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), reason);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.UnregisterRequest.reason)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.UnregisterRequest.reason)
 }
 
 // -------------------------------------------------------------------
@@ -1954,13 +1954,13 @@ inline void RegisterResponse::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 RegisterResponse::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.RegisterResponse.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.RegisterResponse.kernel_id)
   return kernel_id_;
 }
 inline void RegisterResponse::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.RegisterResponse.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.RegisterResponse.kernel_id)
 }
 
 // -------------------------------------------------------------------
@@ -1972,13 +1972,13 @@ inline void UnregisterResponse::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 UnregisterResponse::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.UnregisterResponse.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.UnregisterResponse.kernel_id)
   return kernel_id_;
 }
 inline void UnregisterResponse::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.UnregisterResponse.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.UnregisterResponse.kernel_id)
 }
 
 // -------------------------------------------------------------------
@@ -1990,13 +1990,13 @@ inline void HeartbeatIndication::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 HeartbeatIndication::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.HeartbeatIndication.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.HeartbeatIndication.kernel_id)
   return kernel_id_;
 }
 inline void HeartbeatIndication::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.HeartbeatIndication.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.HeartbeatIndication.kernel_id)
 }
 
 // int64 ts = 2;
@@ -2004,13 +2004,13 @@ inline void HeartbeatIndication::clear_ts() {
   ts_ = GOOGLE_LONGLONG(0);
 }
 inline ::google::protobuf::int64 HeartbeatIndication::ts() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.HeartbeatIndication.ts)
+  // @@protoc_insertion_point(field_get:Game.PSR.HeartbeatIndication.ts)
   return ts_;
 }
 inline void HeartbeatIndication::set_ts(::google::protobuf::int64 value) {
   
   ts_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.HeartbeatIndication.ts)
+  // @@protoc_insertion_point(field_set:Game.PSR.HeartbeatIndication.ts)
 }
 
 // -------------------------------------------------------------------
@@ -2022,13 +2022,13 @@ inline void HeartbeatRequest::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 HeartbeatRequest::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.HeartbeatRequest.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.HeartbeatRequest.kernel_id)
   return kernel_id_;
 }
 inline void HeartbeatRequest::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.HeartbeatRequest.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.HeartbeatRequest.kernel_id)
 }
 
 // int64 ts = 2;
@@ -2036,13 +2036,13 @@ inline void HeartbeatRequest::clear_ts() {
   ts_ = GOOGLE_LONGLONG(0);
 }
 inline ::google::protobuf::int64 HeartbeatRequest::ts() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.HeartbeatRequest.ts)
+  // @@protoc_insertion_point(field_get:Game.PSR.HeartbeatRequest.ts)
   return ts_;
 }
 inline void HeartbeatRequest::set_ts(::google::protobuf::int64 value) {
   
   ts_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.HeartbeatRequest.ts)
+  // @@protoc_insertion_point(field_set:Game.PSR.HeartbeatRequest.ts)
 }
 
 // -------------------------------------------------------------------
@@ -2054,13 +2054,13 @@ inline void HeartbeatResponse::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 HeartbeatResponse::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.HeartbeatResponse.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.HeartbeatResponse.kernel_id)
   return kernel_id_;
 }
 inline void HeartbeatResponse::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.HeartbeatResponse.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.HeartbeatResponse.kernel_id)
 }
 
 // -------------------------------------------------------------------
@@ -2072,13 +2072,13 @@ inline void Request::clear_user_id() {
   user_id_ = 0;
 }
 inline ::google::protobuf::int32 Request::user_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Request.user_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.user_id)
   return user_id_;
 }
 inline void Request::set_user_id(::google::protobuf::int32 value) {
   
   user_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Request.user_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.Request.user_id)
 }
 
 // int32 kernel_id = 2;
@@ -2086,13 +2086,13 @@ inline void Request::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 Request::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Request.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.kernel_id)
   return kernel_id_;
 }
 inline void Request::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Request.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.Request.kernel_id)
 }
 
 // int32 app_id = 3;
@@ -2100,16 +2100,16 @@ inline void Request::clear_app_id() {
   app_id_ = 0;
 }
 inline ::google::protobuf::int32 Request::app_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Request.app_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.app_id)
   return app_id_;
 }
 inline void Request::set_app_id(::google::protobuf::int32 value) {
   
   app_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Request.app_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.Request.app_id)
 }
 
-// .PUMA.Kernel.RegisterRequest register = 11;
+// .Game.PSR.RegisterRequest register = 11;
 inline bool Request::has_register_() const {
   return this != internal_default_instance() && register__ != NULL;
 }
@@ -2119,28 +2119,28 @@ inline void Request::clear_register_() {
   }
   register__ = NULL;
 }
-inline const ::PUMA::Kernel::RegisterRequest& Request::register_() const {
-  const ::PUMA::Kernel::RegisterRequest* p = register__;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Request.register)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::RegisterRequest*>(
-      &::PUMA::Kernel::_RegisterRequest_default_instance_);
+inline const ::Game::PSR::RegisterRequest& Request::register_() const {
+  const ::Game::PSR::RegisterRequest* p = register__;
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.register)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::RegisterRequest*>(
+      &::Game::PSR::_RegisterRequest_default_instance_);
 }
-inline ::PUMA::Kernel::RegisterRequest* Request::release_register_() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Request.register)
+inline ::Game::PSR::RegisterRequest* Request::release_register_() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Request.register)
   
-  ::PUMA::Kernel::RegisterRequest* temp = register__;
+  ::Game::PSR::RegisterRequest* temp = register__;
   register__ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::RegisterRequest* Request::mutable_register_() {
+inline ::Game::PSR::RegisterRequest* Request::mutable_register_() {
   
   if (register__ == NULL) {
-    register__ = new ::PUMA::Kernel::RegisterRequest;
+    register__ = new ::Game::PSR::RegisterRequest;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Request.register)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Request.register)
   return register__;
 }
-inline void Request::set_allocated_register_(::PUMA::Kernel::RegisterRequest* register_) {
+inline void Request::set_allocated_register_(::Game::PSR::RegisterRequest* register_) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete register__;
@@ -2156,10 +2156,10 @@ inline void Request::set_allocated_register_(::PUMA::Kernel::RegisterRequest* re
     
   }
   register__ = register_;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Request.register)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Request.register)
 }
 
-// .PUMA.Kernel.UnregisterRequest unregister = 12;
+// .Game.PSR.UnregisterRequest unregister = 12;
 inline bool Request::has_unregister() const {
   return this != internal_default_instance() && unregister_ != NULL;
 }
@@ -2169,28 +2169,28 @@ inline void Request::clear_unregister() {
   }
   unregister_ = NULL;
 }
-inline const ::PUMA::Kernel::UnregisterRequest& Request::unregister() const {
-  const ::PUMA::Kernel::UnregisterRequest* p = unregister_;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Request.unregister)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::UnregisterRequest*>(
-      &::PUMA::Kernel::_UnregisterRequest_default_instance_);
+inline const ::Game::PSR::UnregisterRequest& Request::unregister() const {
+  const ::Game::PSR::UnregisterRequest* p = unregister_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.unregister)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::UnregisterRequest*>(
+      &::Game::PSR::_UnregisterRequest_default_instance_);
 }
-inline ::PUMA::Kernel::UnregisterRequest* Request::release_unregister() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Request.unregister)
+inline ::Game::PSR::UnregisterRequest* Request::release_unregister() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Request.unregister)
   
-  ::PUMA::Kernel::UnregisterRequest* temp = unregister_;
+  ::Game::PSR::UnregisterRequest* temp = unregister_;
   unregister_ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::UnregisterRequest* Request::mutable_unregister() {
+inline ::Game::PSR::UnregisterRequest* Request::mutable_unregister() {
   
   if (unregister_ == NULL) {
-    unregister_ = new ::PUMA::Kernel::UnregisterRequest;
+    unregister_ = new ::Game::PSR::UnregisterRequest;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Request.unregister)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Request.unregister)
   return unregister_;
 }
-inline void Request::set_allocated_unregister(::PUMA::Kernel::UnregisterRequest* unregister) {
+inline void Request::set_allocated_unregister(::Game::PSR::UnregisterRequest* unregister) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete unregister_;
@@ -2206,10 +2206,10 @@ inline void Request::set_allocated_unregister(::PUMA::Kernel::UnregisterRequest*
     
   }
   unregister_ = unregister;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Request.unregister)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Request.unregister)
 }
 
-// .PUMA.Kernel.HeartbeatRequest heart_beat = 17;
+// .Game.PSR.HeartbeatRequest heart_beat = 17;
 inline bool Request::has_heart_beat() const {
   return this != internal_default_instance() && heart_beat_ != NULL;
 }
@@ -2219,28 +2219,28 @@ inline void Request::clear_heart_beat() {
   }
   heart_beat_ = NULL;
 }
-inline const ::PUMA::Kernel::HeartbeatRequest& Request::heart_beat() const {
-  const ::PUMA::Kernel::HeartbeatRequest* p = heart_beat_;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Request.heart_beat)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::HeartbeatRequest*>(
-      &::PUMA::Kernel::_HeartbeatRequest_default_instance_);
+inline const ::Game::PSR::HeartbeatRequest& Request::heart_beat() const {
+  const ::Game::PSR::HeartbeatRequest* p = heart_beat_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.heart_beat)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::HeartbeatRequest*>(
+      &::Game::PSR::_HeartbeatRequest_default_instance_);
 }
-inline ::PUMA::Kernel::HeartbeatRequest* Request::release_heart_beat() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Request.heart_beat)
+inline ::Game::PSR::HeartbeatRequest* Request::release_heart_beat() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Request.heart_beat)
   
-  ::PUMA::Kernel::HeartbeatRequest* temp = heart_beat_;
+  ::Game::PSR::HeartbeatRequest* temp = heart_beat_;
   heart_beat_ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::HeartbeatRequest* Request::mutable_heart_beat() {
+inline ::Game::PSR::HeartbeatRequest* Request::mutable_heart_beat() {
   
   if (heart_beat_ == NULL) {
-    heart_beat_ = new ::PUMA::Kernel::HeartbeatRequest;
+    heart_beat_ = new ::Game::PSR::HeartbeatRequest;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Request.heart_beat)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Request.heart_beat)
   return heart_beat_;
 }
-inline void Request::set_allocated_heart_beat(::PUMA::Kernel::HeartbeatRequest* heart_beat) {
+inline void Request::set_allocated_heart_beat(::Game::PSR::HeartbeatRequest* heart_beat) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete heart_beat_;
@@ -2256,7 +2256,7 @@ inline void Request::set_allocated_heart_beat(::PUMA::Kernel::HeartbeatRequest* 
     
   }
   heart_beat_ = heart_beat;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Request.heart_beat)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Request.heart_beat)
 }
 
 // -------------------------------------------------------------------
@@ -2268,13 +2268,13 @@ inline void Response::clear_user_id() {
   user_id_ = 0;
 }
 inline ::google::protobuf::int32 Response::user_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.user_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.user_id)
   return user_id_;
 }
 inline void Response::set_user_id(::google::protobuf::int32 value) {
   
   user_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Response.user_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.Response.user_id)
 }
 
 // int32 kernel_id = 2;
@@ -2282,13 +2282,13 @@ inline void Response::clear_kernel_id() {
   kernel_id_ = 0;
 }
 inline ::google::protobuf::int32 Response::kernel_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.kernel_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.kernel_id)
   return kernel_id_;
 }
 inline void Response::set_kernel_id(::google::protobuf::int32 value) {
   
   kernel_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Response.kernel_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.Response.kernel_id)
 }
 
 // int32 app_id = 3;
@@ -2296,13 +2296,13 @@ inline void Response::clear_app_id() {
   app_id_ = 0;
 }
 inline ::google::protobuf::int32 Response::app_id() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.app_id)
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.app_id)
   return app_id_;
 }
 inline void Response::set_app_id(::google::protobuf::int32 value) {
   
   app_id_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Response.app_id)
+  // @@protoc_insertion_point(field_set:Game.PSR.Response.app_id)
 }
 
 // bool result = 6;
@@ -2310,13 +2310,13 @@ inline void Response::clear_result() {
   result_ = false;
 }
 inline bool Response::result() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.result)
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.result)
   return result_;
 }
 inline void Response::set_result(bool value) {
   
   result_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Response.result)
+  // @@protoc_insertion_point(field_set:Game.PSR.Response.result)
 }
 
 // bytes error_describe = 7;
@@ -2324,41 +2324,41 @@ inline void Response::clear_error_describe() {
   error_describe_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Response::error_describe() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.error_describe)
   return error_describe_.GetNoArena();
 }
 inline void Response::set_error_describe(const ::std::string& value) {
   
   error_describe_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_set:Game.PSR.Response.error_describe)
 }
 #if LANG_CXX11
 inline void Response::set_error_describe(::std::string&& value) {
   
   error_describe_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.Response.error_describe)
 }
 #endif
 inline void Response::set_error_describe(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   error_describe_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.Response.error_describe)
 }
 inline void Response::set_error_describe(const void* value, size_t size) {
   
   error_describe_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.Response.error_describe)
 }
 inline ::std::string* Response::mutable_error_describe() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Response.error_describe)
   return error_describe_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Response::release_error_describe() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_release:Game.PSR.Response.error_describe)
   
   return error_describe_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2369,10 +2369,10 @@ inline void Response::set_allocated_error_describe(::std::string* error_describe
     
   }
   error_describe_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), error_describe);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Response.error_describe)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.error_describe)
 }
 
-// .PUMA.Kernel.RegisterResponse register = 11;
+// .Game.PSR.RegisterResponse register = 11;
 inline bool Response::has_register_() const {
   return this != internal_default_instance() && register__ != NULL;
 }
@@ -2382,28 +2382,28 @@ inline void Response::clear_register_() {
   }
   register__ = NULL;
 }
-inline const ::PUMA::Kernel::RegisterResponse& Response::register_() const {
-  const ::PUMA::Kernel::RegisterResponse* p = register__;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.register)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::RegisterResponse*>(
-      &::PUMA::Kernel::_RegisterResponse_default_instance_);
+inline const ::Game::PSR::RegisterResponse& Response::register_() const {
+  const ::Game::PSR::RegisterResponse* p = register__;
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.register)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::RegisterResponse*>(
+      &::Game::PSR::_RegisterResponse_default_instance_);
 }
-inline ::PUMA::Kernel::RegisterResponse* Response::release_register_() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Response.register)
+inline ::Game::PSR::RegisterResponse* Response::release_register_() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Response.register)
   
-  ::PUMA::Kernel::RegisterResponse* temp = register__;
+  ::Game::PSR::RegisterResponse* temp = register__;
   register__ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::RegisterResponse* Response::mutable_register_() {
+inline ::Game::PSR::RegisterResponse* Response::mutable_register_() {
   
   if (register__ == NULL) {
-    register__ = new ::PUMA::Kernel::RegisterResponse;
+    register__ = new ::Game::PSR::RegisterResponse;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Response.register)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Response.register)
   return register__;
 }
-inline void Response::set_allocated_register_(::PUMA::Kernel::RegisterResponse* register_) {
+inline void Response::set_allocated_register_(::Game::PSR::RegisterResponse* register_) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete register__;
@@ -2419,10 +2419,10 @@ inline void Response::set_allocated_register_(::PUMA::Kernel::RegisterResponse* 
     
   }
   register__ = register_;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Response.register)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.register)
 }
 
-// .PUMA.Kernel.UnregisterResponse unregister = 12;
+// .Game.PSR.UnregisterResponse unregister = 12;
 inline bool Response::has_unregister() const {
   return this != internal_default_instance() && unregister_ != NULL;
 }
@@ -2432,28 +2432,28 @@ inline void Response::clear_unregister() {
   }
   unregister_ = NULL;
 }
-inline const ::PUMA::Kernel::UnregisterResponse& Response::unregister() const {
-  const ::PUMA::Kernel::UnregisterResponse* p = unregister_;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.unregister)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::UnregisterResponse*>(
-      &::PUMA::Kernel::_UnregisterResponse_default_instance_);
+inline const ::Game::PSR::UnregisterResponse& Response::unregister() const {
+  const ::Game::PSR::UnregisterResponse* p = unregister_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.unregister)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::UnregisterResponse*>(
+      &::Game::PSR::_UnregisterResponse_default_instance_);
 }
-inline ::PUMA::Kernel::UnregisterResponse* Response::release_unregister() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Response.unregister)
+inline ::Game::PSR::UnregisterResponse* Response::release_unregister() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Response.unregister)
   
-  ::PUMA::Kernel::UnregisterResponse* temp = unregister_;
+  ::Game::PSR::UnregisterResponse* temp = unregister_;
   unregister_ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::UnregisterResponse* Response::mutable_unregister() {
+inline ::Game::PSR::UnregisterResponse* Response::mutable_unregister() {
   
   if (unregister_ == NULL) {
-    unregister_ = new ::PUMA::Kernel::UnregisterResponse;
+    unregister_ = new ::Game::PSR::UnregisterResponse;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Response.unregister)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Response.unregister)
   return unregister_;
 }
-inline void Response::set_allocated_unregister(::PUMA::Kernel::UnregisterResponse* unregister) {
+inline void Response::set_allocated_unregister(::Game::PSR::UnregisterResponse* unregister) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete unregister_;
@@ -2469,10 +2469,10 @@ inline void Response::set_allocated_unregister(::PUMA::Kernel::UnregisterRespons
     
   }
   unregister_ = unregister;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Response.unregister)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.unregister)
 }
 
-// .PUMA.Kernel.HeartbeatResponse heart_beat = 17;
+// .Game.PSR.HeartbeatResponse heart_beat = 17;
 inline bool Response::has_heart_beat() const {
   return this != internal_default_instance() && heart_beat_ != NULL;
 }
@@ -2482,28 +2482,28 @@ inline void Response::clear_heart_beat() {
   }
   heart_beat_ = NULL;
 }
-inline const ::PUMA::Kernel::HeartbeatResponse& Response::heart_beat() const {
-  const ::PUMA::Kernel::HeartbeatResponse* p = heart_beat_;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Response.heart_beat)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::HeartbeatResponse*>(
-      &::PUMA::Kernel::_HeartbeatResponse_default_instance_);
+inline const ::Game::PSR::HeartbeatResponse& Response::heart_beat() const {
+  const ::Game::PSR::HeartbeatResponse* p = heart_beat_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.heart_beat)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::HeartbeatResponse*>(
+      &::Game::PSR::_HeartbeatResponse_default_instance_);
 }
-inline ::PUMA::Kernel::HeartbeatResponse* Response::release_heart_beat() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Response.heart_beat)
+inline ::Game::PSR::HeartbeatResponse* Response::release_heart_beat() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Response.heart_beat)
   
-  ::PUMA::Kernel::HeartbeatResponse* temp = heart_beat_;
+  ::Game::PSR::HeartbeatResponse* temp = heart_beat_;
   heart_beat_ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::HeartbeatResponse* Response::mutable_heart_beat() {
+inline ::Game::PSR::HeartbeatResponse* Response::mutable_heart_beat() {
   
   if (heart_beat_ == NULL) {
-    heart_beat_ = new ::PUMA::Kernel::HeartbeatResponse;
+    heart_beat_ = new ::Game::PSR::HeartbeatResponse;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Response.heart_beat)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Response.heart_beat)
   return heart_beat_;
 }
-inline void Response::set_allocated_heart_beat(::PUMA::Kernel::HeartbeatResponse* heart_beat) {
+inline void Response::set_allocated_heart_beat(::Game::PSR::HeartbeatResponse* heart_beat) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete heart_beat_;
@@ -2519,25 +2519,25 @@ inline void Response::set_allocated_heart_beat(::PUMA::Kernel::HeartbeatResponse
     
   }
   heart_beat_ = heart_beat;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Response.heart_beat)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.heart_beat)
 }
 
 // -------------------------------------------------------------------
 
 // Message
 
-// .PUMA.Kernel.MSG type = 1;
+// .Game.PSR.MSG type = 1;
 inline void Message::clear_type() {
   type_ = 0;
 }
-inline ::PUMA::Kernel::MSG Message::type() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Message.type)
-  return static_cast< ::PUMA::Kernel::MSG >(type_);
+inline ::Game::PSR::MSG Message::type() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.Message.type)
+  return static_cast< ::Game::PSR::MSG >(type_);
 }
-inline void Message::set_type(::PUMA::Kernel::MSG value) {
+inline void Message::set_type(::Game::PSR::MSG value) {
   
   type_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Message.type)
+  // @@protoc_insertion_point(field_set:Game.PSR.Message.type)
 }
 
 // fixed32 sequence = 2;
@@ -2545,13 +2545,13 @@ inline void Message::clear_sequence() {
   sequence_ = 0u;
 }
 inline ::google::protobuf::uint32 Message::sequence() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Message.sequence)
+  // @@protoc_insertion_point(field_get:Game.PSR.Message.sequence)
   return sequence_;
 }
 inline void Message::set_sequence(::google::protobuf::uint32 value) {
   
   sequence_ = value;
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Message.sequence)
+  // @@protoc_insertion_point(field_set:Game.PSR.Message.sequence)
 }
 
 // string description = 3;
@@ -2559,41 +2559,41 @@ inline void Message::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Message::description() const {
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_get:Game.PSR.Message.description)
   return description_.GetNoArena();
 }
 inline void Message::set_description(const ::std::string& value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_set:Game.PSR.Message.description)
 }
 #if LANG_CXX11
 inline void Message::set_description(::std::string&& value) {
   
   description_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_set_rvalue:Game.PSR.Message.description)
 }
 #endif
 inline void Message::set_description(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_set_char:Game.PSR.Message.description)
 }
 inline void Message::set_description(const char* value, size_t size) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_set_pointer:Game.PSR.Message.description)
 }
 inline ::std::string* Message::mutable_description() {
   
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Message.description)
   return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Message::release_description() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_release:Game.PSR.Message.description)
   
   return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2604,10 +2604,10 @@ inline void Message::set_allocated_description(::std::string* description) {
     
   }
   description_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description);
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Message.description)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Message.description)
 }
 
-// .PUMA.Kernel.Request request = 6;
+// .Game.PSR.Request request = 6;
 inline bool Message::has_request() const {
   return this != internal_default_instance() && request_ != NULL;
 }
@@ -2617,28 +2617,28 @@ inline void Message::clear_request() {
   }
   request_ = NULL;
 }
-inline const ::PUMA::Kernel::Request& Message::request() const {
-  const ::PUMA::Kernel::Request* p = request_;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Message.request)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::Request*>(
-      &::PUMA::Kernel::_Request_default_instance_);
+inline const ::Game::PSR::Request& Message::request() const {
+  const ::Game::PSR::Request* p = request_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Message.request)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::Request*>(
+      &::Game::PSR::_Request_default_instance_);
 }
-inline ::PUMA::Kernel::Request* Message::release_request() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Message.request)
+inline ::Game::PSR::Request* Message::release_request() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Message.request)
   
-  ::PUMA::Kernel::Request* temp = request_;
+  ::Game::PSR::Request* temp = request_;
   request_ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::Request* Message::mutable_request() {
+inline ::Game::PSR::Request* Message::mutable_request() {
   
   if (request_ == NULL) {
-    request_ = new ::PUMA::Kernel::Request;
+    request_ = new ::Game::PSR::Request;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Message.request)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Message.request)
   return request_;
 }
-inline void Message::set_allocated_request(::PUMA::Kernel::Request* request) {
+inline void Message::set_allocated_request(::Game::PSR::Request* request) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete request_;
@@ -2654,10 +2654,10 @@ inline void Message::set_allocated_request(::PUMA::Kernel::Request* request) {
     
   }
   request_ = request;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Message.request)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Message.request)
 }
 
-// .PUMA.Kernel.Response response = 7;
+// .Game.PSR.Response response = 7;
 inline bool Message::has_response() const {
   return this != internal_default_instance() && response_ != NULL;
 }
@@ -2667,28 +2667,28 @@ inline void Message::clear_response() {
   }
   response_ = NULL;
 }
-inline const ::PUMA::Kernel::Response& Message::response() const {
-  const ::PUMA::Kernel::Response* p = response_;
-  // @@protoc_insertion_point(field_get:PUMA.Kernel.Message.response)
-  return p != NULL ? *p : *reinterpret_cast<const ::PUMA::Kernel::Response*>(
-      &::PUMA::Kernel::_Response_default_instance_);
+inline const ::Game::PSR::Response& Message::response() const {
+  const ::Game::PSR::Response* p = response_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Message.response)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::Response*>(
+      &::Game::PSR::_Response_default_instance_);
 }
-inline ::PUMA::Kernel::Response* Message::release_response() {
-  // @@protoc_insertion_point(field_release:PUMA.Kernel.Message.response)
+inline ::Game::PSR::Response* Message::release_response() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Message.response)
   
-  ::PUMA::Kernel::Response* temp = response_;
+  ::Game::PSR::Response* temp = response_;
   response_ = NULL;
   return temp;
 }
-inline ::PUMA::Kernel::Response* Message::mutable_response() {
+inline ::Game::PSR::Response* Message::mutable_response() {
   
   if (response_ == NULL) {
-    response_ = new ::PUMA::Kernel::Response;
+    response_ = new ::Game::PSR::Response;
   }
-  // @@protoc_insertion_point(field_mutable:PUMA.Kernel.Message.response)
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Message.response)
   return response_;
 }
-inline void Message::set_allocated_response(::PUMA::Kernel::Response* response) {
+inline void Message::set_allocated_response(::Game::PSR::Response* response) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete response_;
@@ -2704,7 +2704,7 @@ inline void Message::set_allocated_response(::PUMA::Kernel::Response* response) 
     
   }
   response_ = response;
-  // @@protoc_insertion_point(field_set_allocated:PUMA.Kernel.Message.response)
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Message.response)
 }
 
 #ifdef __GNUC__
@@ -2731,13 +2731,13 @@ inline void Message::set_allocated_response(::PUMA::Kernel::Response* response) 
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game
 
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::PUMA::Kernel::MSG> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::Game::PSR::MSG> : ::google::protobuf::internal::true_type {};
 
 }  // namespace protobuf
 }  // namespace google

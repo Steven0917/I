@@ -6,8 +6,8 @@
 
 using namespace std;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 
 class Server
@@ -26,5 +26,5 @@ private:
 };
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

@@ -3,13 +3,13 @@
 
 using namespace std;
 using namespace google;
-using namespace PUMA::Kernel;
+using namespace Game::PSR;
 
 /* Start google log system */
 void InitLogger()
 {
     FLAGS_alsologtostderr = 1;
-    InitGoogleLogging("Game.PSR_");
+    InitGoogleLogging("Game.PSR");
     SetStderrLogging(GLOG_ERROR);
     FLAGS_colorlogtostderr = true;
     FLAGS_logbufsecs = 0;
@@ -38,7 +38,7 @@ int main()
     try
     {
         Init();
-        PUMA::Kernel::Client client;
+        Client client;
 
         // start the server and check if startup succeeded
         if (client.Start())
@@ -46,7 +46,7 @@ int main()
 			client.Run();
         }
 
-        LOG(INFO) << "Game Paper Scissors Rock terminated.";
+        LOG(INFO) << "Game Paper Scissors Rock is terminated.";
         Clearup();
 
         return 0;

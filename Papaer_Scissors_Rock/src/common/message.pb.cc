@@ -16,8 +16,8 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 class RegisterRequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<RegisterRequest>
@@ -68,8 +68,8 @@ class MessageDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<Message>
       _instance;
 } _Message_default_instance_;
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game
 namespace protobuf_message_2eproto {
 void InitDefaultsRegisterRequestImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -80,11 +80,11 @@ void InitDefaultsRegisterRequestImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_RegisterRequest_default_instance_;
-    new (ptr) ::PUMA::Kernel::RegisterRequest();
+    void* ptr = &::Game::PSR::_RegisterRequest_default_instance_;
+    new (ptr) ::Game::PSR::RegisterRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::RegisterRequest::InitAsDefaultInstance();
+  ::Game::PSR::RegisterRequest::InitAsDefaultInstance();
 }
 
 void InitDefaultsRegisterRequest() {
@@ -101,11 +101,11 @@ void InitDefaultsUnregisterRequestImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_UnregisterRequest_default_instance_;
-    new (ptr) ::PUMA::Kernel::UnregisterRequest();
+    void* ptr = &::Game::PSR::_UnregisterRequest_default_instance_;
+    new (ptr) ::Game::PSR::UnregisterRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::UnregisterRequest::InitAsDefaultInstance();
+  ::Game::PSR::UnregisterRequest::InitAsDefaultInstance();
 }
 
 void InitDefaultsUnregisterRequest() {
@@ -122,11 +122,11 @@ void InitDefaultsRegisterResponseImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_RegisterResponse_default_instance_;
-    new (ptr) ::PUMA::Kernel::RegisterResponse();
+    void* ptr = &::Game::PSR::_RegisterResponse_default_instance_;
+    new (ptr) ::Game::PSR::RegisterResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::RegisterResponse::InitAsDefaultInstance();
+  ::Game::PSR::RegisterResponse::InitAsDefaultInstance();
 }
 
 void InitDefaultsRegisterResponse() {
@@ -143,11 +143,11 @@ void InitDefaultsUnregisterResponseImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_UnregisterResponse_default_instance_;
-    new (ptr) ::PUMA::Kernel::UnregisterResponse();
+    void* ptr = &::Game::PSR::_UnregisterResponse_default_instance_;
+    new (ptr) ::Game::PSR::UnregisterResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::UnregisterResponse::InitAsDefaultInstance();
+  ::Game::PSR::UnregisterResponse::InitAsDefaultInstance();
 }
 
 void InitDefaultsUnregisterResponse() {
@@ -164,11 +164,11 @@ void InitDefaultsHeartbeatIndicationImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_HeartbeatIndication_default_instance_;
-    new (ptr) ::PUMA::Kernel::HeartbeatIndication();
+    void* ptr = &::Game::PSR::_HeartbeatIndication_default_instance_;
+    new (ptr) ::Game::PSR::HeartbeatIndication();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::HeartbeatIndication::InitAsDefaultInstance();
+  ::Game::PSR::HeartbeatIndication::InitAsDefaultInstance();
 }
 
 void InitDefaultsHeartbeatIndication() {
@@ -185,11 +185,11 @@ void InitDefaultsHeartbeatRequestImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_HeartbeatRequest_default_instance_;
-    new (ptr) ::PUMA::Kernel::HeartbeatRequest();
+    void* ptr = &::Game::PSR::_HeartbeatRequest_default_instance_;
+    new (ptr) ::Game::PSR::HeartbeatRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::HeartbeatRequest::InitAsDefaultInstance();
+  ::Game::PSR::HeartbeatRequest::InitAsDefaultInstance();
 }
 
 void InitDefaultsHeartbeatRequest() {
@@ -206,11 +206,11 @@ void InitDefaultsHeartbeatResponseImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::PUMA::Kernel::_HeartbeatResponse_default_instance_;
-    new (ptr) ::PUMA::Kernel::HeartbeatResponse();
+    void* ptr = &::Game::PSR::_HeartbeatResponse_default_instance_;
+    new (ptr) ::Game::PSR::HeartbeatResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::HeartbeatResponse::InitAsDefaultInstance();
+  ::Game::PSR::HeartbeatResponse::InitAsDefaultInstance();
 }
 
 void InitDefaultsHeartbeatResponse() {
@@ -230,11 +230,11 @@ void InitDefaultsRequestImpl() {
   protobuf_message_2eproto::InitDefaultsUnregisterRequest();
   protobuf_message_2eproto::InitDefaultsHeartbeatRequest();
   {
-    void* ptr = &::PUMA::Kernel::_Request_default_instance_;
-    new (ptr) ::PUMA::Kernel::Request();
+    void* ptr = &::Game::PSR::_Request_default_instance_;
+    new (ptr) ::Game::PSR::Request();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::Request::InitAsDefaultInstance();
+  ::Game::PSR::Request::InitAsDefaultInstance();
 }
 
 void InitDefaultsRequest() {
@@ -254,11 +254,11 @@ void InitDefaultsResponseImpl() {
   protobuf_message_2eproto::InitDefaultsUnregisterResponse();
   protobuf_message_2eproto::InitDefaultsHeartbeatResponse();
   {
-    void* ptr = &::PUMA::Kernel::_Response_default_instance_;
-    new (ptr) ::PUMA::Kernel::Response();
+    void* ptr = &::Game::PSR::_Response_default_instance_;
+    new (ptr) ::Game::PSR::Response();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::Response::InitAsDefaultInstance();
+  ::Game::PSR::Response::InitAsDefaultInstance();
 }
 
 void InitDefaultsResponse() {
@@ -277,11 +277,11 @@ void InitDefaultsMessageImpl() {
   protobuf_message_2eproto::InitDefaultsRequest();
   protobuf_message_2eproto::InitDefaultsResponse();
   {
-    void* ptr = &::PUMA::Kernel::_Message_default_instance_;
-    new (ptr) ::PUMA::Kernel::Message();
+    void* ptr = &::Game::PSR::_Message_default_instance_;
+    new (ptr) ::Game::PSR::Message();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PUMA::Kernel::Message::InitAsDefaultInstance();
+  ::Game::PSR::Message::InitAsDefaultInstance();
 }
 
 void InitDefaultsMessage() {
@@ -290,8 +290,8 @@ void InitDefaultsMessage() {
 }
 
 }  // namespace protobuf_message_2eproto
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 bool MSG_IsValid(int value) {
   switch (value) {
     case 0:
@@ -327,7 +327,7 @@ RegisterRequest::RegisterRequest()
     ::protobuf_message_2eproto::InitDefaultsRegisterRequest();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(constructor:Game.PSR.RegisterRequest)
 }
 RegisterRequest::RegisterRequest(const RegisterRequest& from)
   : ::google::protobuf::MessageLite(),
@@ -354,7 +354,7 @@ RegisterRequest::RegisterRequest(const RegisterRequest& from)
   if (from.timestamp().size() > 0) {
     timestamp_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.timestamp_);
   }
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.RegisterRequest)
 }
 
 void RegisterRequest::SharedCtor() {
@@ -367,7 +367,7 @@ void RegisterRequest::SharedCtor() {
 }
 
 RegisterRequest::~RegisterRequest() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(destructor:Game.PSR.RegisterRequest)
   SharedDtor();
 }
 
@@ -398,7 +398,7 @@ RegisterRequest* RegisterRequest::New(::google::protobuf::Arena* arena) const {
 }
 
 void RegisterRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.RegisterRequest)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.RegisterRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -421,7 +421,7 @@ bool RegisterRequest::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(parse_start:Game.PSR.RegisterRequest)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -499,17 +499,17 @@ bool RegisterRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(parse_success:Game.PSR.RegisterRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.RegisterRequest)
   return false;
 #undef DO_
 }
 
 void RegisterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.RegisterRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -545,11 +545,11 @@ void RegisterRequest::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.RegisterRequest)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.RegisterRequest)
 }
 
 size_t RegisterRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.RegisterRequest)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.RegisterRequest)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -602,7 +602,7 @@ void RegisterRequest::CheckTypeAndMergeFrom(
 }
 
 void RegisterRequest::MergeFrom(const RegisterRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.RegisterRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.RegisterRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -631,7 +631,7 @@ void RegisterRequest::MergeFrom(const RegisterRequest& from) {
 }
 
 void RegisterRequest::CopyFrom(const RegisterRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.RegisterRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.RegisterRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -657,7 +657,7 @@ void RegisterRequest::InternalSwap(RegisterRequest* other) {
 }
 
 ::std::string RegisterRequest::GetTypeName() const {
-  return "PUMA.Kernel.RegisterRequest";
+  return "Game.PSR.RegisterRequest";
 }
 
 
@@ -679,7 +679,7 @@ UnregisterRequest::UnregisterRequest()
     ::protobuf_message_2eproto::InitDefaultsUnregisterRequest();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(constructor:Game.PSR.UnregisterRequest)
 }
 UnregisterRequest::UnregisterRequest(const UnregisterRequest& from)
   : ::google::protobuf::MessageLite(),
@@ -706,7 +706,7 @@ UnregisterRequest::UnregisterRequest(const UnregisterRequest& from)
   if (from.reason().size() > 0) {
     reason_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reason_);
   }
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.UnregisterRequest)
 }
 
 void UnregisterRequest::SharedCtor() {
@@ -719,7 +719,7 @@ void UnregisterRequest::SharedCtor() {
 }
 
 UnregisterRequest::~UnregisterRequest() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(destructor:Game.PSR.UnregisterRequest)
   SharedDtor();
 }
 
@@ -750,7 +750,7 @@ UnregisterRequest* UnregisterRequest::New(::google::protobuf::Arena* arena) cons
 }
 
 void UnregisterRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.UnregisterRequest)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.UnregisterRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -773,7 +773,7 @@ bool UnregisterRequest::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(parse_start:Game.PSR.UnregisterRequest)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -800,7 +800,7 @@ bool UnregisterRequest::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->address().data(), static_cast<int>(this->address().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PUMA.Kernel.UnregisterRequest.address"));
+            "Game.PSR.UnregisterRequest.address"));
         } else {
           goto handle_unusual;
         }
@@ -828,7 +828,7 @@ bool UnregisterRequest::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->timestamp().data(), static_cast<int>(this->timestamp().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PUMA.Kernel.UnregisterRequest.timestamp"));
+            "Game.PSR.UnregisterRequest.timestamp"));
         } else {
           goto handle_unusual;
         }
@@ -844,7 +844,7 @@ bool UnregisterRequest::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->reason().data(), static_cast<int>(this->reason().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PUMA.Kernel.UnregisterRequest.reason"));
+            "Game.PSR.UnregisterRequest.reason"));
         } else {
           goto handle_unusual;
         }
@@ -863,17 +863,17 @@ bool UnregisterRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(parse_success:Game.PSR.UnregisterRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.UnregisterRequest)
   return false;
 #undef DO_
 }
 
 void UnregisterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.UnregisterRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -888,7 +888,7 @@ void UnregisterRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->address().data(), static_cast<int>(this->address().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PUMA.Kernel.UnregisterRequest.address");
+      "Game.PSR.UnregisterRequest.address");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->address(), output);
   }
@@ -904,7 +904,7 @@ void UnregisterRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->timestamp().data(), static_cast<int>(this->timestamp().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PUMA.Kernel.UnregisterRequest.timestamp");
+      "Game.PSR.UnregisterRequest.timestamp");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->timestamp(), output);
   }
@@ -914,18 +914,18 @@ void UnregisterRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reason().data(), static_cast<int>(this->reason().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PUMA.Kernel.UnregisterRequest.reason");
+      "Game.PSR.UnregisterRequest.reason");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->reason(), output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.UnregisterRequest)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.UnregisterRequest)
 }
 
 size_t UnregisterRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.UnregisterRequest)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.UnregisterRequest)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -978,7 +978,7 @@ void UnregisterRequest::CheckTypeAndMergeFrom(
 }
 
 void UnregisterRequest::MergeFrom(const UnregisterRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.UnregisterRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.UnregisterRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1007,7 +1007,7 @@ void UnregisterRequest::MergeFrom(const UnregisterRequest& from) {
 }
 
 void UnregisterRequest::CopyFrom(const UnregisterRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.UnregisterRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.UnregisterRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1033,7 +1033,7 @@ void UnregisterRequest::InternalSwap(UnregisterRequest* other) {
 }
 
 ::std::string UnregisterRequest::GetTypeName() const {
-  return "PUMA.Kernel.UnregisterRequest";
+  return "Game.PSR.UnregisterRequest";
 }
 
 
@@ -1051,7 +1051,7 @@ RegisterResponse::RegisterResponse()
     ::protobuf_message_2eproto::InitDefaultsRegisterResponse();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(constructor:Game.PSR.RegisterResponse)
 }
 RegisterResponse::RegisterResponse(const RegisterResponse& from)
   : ::google::protobuf::MessageLite(),
@@ -1059,7 +1059,7 @@ RegisterResponse::RegisterResponse(const RegisterResponse& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   kernel_id_ = from.kernel_id_;
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.RegisterResponse)
 }
 
 void RegisterResponse::SharedCtor() {
@@ -1068,7 +1068,7 @@ void RegisterResponse::SharedCtor() {
 }
 
 RegisterResponse::~RegisterResponse() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(destructor:Game.PSR.RegisterResponse)
   SharedDtor();
 }
 
@@ -1094,7 +1094,7 @@ RegisterResponse* RegisterResponse::New(::google::protobuf::Arena* arena) const 
 }
 
 void RegisterResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.RegisterResponse)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.RegisterResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1113,7 +1113,7 @@ bool RegisterResponse::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(parse_start:Game.PSR.RegisterResponse)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1145,17 +1145,17 @@ bool RegisterResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(parse_success:Game.PSR.RegisterResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.RegisterResponse)
   return false;
 #undef DO_
 }
 
 void RegisterResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.RegisterResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1166,11 +1166,11 @@ void RegisterResponse::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.RegisterResponse)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.RegisterResponse)
 }
 
 size_t RegisterResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.RegisterResponse)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.RegisterResponse)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -1195,7 +1195,7 @@ void RegisterResponse::CheckTypeAndMergeFrom(
 }
 
 void RegisterResponse::MergeFrom(const RegisterResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.RegisterResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.RegisterResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1207,7 +1207,7 @@ void RegisterResponse::MergeFrom(const RegisterResponse& from) {
 }
 
 void RegisterResponse::CopyFrom(const RegisterResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.RegisterResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.RegisterResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1229,7 +1229,7 @@ void RegisterResponse::InternalSwap(RegisterResponse* other) {
 }
 
 ::std::string RegisterResponse::GetTypeName() const {
-  return "PUMA.Kernel.RegisterResponse";
+  return "Game.PSR.RegisterResponse";
 }
 
 
@@ -1247,7 +1247,7 @@ UnregisterResponse::UnregisterResponse()
     ::protobuf_message_2eproto::InitDefaultsUnregisterResponse();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(constructor:Game.PSR.UnregisterResponse)
 }
 UnregisterResponse::UnregisterResponse(const UnregisterResponse& from)
   : ::google::protobuf::MessageLite(),
@@ -1255,7 +1255,7 @@ UnregisterResponse::UnregisterResponse(const UnregisterResponse& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   kernel_id_ = from.kernel_id_;
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.UnregisterResponse)
 }
 
 void UnregisterResponse::SharedCtor() {
@@ -1264,7 +1264,7 @@ void UnregisterResponse::SharedCtor() {
 }
 
 UnregisterResponse::~UnregisterResponse() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(destructor:Game.PSR.UnregisterResponse)
   SharedDtor();
 }
 
@@ -1290,7 +1290,7 @@ UnregisterResponse* UnregisterResponse::New(::google::protobuf::Arena* arena) co
 }
 
 void UnregisterResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.UnregisterResponse)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.UnregisterResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1309,7 +1309,7 @@ bool UnregisterResponse::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(parse_start:Game.PSR.UnregisterResponse)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1341,17 +1341,17 @@ bool UnregisterResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(parse_success:Game.PSR.UnregisterResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.UnregisterResponse)
   return false;
 #undef DO_
 }
 
 void UnregisterResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.UnregisterResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1362,11 +1362,11 @@ void UnregisterResponse::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.UnregisterResponse)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.UnregisterResponse)
 }
 
 size_t UnregisterResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.UnregisterResponse)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.UnregisterResponse)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -1391,7 +1391,7 @@ void UnregisterResponse::CheckTypeAndMergeFrom(
 }
 
 void UnregisterResponse::MergeFrom(const UnregisterResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.UnregisterResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.UnregisterResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1403,7 +1403,7 @@ void UnregisterResponse::MergeFrom(const UnregisterResponse& from) {
 }
 
 void UnregisterResponse::CopyFrom(const UnregisterResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.UnregisterResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.UnregisterResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1425,7 +1425,7 @@ void UnregisterResponse::InternalSwap(UnregisterResponse* other) {
 }
 
 ::std::string UnregisterResponse::GetTypeName() const {
-  return "PUMA.Kernel.UnregisterResponse";
+  return "Game.PSR.UnregisterResponse";
 }
 
 
@@ -1444,7 +1444,7 @@ HeartbeatIndication::HeartbeatIndication()
     ::protobuf_message_2eproto::InitDefaultsHeartbeatIndication();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(constructor:Game.PSR.HeartbeatIndication)
 }
 HeartbeatIndication::HeartbeatIndication(const HeartbeatIndication& from)
   : ::google::protobuf::MessageLite(),
@@ -1454,7 +1454,7 @@ HeartbeatIndication::HeartbeatIndication(const HeartbeatIndication& from)
   ::memcpy(&ts_, &from.ts_,
     static_cast<size_t>(reinterpret_cast<char*>(&kernel_id_) -
     reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.HeartbeatIndication)
 }
 
 void HeartbeatIndication::SharedCtor() {
@@ -1465,7 +1465,7 @@ void HeartbeatIndication::SharedCtor() {
 }
 
 HeartbeatIndication::~HeartbeatIndication() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(destructor:Game.PSR.HeartbeatIndication)
   SharedDtor();
 }
 
@@ -1491,7 +1491,7 @@ HeartbeatIndication* HeartbeatIndication::New(::google::protobuf::Arena* arena) 
 }
 
 void HeartbeatIndication::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.HeartbeatIndication)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.HeartbeatIndication)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1512,7 +1512,7 @@ bool HeartbeatIndication::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(parse_start:Game.PSR.HeartbeatIndication)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1558,17 +1558,17 @@ bool HeartbeatIndication::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(parse_success:Game.PSR.HeartbeatIndication)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.HeartbeatIndication)
   return false;
 #undef DO_
 }
 
 void HeartbeatIndication::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.HeartbeatIndication)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1584,11 +1584,11 @@ void HeartbeatIndication::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.HeartbeatIndication)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.HeartbeatIndication)
 }
 
 size_t HeartbeatIndication::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.HeartbeatIndication)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.HeartbeatIndication)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -1620,7 +1620,7 @@ void HeartbeatIndication::CheckTypeAndMergeFrom(
 }
 
 void HeartbeatIndication::MergeFrom(const HeartbeatIndication& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.HeartbeatIndication)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.HeartbeatIndication)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1635,7 +1635,7 @@ void HeartbeatIndication::MergeFrom(const HeartbeatIndication& from) {
 }
 
 void HeartbeatIndication::CopyFrom(const HeartbeatIndication& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.HeartbeatIndication)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.HeartbeatIndication)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1658,7 +1658,7 @@ void HeartbeatIndication::InternalSwap(HeartbeatIndication* other) {
 }
 
 ::std::string HeartbeatIndication::GetTypeName() const {
-  return "PUMA.Kernel.HeartbeatIndication";
+  return "Game.PSR.HeartbeatIndication";
 }
 
 
@@ -1677,7 +1677,7 @@ HeartbeatRequest::HeartbeatRequest()
     ::protobuf_message_2eproto::InitDefaultsHeartbeatRequest();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(constructor:Game.PSR.HeartbeatRequest)
 }
 HeartbeatRequest::HeartbeatRequest(const HeartbeatRequest& from)
   : ::google::protobuf::MessageLite(),
@@ -1687,7 +1687,7 @@ HeartbeatRequest::HeartbeatRequest(const HeartbeatRequest& from)
   ::memcpy(&ts_, &from.ts_,
     static_cast<size_t>(reinterpret_cast<char*>(&kernel_id_) -
     reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.HeartbeatRequest)
 }
 
 void HeartbeatRequest::SharedCtor() {
@@ -1698,7 +1698,7 @@ void HeartbeatRequest::SharedCtor() {
 }
 
 HeartbeatRequest::~HeartbeatRequest() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(destructor:Game.PSR.HeartbeatRequest)
   SharedDtor();
 }
 
@@ -1724,7 +1724,7 @@ HeartbeatRequest* HeartbeatRequest::New(::google::protobuf::Arena* arena) const 
 }
 
 void HeartbeatRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.HeartbeatRequest)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.HeartbeatRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1745,7 +1745,7 @@ bool HeartbeatRequest::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(parse_start:Game.PSR.HeartbeatRequest)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1791,17 +1791,17 @@ bool HeartbeatRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(parse_success:Game.PSR.HeartbeatRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.HeartbeatRequest)
   return false;
 #undef DO_
 }
 
 void HeartbeatRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.HeartbeatRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1817,11 +1817,11 @@ void HeartbeatRequest::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.HeartbeatRequest)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.HeartbeatRequest)
 }
 
 size_t HeartbeatRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.HeartbeatRequest)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.HeartbeatRequest)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -1853,7 +1853,7 @@ void HeartbeatRequest::CheckTypeAndMergeFrom(
 }
 
 void HeartbeatRequest::MergeFrom(const HeartbeatRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.HeartbeatRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.HeartbeatRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1868,7 +1868,7 @@ void HeartbeatRequest::MergeFrom(const HeartbeatRequest& from) {
 }
 
 void HeartbeatRequest::CopyFrom(const HeartbeatRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.HeartbeatRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.HeartbeatRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1891,7 +1891,7 @@ void HeartbeatRequest::InternalSwap(HeartbeatRequest* other) {
 }
 
 ::std::string HeartbeatRequest::GetTypeName() const {
-  return "PUMA.Kernel.HeartbeatRequest";
+  return "Game.PSR.HeartbeatRequest";
 }
 
 
@@ -1909,7 +1909,7 @@ HeartbeatResponse::HeartbeatResponse()
     ::protobuf_message_2eproto::InitDefaultsHeartbeatResponse();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(constructor:Game.PSR.HeartbeatResponse)
 }
 HeartbeatResponse::HeartbeatResponse(const HeartbeatResponse& from)
   : ::google::protobuf::MessageLite(),
@@ -1917,7 +1917,7 @@ HeartbeatResponse::HeartbeatResponse(const HeartbeatResponse& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   kernel_id_ = from.kernel_id_;
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.HeartbeatResponse)
 }
 
 void HeartbeatResponse::SharedCtor() {
@@ -1926,7 +1926,7 @@ void HeartbeatResponse::SharedCtor() {
 }
 
 HeartbeatResponse::~HeartbeatResponse() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(destructor:Game.PSR.HeartbeatResponse)
   SharedDtor();
 }
 
@@ -1952,7 +1952,7 @@ HeartbeatResponse* HeartbeatResponse::New(::google::protobuf::Arena* arena) cons
 }
 
 void HeartbeatResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.HeartbeatResponse)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.HeartbeatResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1971,7 +1971,7 @@ bool HeartbeatResponse::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(parse_start:Game.PSR.HeartbeatResponse)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -2003,17 +2003,17 @@ bool HeartbeatResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(parse_success:Game.PSR.HeartbeatResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.HeartbeatResponse)
   return false;
 #undef DO_
 }
 
 void HeartbeatResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.HeartbeatResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2024,11 +2024,11 @@ void HeartbeatResponse::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.HeartbeatResponse)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.HeartbeatResponse)
 }
 
 size_t HeartbeatResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.HeartbeatResponse)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.HeartbeatResponse)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -2053,7 +2053,7 @@ void HeartbeatResponse::CheckTypeAndMergeFrom(
 }
 
 void HeartbeatResponse::MergeFrom(const HeartbeatResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.HeartbeatResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.HeartbeatResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -2065,7 +2065,7 @@ void HeartbeatResponse::MergeFrom(const HeartbeatResponse& from) {
 }
 
 void HeartbeatResponse::CopyFrom(const HeartbeatResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.HeartbeatResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.HeartbeatResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2087,19 +2087,19 @@ void HeartbeatResponse::InternalSwap(HeartbeatResponse* other) {
 }
 
 ::std::string HeartbeatResponse::GetTypeName() const {
-  return "PUMA.Kernel.HeartbeatResponse";
+  return "Game.PSR.HeartbeatResponse";
 }
 
 
 // ===================================================================
 
 void Request::InitAsDefaultInstance() {
-  ::PUMA::Kernel::_Request_default_instance_._instance.get_mutable()->register__ = const_cast< ::PUMA::Kernel::RegisterRequest*>(
-      ::PUMA::Kernel::RegisterRequest::internal_default_instance());
-  ::PUMA::Kernel::_Request_default_instance_._instance.get_mutable()->unregister_ = const_cast< ::PUMA::Kernel::UnregisterRequest*>(
-      ::PUMA::Kernel::UnregisterRequest::internal_default_instance());
-  ::PUMA::Kernel::_Request_default_instance_._instance.get_mutable()->heart_beat_ = const_cast< ::PUMA::Kernel::HeartbeatRequest*>(
-      ::PUMA::Kernel::HeartbeatRequest::internal_default_instance());
+  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->register__ = const_cast< ::Game::PSR::RegisterRequest*>(
+      ::Game::PSR::RegisterRequest::internal_default_instance());
+  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->unregister_ = const_cast< ::Game::PSR::UnregisterRequest*>(
+      ::Game::PSR::UnregisterRequest::internal_default_instance());
+  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->heart_beat_ = const_cast< ::Game::PSR::HeartbeatRequest*>(
+      ::Game::PSR::HeartbeatRequest::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Request::kUserIdFieldNumber;
@@ -2116,7 +2116,7 @@ Request::Request()
     ::protobuf_message_2eproto::InitDefaultsRequest();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(constructor:Game.PSR.Request)
 }
 Request::Request(const Request& from)
   : ::google::protobuf::MessageLite(),
@@ -2124,24 +2124,24 @@ Request::Request(const Request& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_register_()) {
-    register__ = new ::PUMA::Kernel::RegisterRequest(*from.register__);
+    register__ = new ::Game::PSR::RegisterRequest(*from.register__);
   } else {
     register__ = NULL;
   }
   if (from.has_unregister()) {
-    unregister_ = new ::PUMA::Kernel::UnregisterRequest(*from.unregister_);
+    unregister_ = new ::Game::PSR::UnregisterRequest(*from.unregister_);
   } else {
     unregister_ = NULL;
   }
   if (from.has_heart_beat()) {
-    heart_beat_ = new ::PUMA::Kernel::HeartbeatRequest(*from.heart_beat_);
+    heart_beat_ = new ::Game::PSR::HeartbeatRequest(*from.heart_beat_);
   } else {
     heart_beat_ = NULL;
   }
   ::memcpy(&user_id_, &from.user_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&app_id_) -
     reinterpret_cast<char*>(&user_id_)) + sizeof(app_id_));
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.Request)
 }
 
 void Request::SharedCtor() {
@@ -2152,7 +2152,7 @@ void Request::SharedCtor() {
 }
 
 Request::~Request() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(destructor:Game.PSR.Request)
   SharedDtor();
 }
 
@@ -2181,7 +2181,7 @@ Request* Request::New(::google::protobuf::Arena* arena) const {
 }
 
 void Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.Request)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.Request)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2214,7 +2214,7 @@ bool Request::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(parse_start:Game.PSR.Request)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
     tag = p.first;
@@ -2262,7 +2262,7 @@ bool Request::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.RegisterRequest register = 11;
+      // .Game.PSR.RegisterRequest register = 11;
       case 11: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
@@ -2274,7 +2274,7 @@ bool Request::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.UnregisterRequest unregister = 12;
+      // .Game.PSR.UnregisterRequest unregister = 12;
       case 12: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
@@ -2286,7 +2286,7 @@ bool Request::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.HeartbeatRequest heart_beat = 17;
+      // .Game.PSR.HeartbeatRequest heart_beat = 17;
       case 17: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
@@ -2310,17 +2310,17 @@ bool Request::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(parse_success:Game.PSR.Request)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.Request)
   return false;
 #undef DO_
 }
 
 void Request::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.Request)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2339,19 +2339,19 @@ void Request::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->app_id(), output);
   }
 
-  // .PUMA.Kernel.RegisterRequest register = 11;
+  // .Game.PSR.RegisterRequest register = 11;
   if (this->has_register_()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       11, *this->register__, output);
   }
 
-  // .PUMA.Kernel.UnregisterRequest unregister = 12;
+  // .Game.PSR.UnregisterRequest unregister = 12;
   if (this->has_unregister()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       12, *this->unregister_, output);
   }
 
-  // .PUMA.Kernel.HeartbeatRequest heart_beat = 17;
+  // .Game.PSR.HeartbeatRequest heart_beat = 17;
   if (this->has_heart_beat()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       17, *this->heart_beat_, output);
@@ -2359,30 +2359,30 @@ void Request::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.Request)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.Request)
 }
 
 size_t Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.Request)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.Request)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // .PUMA.Kernel.RegisterRequest register = 11;
+  // .Game.PSR.RegisterRequest register = 11;
   if (this->has_register_()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->register__);
   }
 
-  // .PUMA.Kernel.UnregisterRequest unregister = 12;
+  // .Game.PSR.UnregisterRequest unregister = 12;
   if (this->has_unregister()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->unregister_);
   }
 
-  // .PUMA.Kernel.HeartbeatRequest heart_beat = 17;
+  // .Game.PSR.HeartbeatRequest heart_beat = 17;
   if (this->has_heart_beat()) {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -2423,20 +2423,20 @@ void Request::CheckTypeAndMergeFrom(
 }
 
 void Request::MergeFrom(const Request& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.Request)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.Request)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_register_()) {
-    mutable_register_()->::PUMA::Kernel::RegisterRequest::MergeFrom(from.register_());
+    mutable_register_()->::Game::PSR::RegisterRequest::MergeFrom(from.register_());
   }
   if (from.has_unregister()) {
-    mutable_unregister()->::PUMA::Kernel::UnregisterRequest::MergeFrom(from.unregister());
+    mutable_unregister()->::Game::PSR::UnregisterRequest::MergeFrom(from.unregister());
   }
   if (from.has_heart_beat()) {
-    mutable_heart_beat()->::PUMA::Kernel::HeartbeatRequest::MergeFrom(from.heart_beat());
+    mutable_heart_beat()->::Game::PSR::HeartbeatRequest::MergeFrom(from.heart_beat());
   }
   if (from.user_id() != 0) {
     set_user_id(from.user_id());
@@ -2450,7 +2450,7 @@ void Request::MergeFrom(const Request& from) {
 }
 
 void Request::CopyFrom(const Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2477,19 +2477,19 @@ void Request::InternalSwap(Request* other) {
 }
 
 ::std::string Request::GetTypeName() const {
-  return "PUMA.Kernel.Request";
+  return "Game.PSR.Request";
 }
 
 
 // ===================================================================
 
 void Response::InitAsDefaultInstance() {
-  ::PUMA::Kernel::_Response_default_instance_._instance.get_mutable()->register__ = const_cast< ::PUMA::Kernel::RegisterResponse*>(
-      ::PUMA::Kernel::RegisterResponse::internal_default_instance());
-  ::PUMA::Kernel::_Response_default_instance_._instance.get_mutable()->unregister_ = const_cast< ::PUMA::Kernel::UnregisterResponse*>(
-      ::PUMA::Kernel::UnregisterResponse::internal_default_instance());
-  ::PUMA::Kernel::_Response_default_instance_._instance.get_mutable()->heart_beat_ = const_cast< ::PUMA::Kernel::HeartbeatResponse*>(
-      ::PUMA::Kernel::HeartbeatResponse::internal_default_instance());
+  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->register__ = const_cast< ::Game::PSR::RegisterResponse*>(
+      ::Game::PSR::RegisterResponse::internal_default_instance());
+  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->unregister_ = const_cast< ::Game::PSR::UnregisterResponse*>(
+      ::Game::PSR::UnregisterResponse::internal_default_instance());
+  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->heart_beat_ = const_cast< ::Game::PSR::HeartbeatResponse*>(
+      ::Game::PSR::HeartbeatResponse::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Response::kUserIdFieldNumber;
@@ -2508,7 +2508,7 @@ Response::Response()
     ::protobuf_message_2eproto::InitDefaultsResponse();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(constructor:Game.PSR.Response)
 }
 Response::Response(const Response& from)
   : ::google::protobuf::MessageLite(),
@@ -2520,24 +2520,24 @@ Response::Response(const Response& from)
     error_describe_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_describe_);
   }
   if (from.has_register_()) {
-    register__ = new ::PUMA::Kernel::RegisterResponse(*from.register__);
+    register__ = new ::Game::PSR::RegisterResponse(*from.register__);
   } else {
     register__ = NULL;
   }
   if (from.has_unregister()) {
-    unregister_ = new ::PUMA::Kernel::UnregisterResponse(*from.unregister_);
+    unregister_ = new ::Game::PSR::UnregisterResponse(*from.unregister_);
   } else {
     unregister_ = NULL;
   }
   if (from.has_heart_beat()) {
-    heart_beat_ = new ::PUMA::Kernel::HeartbeatResponse(*from.heart_beat_);
+    heart_beat_ = new ::Game::PSR::HeartbeatResponse(*from.heart_beat_);
   } else {
     heart_beat_ = NULL;
   }
   ::memcpy(&user_id_, &from.user_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&result_) -
     reinterpret_cast<char*>(&user_id_)) + sizeof(result_));
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.Response)
 }
 
 void Response::SharedCtor() {
@@ -2549,7 +2549,7 @@ void Response::SharedCtor() {
 }
 
 Response::~Response() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(destructor:Game.PSR.Response)
   SharedDtor();
 }
 
@@ -2579,7 +2579,7 @@ Response* Response::New(::google::protobuf::Arena* arena) const {
 }
 
 void Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.Response)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.Response)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2613,7 +2613,7 @@ bool Response::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(parse_start:Game.PSR.Response)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
     tag = p.first;
@@ -2687,7 +2687,7 @@ bool Response::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.RegisterResponse register = 11;
+      // .Game.PSR.RegisterResponse register = 11;
       case 11: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
@@ -2699,7 +2699,7 @@ bool Response::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.UnregisterResponse unregister = 12;
+      // .Game.PSR.UnregisterResponse unregister = 12;
       case 12: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
@@ -2711,7 +2711,7 @@ bool Response::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.HeartbeatResponse heart_beat = 17;
+      // .Game.PSR.HeartbeatResponse heart_beat = 17;
       case 17: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
@@ -2735,17 +2735,17 @@ bool Response::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(parse_success:Game.PSR.Response)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.Response)
   return false;
 #undef DO_
 }
 
 void Response::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.Response)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2775,19 +2775,19 @@ void Response::SerializeWithCachedSizes(
       7, this->error_describe(), output);
   }
 
-  // .PUMA.Kernel.RegisterResponse register = 11;
+  // .Game.PSR.RegisterResponse register = 11;
   if (this->has_register_()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       11, *this->register__, output);
   }
 
-  // .PUMA.Kernel.UnregisterResponse unregister = 12;
+  // .Game.PSR.UnregisterResponse unregister = 12;
   if (this->has_unregister()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       12, *this->unregister_, output);
   }
 
-  // .PUMA.Kernel.HeartbeatResponse heart_beat = 17;
+  // .Game.PSR.HeartbeatResponse heart_beat = 17;
   if (this->has_heart_beat()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       17, *this->heart_beat_, output);
@@ -2795,11 +2795,11 @@ void Response::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.Response)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.Response)
 }
 
 size_t Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.Response)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.Response)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -2811,21 +2811,21 @@ size_t Response::ByteSizeLong() const {
         this->error_describe());
   }
 
-  // .PUMA.Kernel.RegisterResponse register = 11;
+  // .Game.PSR.RegisterResponse register = 11;
   if (this->has_register_()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->register__);
   }
 
-  // .PUMA.Kernel.UnregisterResponse unregister = 12;
+  // .Game.PSR.UnregisterResponse unregister = 12;
   if (this->has_unregister()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->unregister_);
   }
 
-  // .PUMA.Kernel.HeartbeatResponse heart_beat = 17;
+  // .Game.PSR.HeartbeatResponse heart_beat = 17;
   if (this->has_heart_beat()) {
     total_size += 2 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -2871,7 +2871,7 @@ void Response::CheckTypeAndMergeFrom(
 }
 
 void Response::MergeFrom(const Response& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.Response)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.Response)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -2882,13 +2882,13 @@ void Response::MergeFrom(const Response& from) {
     error_describe_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_describe_);
   }
   if (from.has_register_()) {
-    mutable_register_()->::PUMA::Kernel::RegisterResponse::MergeFrom(from.register_());
+    mutable_register_()->::Game::PSR::RegisterResponse::MergeFrom(from.register_());
   }
   if (from.has_unregister()) {
-    mutable_unregister()->::PUMA::Kernel::UnregisterResponse::MergeFrom(from.unregister());
+    mutable_unregister()->::Game::PSR::UnregisterResponse::MergeFrom(from.unregister());
   }
   if (from.has_heart_beat()) {
-    mutable_heart_beat()->::PUMA::Kernel::HeartbeatResponse::MergeFrom(from.heart_beat());
+    mutable_heart_beat()->::Game::PSR::HeartbeatResponse::MergeFrom(from.heart_beat());
   }
   if (from.user_id() != 0) {
     set_user_id(from.user_id());
@@ -2905,7 +2905,7 @@ void Response::MergeFrom(const Response& from) {
 }
 
 void Response::CopyFrom(const Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2934,17 +2934,17 @@ void Response::InternalSwap(Response* other) {
 }
 
 ::std::string Response::GetTypeName() const {
-  return "PUMA.Kernel.Response";
+  return "Game.PSR.Response";
 }
 
 
 // ===================================================================
 
 void Message::InitAsDefaultInstance() {
-  ::PUMA::Kernel::_Message_default_instance_._instance.get_mutable()->request_ = const_cast< ::PUMA::Kernel::Request*>(
-      ::PUMA::Kernel::Request::internal_default_instance());
-  ::PUMA::Kernel::_Message_default_instance_._instance.get_mutable()->response_ = const_cast< ::PUMA::Kernel::Response*>(
-      ::PUMA::Kernel::Response::internal_default_instance());
+  ::Game::PSR::_Message_default_instance_._instance.get_mutable()->request_ = const_cast< ::Game::PSR::Request*>(
+      ::Game::PSR::Request::internal_default_instance());
+  ::Game::PSR::_Message_default_instance_._instance.get_mutable()->response_ = const_cast< ::Game::PSR::Response*>(
+      ::Game::PSR::Response::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Message::kTypeFieldNumber;
@@ -2960,7 +2960,7 @@ Message::Message()
     ::protobuf_message_2eproto::InitDefaultsMessage();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(constructor:Game.PSR.Message)
 }
 Message::Message(const Message& from)
   : ::google::protobuf::MessageLite(),
@@ -2972,19 +2972,19 @@ Message::Message(const Message& from)
     description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
   }
   if (from.has_request()) {
-    request_ = new ::PUMA::Kernel::Request(*from.request_);
+    request_ = new ::Game::PSR::Request(*from.request_);
   } else {
     request_ = NULL;
   }
   if (from.has_response()) {
-    response_ = new ::PUMA::Kernel::Response(*from.response_);
+    response_ = new ::Game::PSR::Response(*from.response_);
   } else {
     response_ = NULL;
   }
   ::memcpy(&type_, &from.type_,
     static_cast<size_t>(reinterpret_cast<char*>(&sequence_) -
     reinterpret_cast<char*>(&type_)) + sizeof(sequence_));
-  // @@protoc_insertion_point(copy_constructor:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.Message)
 }
 
 void Message::SharedCtor() {
@@ -2996,7 +2996,7 @@ void Message::SharedCtor() {
 }
 
 Message::~Message() {
-  // @@protoc_insertion_point(destructor:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(destructor:Game.PSR.Message)
   SharedDtor();
 }
 
@@ -3025,7 +3025,7 @@ Message* Message::New(::google::protobuf::Arena* arena) const {
 }
 
 void Message::Clear() {
-// @@protoc_insertion_point(message_clear_start:PUMA.Kernel.Message)
+// @@protoc_insertion_point(message_clear_start:Game.PSR.Message)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3055,13 +3055,13 @@ bool Message::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(parse_start:Game.PSR.Message)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .PUMA.Kernel.MSG type = 1;
+      // .Game.PSR.MSG type = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
@@ -3069,7 +3069,7 @@ bool Message::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_type(static_cast< ::PUMA::Kernel::MSG >(value));
+          set_type(static_cast< ::Game::PSR::MSG >(value));
         } else {
           goto handle_unusual;
         }
@@ -3099,14 +3099,14 @@ bool Message::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->description().data(), static_cast<int>(this->description().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PUMA.Kernel.Message.description"));
+            "Game.PSR.Message.description"));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // .PUMA.Kernel.Request request = 6;
+      // .Game.PSR.Request request = 6;
       case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
@@ -3118,7 +3118,7 @@ bool Message::MergePartialFromCodedStream(
         break;
       }
 
-      // .PUMA.Kernel.Response response = 7;
+      // .Game.PSR.Response response = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
@@ -3142,21 +3142,21 @@ bool Message::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(parse_success:Game.PSR.Message)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.Message)
   return false;
 #undef DO_
 }
 
 void Message::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.Message)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .PUMA.Kernel.MSG type = 1;
+  // .Game.PSR.MSG type = 1;
   if (this->type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
@@ -3172,18 +3172,18 @@ void Message::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), static_cast<int>(this->description().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PUMA.Kernel.Message.description");
+      "Game.PSR.Message.description");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->description(), output);
   }
 
-  // .PUMA.Kernel.Request request = 6;
+  // .Game.PSR.Request request = 6;
   if (this->has_request()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       6, *this->request_, output);
   }
 
-  // .PUMA.Kernel.Response response = 7;
+  // .Game.PSR.Response response = 7;
   if (this->has_response()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       7, *this->response_, output);
@@ -3191,11 +3191,11 @@ void Message::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:PUMA.Kernel.Message)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.Message)
 }
 
 size_t Message::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PUMA.Kernel.Message)
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.Message)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -3207,21 +3207,21 @@ size_t Message::ByteSizeLong() const {
         this->description());
   }
 
-  // .PUMA.Kernel.Request request = 6;
+  // .Game.PSR.Request request = 6;
   if (this->has_request()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->request_);
   }
 
-  // .PUMA.Kernel.Response response = 7;
+  // .Game.PSR.Response response = 7;
   if (this->has_response()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->response_);
   }
 
-  // .PUMA.Kernel.MSG type = 1;
+  // .Game.PSR.MSG type = 1;
   if (this->type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
@@ -3245,7 +3245,7 @@ void Message::CheckTypeAndMergeFrom(
 }
 
 void Message::MergeFrom(const Message& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PUMA.Kernel.Message)
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.Message)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -3256,10 +3256,10 @@ void Message::MergeFrom(const Message& from) {
     description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
   }
   if (from.has_request()) {
-    mutable_request()->::PUMA::Kernel::Request::MergeFrom(from.request());
+    mutable_request()->::Game::PSR::Request::MergeFrom(from.request());
   }
   if (from.has_response()) {
-    mutable_response()->::PUMA::Kernel::Response::MergeFrom(from.response());
+    mutable_response()->::Game::PSR::Response::MergeFrom(from.response());
   }
   if (from.type() != 0) {
     set_type(from.type());
@@ -3270,7 +3270,7 @@ void Message::MergeFrom(const Message& from) {
 }
 
 void Message::CopyFrom(const Message& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PUMA.Kernel.Message)
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.Message)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3296,12 +3296,12 @@ void Message::InternalSwap(Message* other) {
 }
 
 ::std::string Message::GetTypeName() const {
-  return "PUMA.Kernel.Message";
+  return "Game.PSR.Message";
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game
 
 // @@protoc_insertion_point(global_scope)

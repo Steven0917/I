@@ -6,23 +6,26 @@
 
 using namespace std;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class NetworkHandler
 {
 public:
+    NetworkHandler();
 	NetworkHandler(Networker& networker);
 	virtual ~NetworkHandler();
 
 	shared_ptr<Message> RecvMsg();
 	void SendMsg(shared_ptr<Message>& msg);
 
+    void SetNetworker(Networker& networker);
+
 //protected:
 	Networker mNetworker;
 
 };
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game
 

@@ -1,8 +1,8 @@
 #include "event_queue.h"
 //#include "glog\logging.h"
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 
 EventQueue::EventQueue()
@@ -40,5 +40,5 @@ shared_ptr<Message> EventQueue::GetMsg()
     return shared_ptr<Message>(nullptr);
 }
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

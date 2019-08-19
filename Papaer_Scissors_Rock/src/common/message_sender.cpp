@@ -14,12 +14,20 @@
 using namespace google::protobuf;
 using namespace google::protobuf::io;
 
-namespace PUMA {
-namespace Kernel {
-
+namespace Game {
+namespace PSR {
     
-MessageSender::MessageSender(Context& context) : mContext(context)
+MessageSender::MessageSender()
 {
+}
+
+MessageSender::MessageSender(Networker& networker) : mNetworker(networker)
+{
+}
+
+void MessageSender::SetNetworker(Networker& networker)
+{
+    mNetworker = networker;
 }
 
 MessageSender::~MessageSender()
@@ -30,7 +38,7 @@ MessageSender::~MessageSender()
 void MessageSender::SendRegReq()
 {
     string name, address, timestamp;
-	mContext.mpHandler->mNetworker.GetHostNameAddr(name, address);
+	mNetworker.GetHostNameAddr(name, address);
     char *userName = getenv("USERNAME");
     stringstream ss;
     string user_id;
@@ -111,8 +119,8 @@ void MessageSender::SendMsg(shared_ptr<Message>& msg)
     msg->SerializeToCodedStream(coded_output.get());
 
     LOG(INFO) << "<-- " << msg->description() << "(" << msg->type() << "), " << size << " bytes.";
-	mContext.mpHandler->mNetworker.Send(buf, size);
+	mNetworker.Send(buf, size);
 }
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

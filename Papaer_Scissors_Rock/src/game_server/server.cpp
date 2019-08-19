@@ -1,20 +1,20 @@
 #include "server.h"
 #include "server_config.h"
 #include "networker.h"
-#include "game_psr.h"
+#include "game_engine.h"
 #include "message.pb.h"
 #include "glog/logging.h"
 #include <google/protobuf/message.h>
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class ClientConnection
 {
 public:
     void operator() (Networker& networker, Server& server)
     {
-		GamePSR game(networker);
+		GameEngine game(networker);
         game.Start();
         //superNode.Run();
     }
@@ -69,5 +69,5 @@ void Server::Run(void)
 }
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

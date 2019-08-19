@@ -54,10 +54,19 @@
     <ClCompile Include="..\common\context.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game_psr.cpp">
+    <ClCompile Include="game_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game_state.cpp">
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idle_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reg_req_handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -101,10 +110,19 @@
     <ClInclude Include="..\common\context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game_psr.h">
+    <ClInclude Include="game_state.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game_state.h">
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idle_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reg_req_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

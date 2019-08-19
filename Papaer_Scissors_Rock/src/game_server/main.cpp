@@ -3,7 +3,7 @@
 
 using namespace std;
 using namespace google;
-using namespace PUMA::Kernel;
+using namespace Game::PSR;
 
 /* Start google log system */
 void InitLogger()
@@ -38,7 +38,7 @@ int main()
     try
     {
         Init();
-        PUMA::Kernel::Server server;
+        Server server;
 
         // start the server and check if startup succeeded
         if (server.Start())

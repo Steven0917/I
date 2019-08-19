@@ -7,8 +7,8 @@
 
 using namespace std;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class EventQueue
 {
@@ -25,6 +25,6 @@ protected:
     queue<shared_ptr<Message>> mEvents;
 };
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game
 

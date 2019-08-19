@@ -2,25 +2,31 @@
 #include "message_handler.h"
 #include "glog\logging.h"
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 Context::Context()
 {
 }
 
-Context::Context(Networker & networker) : mpHandler(new NetworkHandler(networker))
+Context::Context(Networker & networker) : mMsgHandler(networker), mMsgSender(networker)
 {
 }
 
 Context::~Context()
 {
-    LOG(INFO) << "Client::~Client()";
+    LOG(INFO) << "Context::~Context()";
 }
 
 void Context::Process()
 {
 }
 
-}  // namespace Kernel
-}  // namespace PUMA
+void Context::SetNetworker(Networker& networker)
+{
+    mMsgHandler.SetNetworker(networker);
+    mMsgSender.SetNetworker(networker);
+}
+
+}  // namespace PSR
+}  // namespace Game

@@ -11,8 +11,8 @@
 
 using namespace google::protobuf;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 // Creates the socket that calls to the Networker's functions are forwarded to.
 // Returns NW_OK if the creation of the socket was successful, NW_ERROR otherwise.
@@ -506,5 +506,5 @@ NW_STATUS Networker::InitClient()
 	}
 }
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

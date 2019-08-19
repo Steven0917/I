@@ -5,8 +5,8 @@
 
 using std::shared_ptr;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class Context;
 class MessageHandler
@@ -39,5 +39,5 @@ private:
 };
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

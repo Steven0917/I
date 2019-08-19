@@ -4,8 +4,8 @@
 #include <string>
 #include "message.pb.h"
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class MessageTypes
 {
@@ -13,5 +13,5 @@ public:
     static std::string GetType(MSG type);
 };
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

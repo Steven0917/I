@@ -2,8 +2,8 @@
 #include "glog/logging.h"
 #include "context.h"
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 std::map<MSG, MessageHandler*> MessageHandler::mHandlers;
 
@@ -43,5 +43,5 @@ void MessageHandler::Execute(const Message& msg, Context& context)
 }
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

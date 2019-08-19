@@ -1,8 +1,9 @@
 #include "reg_rsp_handler.h"
 #include "glog\logging.h"
+#include "context.h"
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 RegisterResponseHandler::RegisterResponseHandler() : MessageHandler(MSG::Register_Response)
 {
@@ -17,7 +18,8 @@ RegisterResponseHandler::~RegisterResponseHandler()
 void RegisterResponseHandler::Process(const Message& msg, Context& context)
 {
 	LOG(INFO) << msg.type();
+    
 }
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

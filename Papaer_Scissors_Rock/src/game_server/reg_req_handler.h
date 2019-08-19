@@ -1,15 +1,14 @@
 #pragma once
 #include "message_handler.h"
 
-
 namespace Game {
 namespace PSR {
 
-class RegisterResponseHandler : public MessageHandler
+class RegisterRequestHandler : public MessageHandler
 {
 public:
-    RegisterResponseHandler();
-    ~RegisterResponseHandler();
+    RegisterRequestHandler();
+    ~RegisterRequestHandler();
 
     virtual void Process(const Message& msg, Context& context);
 };

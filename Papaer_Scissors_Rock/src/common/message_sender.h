@@ -1,15 +1,14 @@
 #pragma once
 
 #include "message.pb.h"
-#include "networker.h"
 #include <memory>
 
 using std::shared_ptr;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
-class Context;
+class Networker;
 class MessageSender
 {
 public:
@@ -19,7 +18,9 @@ public:
     void SendHeartBeatReq();
     void SendHeartBeatRsp();
 
-    MessageSender(Context& context);
+    MessageSender();
+    MessageSender(Networker& networker);
+    void SetNetworker(Networker& networker);
     virtual ~MessageSender();
 
 private:
@@ -28,9 +29,9 @@ private:
     void SendMsg(shared_ptr<Message>& msg);
 
 private:
-	Context& mContext;
+    Networker mNetworker;
 };
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

@@ -20,8 +20,8 @@ using std::condition_variable;
 using std::result_of;
 using std::unique_lock;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 class ThreadPool
 {
@@ -106,5 +106,5 @@ auto ThreadPool::enqueue(F&& f, Args&&... args)
 }
 
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace Game
+}  // namespace PSR

@@ -1,7 +1,7 @@
 #pragma once
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 
 enum NW_STATUS
 {
@@ -31,5 +31,5 @@ public:
 
 };
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game

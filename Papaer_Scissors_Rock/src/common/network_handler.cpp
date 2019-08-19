@@ -6,8 +6,12 @@
 
 using namespace google::protobuf;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
+
+NetworkHandler::NetworkHandler()
+{
+}
 
 NetworkHandler::NetworkHandler(Networker& networker) : mNetworker(networker)
 {
@@ -74,6 +78,11 @@ void NetworkHandler::SendMsg(shared_ptr<Message>& msg)
 	mNetworker.Send(buf, size);
 }
 
+void NetworkHandler::SetNetworker(Networker& networker)
+{
+    mNetworker = networker;
+}
 
-}  // namespace Kernel
-}  // namespace PUMA
+
+}  // namespace PSR
+}  // namespace Game

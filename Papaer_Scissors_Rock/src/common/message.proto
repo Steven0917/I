@@ -9,7 +9,7 @@
 // [START declaration]
 syntax = "proto3";
 
-package PUMA.Kernel;
+package Game.PSR;
 
 option optimize_for = LITE_RUNTIME;
 

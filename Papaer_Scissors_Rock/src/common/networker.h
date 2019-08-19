@@ -16,8 +16,8 @@
 
 using namespace std;
 
-namespace PUMA {
-namespace Kernel {
+namespace Game {
+namespace PSR {
 	
 class Networker
 {
@@ -55,6 +55,6 @@ protected:
     Networker(SOCKET newSocket);
 };
 
-}  // namespace Kernel
-}  // namespace PUMA
+}  // namespace PSR
+}  // namespace Game
 
