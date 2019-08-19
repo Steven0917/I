@@ -43,6 +43,7 @@ bool Client::Start(void)
 
 void Client::Run(void)
 {
+    mMsgSender.SendStartGameReq();
     while (!mStop)
     {
 		shared_ptr<Message> msg = mMsgHandler.RecvMsg();

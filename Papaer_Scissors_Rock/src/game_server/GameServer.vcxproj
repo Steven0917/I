@@ -184,11 +184,13 @@
     <ClCompile Include="..\common\network_handler.cpp" />
     <ClCompile Include="..\common\server_config.cpp" />
     <ClCompile Include="game_engine.cpp" />
+    <ClCompile Include="game_started_state.cpp" />
     <ClCompile Include="game_state.cpp" />
     <ClCompile Include="idle_state.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="server.cpp" />
+    <ClCompile Include="start_game_req_handler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\common\context.h" />
@@ -204,10 +206,12 @@
     <ClInclude Include="..\common\server_config.h" />
     <ClInclude Include="..\common\version.h" />
     <ClInclude Include="game_engine.h" />
+    <ClInclude Include="game_started_state.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="idle_state.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="server.h" />
+    <ClInclude Include="start_game_req_handler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -34,6 +34,24 @@ MessageSender::~MessageSender()
 {
 }
 
+void MessageSender::SendStartGameReq()
+{
+    Request* req = new Request();
+    StartGameRequest* start = new StartGameRequest();
+    req->set_allocated_start(start);
+
+    SendRequest(req, MSG::Start_Game_Request);
+}
+
+void MessageSender::SendStartGameRsp()
+{
+    Response* rsp = new Response();
+    StartGameResponse* start = new StartGameResponse();
+    rsp->set_allocated_start(start);
+
+    SendResponse(rsp, MSG::Start_Game_Response);
+}
+
 
 /* Common Sender Operations */
 void MessageSender::SendRequest(Request* req, MSG type)

@@ -4,6 +4,8 @@
 #include "network_handler.h"
 #include "game_state.h"
 #include "idle_state.h"
+#include "game_started_state.h"
+#include "start_game_req_handler.h"
 
 using namespace std;
 
@@ -25,8 +27,12 @@ private:
     NetworkHandler mHandler;
     GameState*     mpState;
 
-    IdleState     mIdleState;
-    friend class RegisterRequestHandler;
+    IdleState          mIdleState;
+    GameStartedState   mGameStartedState;
+
+    StartGameRequestHandler mStartGameRequestHandler;
+
+    friend class StartGameRequestHandler;
 };
 
 }  // namespace PSR

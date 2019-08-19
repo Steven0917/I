@@ -4,7 +4,8 @@
 namespace Game {
 namespace PSR {
 
-GameEngine::GameEngine(Networker & networker) : mHandler(networker), mStop(false), mpState(&mIdleState)
+GameEngine::GameEngine(Networker & networker) : mHandler(networker), mStop(false),
+                 mGameStartedState(*this), mIdleState(*this), mpState(&mIdleState)
 {
 }
 
@@ -24,7 +25,6 @@ void GameEngine::Start()
 
         this_thread::sleep_for(chrono::milliseconds(200));
     }
-	
 }
 
 }  // namespace PSR

@@ -66,6 +66,12 @@
     <ClCompile Include="game_engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="game_started_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="start_game_req_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="server.h">
@@ -117,6 +123,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="game_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_started_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="start_game_req_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,11 +4,11 @@
 namespace Game {
 namespace PSR {
 
-class IdleState : public GameState
+class GameStartedState : public GameState
 {
 public:
-    IdleState(GameEngine& game);
-    virtual ~IdleState();
+    GameStartedState(GameEngine& game);
+    virtual ~GameStartedState();
 
     virtual void OnStart() {};
     virtual void OnPlay() {};

@@ -18,6 +18,9 @@ public:
     void SetNetworker(Networker& networker);
     virtual ~MessageSender();
 
+    void SendStartGameReq();
+    void SendStartGameRsp();
+
 private:
     void SendRequest(Request* req, MSG type);
     void SendResponse(Response* rsp, MSG type);

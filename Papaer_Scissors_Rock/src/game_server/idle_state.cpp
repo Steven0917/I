@@ -4,7 +4,7 @@
 namespace Game {
 namespace PSR {
 
-IdleState::IdleState()
+IdleState::IdleState(GameEngine& game) : GameState(game)
 {
 }
 
