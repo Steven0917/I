@@ -1,0 +1,7 @@
+**/Debug/
+**/Release/
+*.exe
+*.idb
+*.pdb
+*.obj
+*.db
