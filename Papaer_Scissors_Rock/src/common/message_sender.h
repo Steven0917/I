@@ -12,11 +12,6 @@ class Networker;
 class MessageSender
 {
 public:
-    void SendRegReq();
-    void SendRegRsp(int kernel_id, bool result = true);
-
-    void SendHeartBeatReq();
-    void SendHeartBeatRsp();
 
     MessageSender();
     MessageSender(Networker& networker);

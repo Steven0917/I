@@ -18,41 +18,16 @@
 // @@protoc_insertion_point(includes)
 namespace Game {
 namespace PSR {
-class RegisterRequestDefaultTypeInternal {
+class StartGameRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RegisterRequest>
+  ::google::protobuf::internal::ExplicitlyConstructed<StartGameRequest>
       _instance;
-} _RegisterRequest_default_instance_;
-class UnregisterRequestDefaultTypeInternal {
+} _StartGameRequest_default_instance_;
+class StartGameResponseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<UnregisterRequest>
+  ::google::protobuf::internal::ExplicitlyConstructed<StartGameResponse>
       _instance;
-} _UnregisterRequest_default_instance_;
-class RegisterResponseDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RegisterResponse>
-      _instance;
-} _RegisterResponse_default_instance_;
-class UnregisterResponseDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<UnregisterResponse>
-      _instance;
-} _UnregisterResponse_default_instance_;
-class HeartbeatIndicationDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<HeartbeatIndication>
-      _instance;
-} _HeartbeatIndication_default_instance_;
-class HeartbeatRequestDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<HeartbeatRequest>
-      _instance;
-} _HeartbeatRequest_default_instance_;
-class HeartbeatResponseDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<HeartbeatResponse>
-      _instance;
-} _HeartbeatResponse_default_instance_;
+} _StartGameResponse_default_instance_;
 class RequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Request>
@@ -71,7 +46,7 @@ class MessageDefaultTypeInternal {
 }  // namespace PSR
 }  // namespace Game
 namespace protobuf_message_2eproto {
-void InitDefaultsRegisterRequestImpl() {
+void InitDefaultsStartGameRequestImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
 #ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
@@ -80,19 +55,19 @@ void InitDefaultsRegisterRequestImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::Game::PSR::_RegisterRequest_default_instance_;
-    new (ptr) ::Game::PSR::RegisterRequest();
+    void* ptr = &::Game::PSR::_StartGameRequest_default_instance_;
+    new (ptr) ::Game::PSR::StartGameRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::Game::PSR::RegisterRequest::InitAsDefaultInstance();
+  ::Game::PSR::StartGameRequest::InitAsDefaultInstance();
 }
 
-void InitDefaultsRegisterRequest() {
+void InitDefaultsStartGameRequest() {
   static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsRegisterRequestImpl);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsStartGameRequestImpl);
 }
 
-void InitDefaultsUnregisterRequestImpl() {
+void InitDefaultsStartGameResponseImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
 #ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
@@ -101,121 +76,16 @@ void InitDefaultsUnregisterRequestImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::Game::PSR::_UnregisterRequest_default_instance_;
-    new (ptr) ::Game::PSR::UnregisterRequest();
+    void* ptr = &::Game::PSR::_StartGameResponse_default_instance_;
+    new (ptr) ::Game::PSR::StartGameResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::Game::PSR::UnregisterRequest::InitAsDefaultInstance();
+  ::Game::PSR::StartGameResponse::InitAsDefaultInstance();
 }
 
-void InitDefaultsUnregisterRequest() {
+void InitDefaultsStartGameResponse() {
   static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUnregisterRequestImpl);
-}
-
-void InitDefaultsRegisterResponseImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::Game::PSR::_RegisterResponse_default_instance_;
-    new (ptr) ::Game::PSR::RegisterResponse();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Game::PSR::RegisterResponse::InitAsDefaultInstance();
-}
-
-void InitDefaultsRegisterResponse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsRegisterResponseImpl);
-}
-
-void InitDefaultsUnregisterResponseImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::Game::PSR::_UnregisterResponse_default_instance_;
-    new (ptr) ::Game::PSR::UnregisterResponse();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Game::PSR::UnregisterResponse::InitAsDefaultInstance();
-}
-
-void InitDefaultsUnregisterResponse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUnregisterResponseImpl);
-}
-
-void InitDefaultsHeartbeatIndicationImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::Game::PSR::_HeartbeatIndication_default_instance_;
-    new (ptr) ::Game::PSR::HeartbeatIndication();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Game::PSR::HeartbeatIndication::InitAsDefaultInstance();
-}
-
-void InitDefaultsHeartbeatIndication() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHeartbeatIndicationImpl);
-}
-
-void InitDefaultsHeartbeatRequestImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::Game::PSR::_HeartbeatRequest_default_instance_;
-    new (ptr) ::Game::PSR::HeartbeatRequest();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Game::PSR::HeartbeatRequest::InitAsDefaultInstance();
-}
-
-void InitDefaultsHeartbeatRequest() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHeartbeatRequestImpl);
-}
-
-void InitDefaultsHeartbeatResponseImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::Game::PSR::_HeartbeatResponse_default_instance_;
-    new (ptr) ::Game::PSR::HeartbeatResponse();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Game::PSR::HeartbeatResponse::InitAsDefaultInstance();
-}
-
-void InitDefaultsHeartbeatResponse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHeartbeatResponseImpl);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsStartGameResponseImpl);
 }
 
 void InitDefaultsRequestImpl() {
@@ -226,9 +96,7 @@ void InitDefaultsRequestImpl() {
 #else
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_message_2eproto::InitDefaultsRegisterRequest();
-  protobuf_message_2eproto::InitDefaultsUnregisterRequest();
-  protobuf_message_2eproto::InitDefaultsHeartbeatRequest();
+  protobuf_message_2eproto::InitDefaultsStartGameRequest();
   {
     void* ptr = &::Game::PSR::_Request_default_instance_;
     new (ptr) ::Game::PSR::Request();
@@ -250,9 +118,7 @@ void InitDefaultsResponseImpl() {
 #else
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_message_2eproto::InitDefaultsRegisterResponse();
-  protobuf_message_2eproto::InitDefaultsUnregisterResponse();
-  protobuf_message_2eproto::InitDefaultsHeartbeatResponse();
+  protobuf_message_2eproto::InitDefaultsStartGameResponse();
   {
     void* ptr = &::Game::PSR::_Response_default_instance_;
     new (ptr) ::Game::PSR::Response();
@@ -295,13 +161,8 @@ namespace PSR {
 bool MSG_IsValid(int value) {
   switch (value) {
     case 0:
-    case 101:
-    case 102:
-    case 118:
-    case 201:
-    case 202:
-    case 218:
-    case 419:
+    case 11:
+    case 21:
       return true;
     default:
       return false;
@@ -311,107 +172,67 @@ bool MSG_IsValid(int value) {
 
 // ===================================================================
 
-void RegisterRequest::InitAsDefaultInstance() {
+void StartGameRequest::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RegisterRequest::kNameFieldNumber;
-const int RegisterRequest::kUserIdFieldNumber;
-const int RegisterRequest::kAddressFieldNumber;
-const int RegisterRequest::kVersionFieldNumber;
-const int RegisterRequest::kTimestampFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-RegisterRequest::RegisterRequest()
+StartGameRequest::StartGameRequest()
   : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsRegisterRequest();
+    ::protobuf_message_2eproto::InitDefaultsStartGameRequest();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(constructor:Game.PSR.StartGameRequest)
 }
-RegisterRequest::RegisterRequest(const RegisterRequest& from)
+StartGameRequest::StartGameRequest(const StartGameRequest& from)
   : ::google::protobuf::MessageLite(),
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  user_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.user_id().size() > 0) {
-    user_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_id_);
-  }
-  address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.address().size() > 0) {
-    address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
-  }
-  version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.version().size() > 0) {
-    version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.version_);
-  }
-  timestamp_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.timestamp().size() > 0) {
-    timestamp_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.timestamp_);
-  }
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.StartGameRequest)
 }
 
-void RegisterRequest::SharedCtor() {
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  user_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timestamp_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+void StartGameRequest::SharedCtor() {
   _cached_size_ = 0;
 }
 
-RegisterRequest::~RegisterRequest() {
-  // @@protoc_insertion_point(destructor:Game.PSR.RegisterRequest)
+StartGameRequest::~StartGameRequest() {
+  // @@protoc_insertion_point(destructor:Game.PSR.StartGameRequest)
   SharedDtor();
 }
 
-void RegisterRequest::SharedDtor() {
-  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  user_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  address_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timestamp_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+void StartGameRequest::SharedDtor() {
 }
 
-void RegisterRequest::SetCachedSize(int size) const {
+void StartGameRequest::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
-const RegisterRequest& RegisterRequest::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsRegisterRequest();
+const StartGameRequest& StartGameRequest::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsStartGameRequest();
   return *internal_default_instance();
 }
 
-RegisterRequest* RegisterRequest::New(::google::protobuf::Arena* arena) const {
-  RegisterRequest* n = new RegisterRequest;
+StartGameRequest* StartGameRequest::New(::google::protobuf::Arena* arena) const {
+  StartGameRequest* n = new StartGameRequest;
   if (arena != NULL) {
     arena->Own(n);
   }
   return n;
 }
 
-void RegisterRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.RegisterRequest)
+void StartGameRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.StartGameRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  user_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timestamp_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _internal_metadata_.Clear();
 }
 
-bool RegisterRequest::MergePartialFromCodedStream(
+bool StartGameRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
@@ -421,173 +242,43 @@ bool RegisterRequest::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(parse_start:Game.PSR.StartGameRequest)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes name = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_name()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes user_id = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_user_id()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes address = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_address()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes version = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_version()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes timestamp = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_timestamp()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
     }
+    DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+        input, tag, &unknown_fields_stream));
   }
 success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(parse_success:Game.PSR.StartGameRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.StartGameRequest)
   return false;
 #undef DO_
 }
 
-void RegisterRequest::SerializeWithCachedSizes(
+void StartGameRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.StartGameRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // bytes name = 1;
-  if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      1, this->name(), output);
-  }
-
-  // bytes user_id = 2;
-  if (this->user_id().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      2, this->user_id(), output);
-  }
-
-  // bytes address = 3;
-  if (this->address().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      3, this->address(), output);
-  }
-
-  // bytes version = 4;
-  if (this->version().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      4, this->version(), output);
-  }
-
-  // bytes timestamp = 5;
-  if (this->timestamp().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      5, this->timestamp(), output);
-  }
-
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.RegisterRequest)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.StartGameRequest)
 }
 
-size_t RegisterRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.RegisterRequest)
+size_t StartGameRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.StartGameRequest)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // bytes name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->name());
-  }
-
-  // bytes user_id = 2;
-  if (this->user_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->user_id());
-  }
-
-  // bytes address = 3;
-  if (this->address().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->address());
-  }
-
-  // bytes version = 4;
-  if (this->version().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->version());
-  }
-
-  // bytes timestamp = 5;
-  if (this->timestamp().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->timestamp());
-  }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
@@ -596,174 +287,109 @@ size_t RegisterRequest::ByteSizeLong() const {
   return total_size;
 }
 
-void RegisterRequest::CheckTypeAndMergeFrom(
+void StartGameRequest::CheckTypeAndMergeFrom(
     const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const RegisterRequest*>(&from));
+  MergeFrom(*::google::protobuf::down_cast<const StartGameRequest*>(&from));
 }
 
-void RegisterRequest::MergeFrom(const RegisterRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.RegisterRequest)
+void StartGameRequest::MergeFrom(const StartGameRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.StartGameRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.name().size() > 0) {
-
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.user_id().size() > 0) {
-
-    user_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_id_);
-  }
-  if (from.address().size() > 0) {
-
-    address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
-  }
-  if (from.version().size() > 0) {
-
-    version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.version_);
-  }
-  if (from.timestamp().size() > 0) {
-
-    timestamp_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.timestamp_);
-  }
 }
 
-void RegisterRequest::CopyFrom(const RegisterRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.RegisterRequest)
+void StartGameRequest::CopyFrom(const StartGameRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.StartGameRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool RegisterRequest::IsInitialized() const {
+bool StartGameRequest::IsInitialized() const {
   return true;
 }
 
-void RegisterRequest::Swap(RegisterRequest* other) {
+void StartGameRequest::Swap(StartGameRequest* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void RegisterRequest::InternalSwap(RegisterRequest* other) {
+void StartGameRequest::InternalSwap(StartGameRequest* other) {
   using std::swap;
-  name_.Swap(&other->name_);
-  user_id_.Swap(&other->user_id_);
-  address_.Swap(&other->address_);
-  version_.Swap(&other->version_);
-  timestamp_.Swap(&other->timestamp_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
 
-::std::string RegisterRequest::GetTypeName() const {
-  return "Game.PSR.RegisterRequest";
+::std::string StartGameRequest::GetTypeName() const {
+  return "Game.PSR.StartGameRequest";
 }
 
 
 // ===================================================================
 
-void UnregisterRequest::InitAsDefaultInstance() {
+void StartGameResponse::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int UnregisterRequest::kNameFieldNumber;
-const int UnregisterRequest::kAddressFieldNumber;
-const int UnregisterRequest::kVersionFieldNumber;
-const int UnregisterRequest::kTimestampFieldNumber;
-const int UnregisterRequest::kReasonFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-UnregisterRequest::UnregisterRequest()
+StartGameResponse::StartGameResponse()
   : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsUnregisterRequest();
+    ::protobuf_message_2eproto::InitDefaultsStartGameResponse();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(constructor:Game.PSR.StartGameResponse)
 }
-UnregisterRequest::UnregisterRequest(const UnregisterRequest& from)
+StartGameResponse::StartGameResponse(const StartGameResponse& from)
   : ::google::protobuf::MessageLite(),
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.address().size() > 0) {
-    address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
-  }
-  version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.version().size() > 0) {
-    version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.version_);
-  }
-  timestamp_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.timestamp().size() > 0) {
-    timestamp_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.timestamp_);
-  }
-  reason_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.reason().size() > 0) {
-    reason_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reason_);
-  }
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.StartGameResponse)
 }
 
-void UnregisterRequest::SharedCtor() {
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timestamp_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  reason_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+void StartGameResponse::SharedCtor() {
   _cached_size_ = 0;
 }
 
-UnregisterRequest::~UnregisterRequest() {
-  // @@protoc_insertion_point(destructor:Game.PSR.UnregisterRequest)
+StartGameResponse::~StartGameResponse() {
+  // @@protoc_insertion_point(destructor:Game.PSR.StartGameResponse)
   SharedDtor();
 }
 
-void UnregisterRequest::SharedDtor() {
-  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  address_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timestamp_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  reason_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+void StartGameResponse::SharedDtor() {
 }
 
-void UnregisterRequest::SetCachedSize(int size) const {
+void StartGameResponse::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
-const UnregisterRequest& UnregisterRequest::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsUnregisterRequest();
+const StartGameResponse& StartGameResponse::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsStartGameResponse();
   return *internal_default_instance();
 }
 
-UnregisterRequest* UnregisterRequest::New(::google::protobuf::Arena* arena) const {
-  UnregisterRequest* n = new UnregisterRequest;
+StartGameResponse* StartGameResponse::New(::google::protobuf::Arena* arena) const {
+  StartGameResponse* n = new StartGameResponse;
   if (arena != NULL) {
     arena->Own(n);
   }
   return n;
 }
 
-void UnregisterRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.UnregisterRequest)
+void StartGameResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.StartGameResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timestamp_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  reason_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _internal_metadata_.Clear();
 }
 
-bool UnregisterRequest::MergePartialFromCodedStream(
+bool StartGameResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
@@ -773,197 +399,43 @@ bool UnregisterRequest::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(parse_start:Game.PSR.StartGameResponse)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes name = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_name()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string address = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_address()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->address().data(), static_cast<int>(this->address().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Game.PSR.UnregisterRequest.address"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes version = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_version()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string timestamp = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_timestamp()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->timestamp().data(), static_cast<int>(this->timestamp().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Game.PSR.UnregisterRequest.timestamp"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string reason = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_reason()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->reason().data(), static_cast<int>(this->reason().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Game.PSR.UnregisterRequest.reason"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
     }
+    DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+        input, tag, &unknown_fields_stream));
   }
 success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(parse_success:Game.PSR.StartGameResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(parse_failure:Game.PSR.StartGameResponse)
   return false;
 #undef DO_
 }
 
-void UnregisterRequest::SerializeWithCachedSizes(
+void StartGameResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(serialize_start:Game.PSR.StartGameResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // bytes name = 1;
-  if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      1, this->name(), output);
-  }
-
-  // string address = 2;
-  if (this->address().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->address().data(), static_cast<int>(this->address().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Game.PSR.UnregisterRequest.address");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->address(), output);
-  }
-
-  // bytes version = 3;
-  if (this->version().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      3, this->version(), output);
-  }
-
-  // string timestamp = 4;
-  if (this->timestamp().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->timestamp().data(), static_cast<int>(this->timestamp().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Game.PSR.UnregisterRequest.timestamp");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->timestamp(), output);
-  }
-
-  // string reason = 5;
-  if (this->reason().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->reason().data(), static_cast<int>(this->reason().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Game.PSR.UnregisterRequest.reason");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      5, this->reason(), output);
-  }
-
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.UnregisterRequest)
+  // @@protoc_insertion_point(serialize_end:Game.PSR.StartGameResponse)
 }
 
-size_t UnregisterRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.UnregisterRequest)
+size_t StartGameResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.StartGameResponse)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // bytes name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->name());
-  }
-
-  // string address = 2;
-  if (this->address().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->address());
-  }
-
-  // bytes version = 3;
-  if (this->version().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->version());
-  }
-
-  // string timestamp = 4;
-  if (this->timestamp().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->timestamp());
-  }
-
-  // string reason = 5;
-  if (this->reason().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->reason());
-  }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
@@ -972,1142 +444,54 @@ size_t UnregisterRequest::ByteSizeLong() const {
   return total_size;
 }
 
-void UnregisterRequest::CheckTypeAndMergeFrom(
+void StartGameResponse::CheckTypeAndMergeFrom(
     const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const UnregisterRequest*>(&from));
+  MergeFrom(*::google::protobuf::down_cast<const StartGameResponse*>(&from));
 }
 
-void UnregisterRequest::MergeFrom(const UnregisterRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.UnregisterRequest)
+void StartGameResponse::MergeFrom(const StartGameResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.StartGameResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.name().size() > 0) {
-
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.address().size() > 0) {
-
-    address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
-  }
-  if (from.version().size() > 0) {
-
-    version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.version_);
-  }
-  if (from.timestamp().size() > 0) {
-
-    timestamp_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.timestamp_);
-  }
-  if (from.reason().size() > 0) {
-
-    reason_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reason_);
-  }
 }
 
-void UnregisterRequest::CopyFrom(const UnregisterRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.UnregisterRequest)
+void StartGameResponse::CopyFrom(const StartGameResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.StartGameResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool UnregisterRequest::IsInitialized() const {
+bool StartGameResponse::IsInitialized() const {
   return true;
 }
 
-void UnregisterRequest::Swap(UnregisterRequest* other) {
+void StartGameResponse::Swap(StartGameResponse* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void UnregisterRequest::InternalSwap(UnregisterRequest* other) {
+void StartGameResponse::InternalSwap(StartGameResponse* other) {
   using std::swap;
-  name_.Swap(&other->name_);
-  address_.Swap(&other->address_);
-  version_.Swap(&other->version_);
-  timestamp_.Swap(&other->timestamp_);
-  reason_.Swap(&other->reason_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
 
-::std::string UnregisterRequest::GetTypeName() const {
-  return "Game.PSR.UnregisterRequest";
-}
-
-
-// ===================================================================
-
-void RegisterResponse::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RegisterResponse::kKernelIdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RegisterResponse::RegisterResponse()
-  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsRegisterResponse();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.RegisterResponse)
-}
-RegisterResponse::RegisterResponse(const RegisterResponse& from)
-  : ::google::protobuf::MessageLite(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  kernel_id_ = from.kernel_id_;
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.RegisterResponse)
-}
-
-void RegisterResponse::SharedCtor() {
-  kernel_id_ = 0;
-  _cached_size_ = 0;
-}
-
-RegisterResponse::~RegisterResponse() {
-  // @@protoc_insertion_point(destructor:Game.PSR.RegisterResponse)
-  SharedDtor();
-}
-
-void RegisterResponse::SharedDtor() {
-}
-
-void RegisterResponse::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const RegisterResponse& RegisterResponse::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsRegisterResponse();
-  return *internal_default_instance();
-}
-
-RegisterResponse* RegisterResponse::New(::google::protobuf::Arena* arena) const {
-  RegisterResponse* n = new RegisterResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void RegisterResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.RegisterResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  kernel_id_ = 0;
-  _internal_metadata_.Clear();
-}
-
-bool RegisterResponse::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
-      &_internal_metadata_);
-  ::google::protobuf::io::StringOutputStream unknown_fields_output(
-      unknown_fields_setter.buffer());
-  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
-      &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.RegisterResponse)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 kernel_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.RegisterResponse)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.RegisterResponse)
-  return false;
-#undef DO_
-}
-
-void RegisterResponse::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.RegisterResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->kernel_id(), output);
-  }
-
-  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
-                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.RegisterResponse)
-}
-
-size_t RegisterResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.RegisterResponse)
-  size_t total_size = 0;
-
-  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void RegisterResponse::CheckTypeAndMergeFrom(
-    const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const RegisterResponse*>(&from));
-}
-
-void RegisterResponse::MergeFrom(const RegisterResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.RegisterResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-}
-
-void RegisterResponse::CopyFrom(const RegisterResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.RegisterResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool RegisterResponse::IsInitialized() const {
-  return true;
-}
-
-void RegisterResponse::Swap(RegisterResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void RegisterResponse::InternalSwap(RegisterResponse* other) {
-  using std::swap;
-  swap(kernel_id_, other->kernel_id_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::std::string RegisterResponse::GetTypeName() const {
-  return "Game.PSR.RegisterResponse";
-}
-
-
-// ===================================================================
-
-void UnregisterResponse::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int UnregisterResponse::kKernelIdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-UnregisterResponse::UnregisterResponse()
-  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsUnregisterResponse();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.UnregisterResponse)
-}
-UnregisterResponse::UnregisterResponse(const UnregisterResponse& from)
-  : ::google::protobuf::MessageLite(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  kernel_id_ = from.kernel_id_;
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.UnregisterResponse)
-}
-
-void UnregisterResponse::SharedCtor() {
-  kernel_id_ = 0;
-  _cached_size_ = 0;
-}
-
-UnregisterResponse::~UnregisterResponse() {
-  // @@protoc_insertion_point(destructor:Game.PSR.UnregisterResponse)
-  SharedDtor();
-}
-
-void UnregisterResponse::SharedDtor() {
-}
-
-void UnregisterResponse::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const UnregisterResponse& UnregisterResponse::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsUnregisterResponse();
-  return *internal_default_instance();
-}
-
-UnregisterResponse* UnregisterResponse::New(::google::protobuf::Arena* arena) const {
-  UnregisterResponse* n = new UnregisterResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void UnregisterResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.UnregisterResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  kernel_id_ = 0;
-  _internal_metadata_.Clear();
-}
-
-bool UnregisterResponse::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
-      &_internal_metadata_);
-  ::google::protobuf::io::StringOutputStream unknown_fields_output(
-      unknown_fields_setter.buffer());
-  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
-      &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.UnregisterResponse)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 kernel_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.UnregisterResponse)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.UnregisterResponse)
-  return false;
-#undef DO_
-}
-
-void UnregisterResponse::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.UnregisterResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->kernel_id(), output);
-  }
-
-  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
-                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.UnregisterResponse)
-}
-
-size_t UnregisterResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.UnregisterResponse)
-  size_t total_size = 0;
-
-  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void UnregisterResponse::CheckTypeAndMergeFrom(
-    const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const UnregisterResponse*>(&from));
-}
-
-void UnregisterResponse::MergeFrom(const UnregisterResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.UnregisterResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-}
-
-void UnregisterResponse::CopyFrom(const UnregisterResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.UnregisterResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool UnregisterResponse::IsInitialized() const {
-  return true;
-}
-
-void UnregisterResponse::Swap(UnregisterResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void UnregisterResponse::InternalSwap(UnregisterResponse* other) {
-  using std::swap;
-  swap(kernel_id_, other->kernel_id_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::std::string UnregisterResponse::GetTypeName() const {
-  return "Game.PSR.UnregisterResponse";
-}
-
-
-// ===================================================================
-
-void HeartbeatIndication::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int HeartbeatIndication::kKernelIdFieldNumber;
-const int HeartbeatIndication::kTsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-HeartbeatIndication::HeartbeatIndication()
-  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsHeartbeatIndication();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.HeartbeatIndication)
-}
-HeartbeatIndication::HeartbeatIndication(const HeartbeatIndication& from)
-  : ::google::protobuf::MessageLite(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&ts_, &from.ts_,
-    static_cast<size_t>(reinterpret_cast<char*>(&kernel_id_) -
-    reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.HeartbeatIndication)
-}
-
-void HeartbeatIndication::SharedCtor() {
-  ::memset(&ts_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&kernel_id_) -
-      reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  _cached_size_ = 0;
-}
-
-HeartbeatIndication::~HeartbeatIndication() {
-  // @@protoc_insertion_point(destructor:Game.PSR.HeartbeatIndication)
-  SharedDtor();
-}
-
-void HeartbeatIndication::SharedDtor() {
-}
-
-void HeartbeatIndication::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const HeartbeatIndication& HeartbeatIndication::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsHeartbeatIndication();
-  return *internal_default_instance();
-}
-
-HeartbeatIndication* HeartbeatIndication::New(::google::protobuf::Arena* arena) const {
-  HeartbeatIndication* n = new HeartbeatIndication;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void HeartbeatIndication::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.HeartbeatIndication)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&ts_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&kernel_id_) -
-      reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  _internal_metadata_.Clear();
-}
-
-bool HeartbeatIndication::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
-      &_internal_metadata_);
-  ::google::protobuf::io::StringOutputStream unknown_fields_output(
-      unknown_fields_setter.buffer());
-  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
-      &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.HeartbeatIndication)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 kernel_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 ts = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, &ts_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.HeartbeatIndication)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.HeartbeatIndication)
-  return false;
-#undef DO_
-}
-
-void HeartbeatIndication::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.HeartbeatIndication)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->kernel_id(), output);
-  }
-
-  // int64 ts = 2;
-  if (this->ts() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->ts(), output);
-  }
-
-  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
-                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.HeartbeatIndication)
-}
-
-size_t HeartbeatIndication::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.HeartbeatIndication)
-  size_t total_size = 0;
-
-  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // int64 ts = 2;
-  if (this->ts() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->ts());
-  }
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void HeartbeatIndication::CheckTypeAndMergeFrom(
-    const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const HeartbeatIndication*>(&from));
-}
-
-void HeartbeatIndication::MergeFrom(const HeartbeatIndication& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.HeartbeatIndication)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.ts() != 0) {
-    set_ts(from.ts());
-  }
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-}
-
-void HeartbeatIndication::CopyFrom(const HeartbeatIndication& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.HeartbeatIndication)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool HeartbeatIndication::IsInitialized() const {
-  return true;
-}
-
-void HeartbeatIndication::Swap(HeartbeatIndication* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void HeartbeatIndication::InternalSwap(HeartbeatIndication* other) {
-  using std::swap;
-  swap(ts_, other->ts_);
-  swap(kernel_id_, other->kernel_id_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::std::string HeartbeatIndication::GetTypeName() const {
-  return "Game.PSR.HeartbeatIndication";
-}
-
-
-// ===================================================================
-
-void HeartbeatRequest::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int HeartbeatRequest::kKernelIdFieldNumber;
-const int HeartbeatRequest::kTsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-HeartbeatRequest::HeartbeatRequest()
-  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsHeartbeatRequest();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.HeartbeatRequest)
-}
-HeartbeatRequest::HeartbeatRequest(const HeartbeatRequest& from)
-  : ::google::protobuf::MessageLite(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&ts_, &from.ts_,
-    static_cast<size_t>(reinterpret_cast<char*>(&kernel_id_) -
-    reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.HeartbeatRequest)
-}
-
-void HeartbeatRequest::SharedCtor() {
-  ::memset(&ts_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&kernel_id_) -
-      reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  _cached_size_ = 0;
-}
-
-HeartbeatRequest::~HeartbeatRequest() {
-  // @@protoc_insertion_point(destructor:Game.PSR.HeartbeatRequest)
-  SharedDtor();
-}
-
-void HeartbeatRequest::SharedDtor() {
-}
-
-void HeartbeatRequest::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const HeartbeatRequest& HeartbeatRequest::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsHeartbeatRequest();
-  return *internal_default_instance();
-}
-
-HeartbeatRequest* HeartbeatRequest::New(::google::protobuf::Arena* arena) const {
-  HeartbeatRequest* n = new HeartbeatRequest;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void HeartbeatRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.HeartbeatRequest)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&ts_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&kernel_id_) -
-      reinterpret_cast<char*>(&ts_)) + sizeof(kernel_id_));
-  _internal_metadata_.Clear();
-}
-
-bool HeartbeatRequest::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
-      &_internal_metadata_);
-  ::google::protobuf::io::StringOutputStream unknown_fields_output(
-      unknown_fields_setter.buffer());
-  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
-      &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.HeartbeatRequest)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 kernel_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 ts = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, &ts_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.HeartbeatRequest)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.HeartbeatRequest)
-  return false;
-#undef DO_
-}
-
-void HeartbeatRequest::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.HeartbeatRequest)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->kernel_id(), output);
-  }
-
-  // int64 ts = 2;
-  if (this->ts() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->ts(), output);
-  }
-
-  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
-                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.HeartbeatRequest)
-}
-
-size_t HeartbeatRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.HeartbeatRequest)
-  size_t total_size = 0;
-
-  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // int64 ts = 2;
-  if (this->ts() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->ts());
-  }
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void HeartbeatRequest::CheckTypeAndMergeFrom(
-    const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const HeartbeatRequest*>(&from));
-}
-
-void HeartbeatRequest::MergeFrom(const HeartbeatRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.HeartbeatRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.ts() != 0) {
-    set_ts(from.ts());
-  }
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-}
-
-void HeartbeatRequest::CopyFrom(const HeartbeatRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.HeartbeatRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool HeartbeatRequest::IsInitialized() const {
-  return true;
-}
-
-void HeartbeatRequest::Swap(HeartbeatRequest* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void HeartbeatRequest::InternalSwap(HeartbeatRequest* other) {
-  using std::swap;
-  swap(ts_, other->ts_);
-  swap(kernel_id_, other->kernel_id_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::std::string HeartbeatRequest::GetTypeName() const {
-  return "Game.PSR.HeartbeatRequest";
-}
-
-
-// ===================================================================
-
-void HeartbeatResponse::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int HeartbeatResponse::kKernelIdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-HeartbeatResponse::HeartbeatResponse()
-  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_message_2eproto::InitDefaultsHeartbeatResponse();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:Game.PSR.HeartbeatResponse)
-}
-HeartbeatResponse::HeartbeatResponse(const HeartbeatResponse& from)
-  : ::google::protobuf::MessageLite(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  kernel_id_ = from.kernel_id_;
-  // @@protoc_insertion_point(copy_constructor:Game.PSR.HeartbeatResponse)
-}
-
-void HeartbeatResponse::SharedCtor() {
-  kernel_id_ = 0;
-  _cached_size_ = 0;
-}
-
-HeartbeatResponse::~HeartbeatResponse() {
-  // @@protoc_insertion_point(destructor:Game.PSR.HeartbeatResponse)
-  SharedDtor();
-}
-
-void HeartbeatResponse::SharedDtor() {
-}
-
-void HeartbeatResponse::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const HeartbeatResponse& HeartbeatResponse::default_instance() {
-  ::protobuf_message_2eproto::InitDefaultsHeartbeatResponse();
-  return *internal_default_instance();
-}
-
-HeartbeatResponse* HeartbeatResponse::New(::google::protobuf::Arena* arena) const {
-  HeartbeatResponse* n = new HeartbeatResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void HeartbeatResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:Game.PSR.HeartbeatResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  kernel_id_ = 0;
-  _internal_metadata_.Clear();
-}
-
-bool HeartbeatResponse::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
-      &_internal_metadata_);
-  ::google::protobuf::io::StringOutputStream unknown_fields_output(
-      unknown_fields_setter.buffer());
-  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
-      &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:Game.PSR.HeartbeatResponse)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 kernel_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
-            input, tag, &unknown_fields_stream));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:Game.PSR.HeartbeatResponse)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:Game.PSR.HeartbeatResponse)
-  return false;
-#undef DO_
-}
-
-void HeartbeatResponse::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Game.PSR.HeartbeatResponse)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->kernel_id(), output);
-  }
-
-  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
-                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:Game.PSR.HeartbeatResponse)
-}
-
-size_t HeartbeatResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Game.PSR.HeartbeatResponse)
-  size_t total_size = 0;
-
-  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
-
-  // int32 kernel_id = 1;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void HeartbeatResponse::CheckTypeAndMergeFrom(
-    const ::google::protobuf::MessageLite& from) {
-  MergeFrom(*::google::protobuf::down_cast<const HeartbeatResponse*>(&from));
-}
-
-void HeartbeatResponse::MergeFrom(const HeartbeatResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.HeartbeatResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-}
-
-void HeartbeatResponse::CopyFrom(const HeartbeatResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.HeartbeatResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool HeartbeatResponse::IsInitialized() const {
-  return true;
-}
-
-void HeartbeatResponse::Swap(HeartbeatResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void HeartbeatResponse::InternalSwap(HeartbeatResponse* other) {
-  using std::swap;
-  swap(kernel_id_, other->kernel_id_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::std::string HeartbeatResponse::GetTypeName() const {
-  return "Game.PSR.HeartbeatResponse";
+::std::string StartGameResponse::GetTypeName() const {
+  return "Game.PSR.StartGameResponse";
 }
 
 
 // ===================================================================
 
 void Request::InitAsDefaultInstance() {
-  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->register__ = const_cast< ::Game::PSR::RegisterRequest*>(
-      ::Game::PSR::RegisterRequest::internal_default_instance());
-  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->unregister_ = const_cast< ::Game::PSR::UnregisterRequest*>(
-      ::Game::PSR::UnregisterRequest::internal_default_instance());
-  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->heart_beat_ = const_cast< ::Game::PSR::HeartbeatRequest*>(
-      ::Game::PSR::HeartbeatRequest::internal_default_instance());
+  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->start_ = const_cast< ::Game::PSR::StartGameRequest*>(
+      ::Game::PSR::StartGameRequest::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Request::kUserIdFieldNumber;
-const int Request::kKernelIdFieldNumber;
-const int Request::kAppIdFieldNumber;
-const int Request::kRegisterFieldNumber;
-const int Request::kUnregisterFieldNumber;
-const int Request::kHeartBeatFieldNumber;
+const int Request::kStartFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Request::Request()
@@ -2123,31 +507,16 @@ Request::Request(const Request& from)
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_register_()) {
-    register__ = new ::Game::PSR::RegisterRequest(*from.register__);
+  if (from.has_start()) {
+    start_ = new ::Game::PSR::StartGameRequest(*from.start_);
   } else {
-    register__ = NULL;
+    start_ = NULL;
   }
-  if (from.has_unregister()) {
-    unregister_ = new ::Game::PSR::UnregisterRequest(*from.unregister_);
-  } else {
-    unregister_ = NULL;
-  }
-  if (from.has_heart_beat()) {
-    heart_beat_ = new ::Game::PSR::HeartbeatRequest(*from.heart_beat_);
-  } else {
-    heart_beat_ = NULL;
-  }
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&app_id_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(app_id_));
   // @@protoc_insertion_point(copy_constructor:Game.PSR.Request)
 }
 
 void Request::SharedCtor() {
-  ::memset(&register__, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&app_id_) -
-      reinterpret_cast<char*>(&register__)) + sizeof(app_id_));
+  start_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -2157,9 +526,7 @@ Request::~Request() {
 }
 
 void Request::SharedDtor() {
-  if (this != internal_default_instance()) delete register__;
-  if (this != internal_default_instance()) delete unregister_;
-  if (this != internal_default_instance()) delete heart_beat_;
+  if (this != internal_default_instance()) delete start_;
 }
 
 void Request::SetCachedSize(int size) const {
@@ -2186,21 +553,10 @@ void Request::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == NULL && register__ != NULL) {
-    delete register__;
+  if (GetArenaNoVirtual() == NULL && start_ != NULL) {
+    delete start_;
   }
-  register__ = NULL;
-  if (GetArenaNoVirtual() == NULL && unregister_ != NULL) {
-    delete unregister_;
-  }
-  unregister_ = NULL;
-  if (GetArenaNoVirtual() == NULL && heart_beat_ != NULL) {
-    delete heart_beat_;
-  }
-  heart_beat_ = NULL;
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&app_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(app_id_));
+  start_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -2216,82 +572,16 @@ bool Request::MergePartialFromCodedStream(
       &unknown_fields_output, false);
   // @@protoc_insertion_point(parse_start:Game.PSR.Request)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 user_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &user_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 kernel_id = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 app_id = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &app_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .Game.PSR.RegisterRequest register = 11;
+      // .Game.PSR.StartGameRequest start = 11;
       case 11: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_register_()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .Game.PSR.UnregisterRequest unregister = 12;
-      case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_unregister()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .Game.PSR.HeartbeatRequest heart_beat = 17;
-      case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_heart_beat()));
+               input, mutable_start()));
         } else {
           goto handle_unusual;
         }
@@ -2324,37 +614,10 @@ void Request::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->user_id(), output);
-  }
-
-  // int32 kernel_id = 2;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->kernel_id(), output);
-  }
-
-  // int32 app_id = 3;
-  if (this->app_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->app_id(), output);
-  }
-
-  // .Game.PSR.RegisterRequest register = 11;
-  if (this->has_register_()) {
+  // .Game.PSR.StartGameRequest start = 11;
+  if (this->has_start()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      11, *this->register__, output);
-  }
-
-  // .Game.PSR.UnregisterRequest unregister = 12;
-  if (this->has_unregister()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      12, *this->unregister_, output);
-  }
-
-  // .Game.PSR.HeartbeatRequest heart_beat = 17;
-  if (this->has_heart_beat()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      17, *this->heart_beat_, output);
+      11, *this->start_, output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
@@ -2368,46 +631,11 @@ size_t Request::ByteSizeLong() const {
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // .Game.PSR.RegisterRequest register = 11;
-  if (this->has_register_()) {
+  // .Game.PSR.StartGameRequest start = 11;
+  if (this->has_start()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->register__);
-  }
-
-  // .Game.PSR.UnregisterRequest unregister = 12;
-  if (this->has_unregister()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->unregister_);
-  }
-
-  // .Game.PSR.HeartbeatRequest heart_beat = 17;
-  if (this->has_heart_beat()) {
-    total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->heart_beat_);
-  }
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->user_id());
-  }
-
-  // int32 kernel_id = 2;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  // int32 app_id = 3;
-  if (this->app_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->app_id());
+        *this->start_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2429,23 +657,8 @@ void Request::MergeFrom(const Request& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_register_()) {
-    mutable_register_()->::Game::PSR::RegisterRequest::MergeFrom(from.register_());
-  }
-  if (from.has_unregister()) {
-    mutable_unregister()->::Game::PSR::UnregisterRequest::MergeFrom(from.unregister());
-  }
-  if (from.has_heart_beat()) {
-    mutable_heart_beat()->::Game::PSR::HeartbeatRequest::MergeFrom(from.heart_beat());
-  }
-  if (from.user_id() != 0) {
-    set_user_id(from.user_id());
-  }
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-  if (from.app_id() != 0) {
-    set_app_id(from.app_id());
+  if (from.has_start()) {
+    mutable_start()->::Game::PSR::StartGameRequest::MergeFrom(from.start());
   }
 }
 
@@ -2466,12 +679,7 @@ void Request::Swap(Request* other) {
 }
 void Request::InternalSwap(Request* other) {
   using std::swap;
-  swap(register__, other->register__);
-  swap(unregister_, other->unregister_);
-  swap(heart_beat_, other->heart_beat_);
-  swap(user_id_, other->user_id_);
-  swap(kernel_id_, other->kernel_id_);
-  swap(app_id_, other->app_id_);
+  swap(start_, other->start_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
@@ -2484,22 +692,11 @@ void Request::InternalSwap(Request* other) {
 // ===================================================================
 
 void Response::InitAsDefaultInstance() {
-  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->register__ = const_cast< ::Game::PSR::RegisterResponse*>(
-      ::Game::PSR::RegisterResponse::internal_default_instance());
-  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->unregister_ = const_cast< ::Game::PSR::UnregisterResponse*>(
-      ::Game::PSR::UnregisterResponse::internal_default_instance());
-  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->heart_beat_ = const_cast< ::Game::PSR::HeartbeatResponse*>(
-      ::Game::PSR::HeartbeatResponse::internal_default_instance());
+  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->start_ = const_cast< ::Game::PSR::StartGameResponse*>(
+      ::Game::PSR::StartGameResponse::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Response::kUserIdFieldNumber;
-const int Response::kKernelIdFieldNumber;
-const int Response::kAppIdFieldNumber;
-const int Response::kResultFieldNumber;
-const int Response::kErrorDescribeFieldNumber;
-const int Response::kRegisterFieldNumber;
-const int Response::kUnregisterFieldNumber;
-const int Response::kHeartBeatFieldNumber;
+const int Response::kStartFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Response::Response()
@@ -2515,36 +712,16 @@ Response::Response(const Response& from)
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  error_describe_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.error_describe().size() > 0) {
-    error_describe_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_describe_);
-  }
-  if (from.has_register_()) {
-    register__ = new ::Game::PSR::RegisterResponse(*from.register__);
+  if (from.has_start()) {
+    start_ = new ::Game::PSR::StartGameResponse(*from.start_);
   } else {
-    register__ = NULL;
+    start_ = NULL;
   }
-  if (from.has_unregister()) {
-    unregister_ = new ::Game::PSR::UnregisterResponse(*from.unregister_);
-  } else {
-    unregister_ = NULL;
-  }
-  if (from.has_heart_beat()) {
-    heart_beat_ = new ::Game::PSR::HeartbeatResponse(*from.heart_beat_);
-  } else {
-    heart_beat_ = NULL;
-  }
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&result_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(result_));
   // @@protoc_insertion_point(copy_constructor:Game.PSR.Response)
 }
 
 void Response::SharedCtor() {
-  error_describe_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&register__, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&result_) -
-      reinterpret_cast<char*>(&register__)) + sizeof(result_));
+  start_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -2554,10 +731,7 @@ Response::~Response() {
 }
 
 void Response::SharedDtor() {
-  error_describe_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete register__;
-  if (this != internal_default_instance()) delete unregister_;
-  if (this != internal_default_instance()) delete heart_beat_;
+  if (this != internal_default_instance()) delete start_;
 }
 
 void Response::SetCachedSize(int size) const {
@@ -2584,22 +758,10 @@ void Response::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  error_describe_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && register__ != NULL) {
-    delete register__;
+  if (GetArenaNoVirtual() == NULL && start_ != NULL) {
+    delete start_;
   }
-  register__ = NULL;
-  if (GetArenaNoVirtual() == NULL && unregister_ != NULL) {
-    delete unregister_;
-  }
-  unregister_ = NULL;
-  if (GetArenaNoVirtual() == NULL && heart_beat_ != NULL) {
-    delete heart_beat_;
-  }
-  heart_beat_ = NULL;
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&result_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(result_));
+  start_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -2615,108 +777,16 @@ bool Response::MergePartialFromCodedStream(
       &unknown_fields_output, false);
   // @@protoc_insertion_point(parse_start:Game.PSR.Response)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 user_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &user_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 kernel_id = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &kernel_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 app_id = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, &app_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool result = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &result_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes error_describe = 7;
-      case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_error_describe()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .Game.PSR.RegisterResponse register = 11;
+      // .Game.PSR.StartGameResponse start = 11;
       case 11: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_register_()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .Game.PSR.UnregisterResponse unregister = 12;
-      case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_unregister()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .Game.PSR.HeartbeatResponse heart_beat = 17;
-      case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_heart_beat()));
+               input, mutable_start()));
         } else {
           goto handle_unusual;
         }
@@ -2749,48 +819,10 @@ void Response::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->user_id(), output);
-  }
-
-  // int32 kernel_id = 2;
-  if (this->kernel_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->kernel_id(), output);
-  }
-
-  // int32 app_id = 3;
-  if (this->app_id() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->app_id(), output);
-  }
-
-  // bool result = 6;
-  if (this->result() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->result(), output);
-  }
-
-  // bytes error_describe = 7;
-  if (this->error_describe().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      7, this->error_describe(), output);
-  }
-
-  // .Game.PSR.RegisterResponse register = 11;
-  if (this->has_register_()) {
+  // .Game.PSR.StartGameResponse start = 11;
+  if (this->has_start()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      11, *this->register__, output);
-  }
-
-  // .Game.PSR.UnregisterResponse unregister = 12;
-  if (this->has_unregister()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      12, *this->unregister_, output);
-  }
-
-  // .Game.PSR.HeartbeatResponse heart_beat = 17;
-  if (this->has_heart_beat()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      17, *this->heart_beat_, output);
+      11, *this->start_, output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
@@ -2804,58 +836,11 @@ size_t Response::ByteSizeLong() const {
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // bytes error_describe = 7;
-  if (this->error_describe().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->error_describe());
-  }
-
-  // .Game.PSR.RegisterResponse register = 11;
-  if (this->has_register_()) {
+  // .Game.PSR.StartGameResponse start = 11;
+  if (this->has_start()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->register__);
-  }
-
-  // .Game.PSR.UnregisterResponse unregister = 12;
-  if (this->has_unregister()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->unregister_);
-  }
-
-  // .Game.PSR.HeartbeatResponse heart_beat = 17;
-  if (this->has_heart_beat()) {
-    total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->heart_beat_);
-  }
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->user_id());
-  }
-
-  // int32 kernel_id = 2;
-  if (this->kernel_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->kernel_id());
-  }
-
-  // int32 app_id = 3;
-  if (this->app_id() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->app_id());
-  }
-
-  // bool result = 6;
-  if (this->result() != 0) {
-    total_size += 1 + 1;
+        *this->start_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2877,30 +862,8 @@ void Response::MergeFrom(const Response& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.error_describe().size() > 0) {
-
-    error_describe_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_describe_);
-  }
-  if (from.has_register_()) {
-    mutable_register_()->::Game::PSR::RegisterResponse::MergeFrom(from.register_());
-  }
-  if (from.has_unregister()) {
-    mutable_unregister()->::Game::PSR::UnregisterResponse::MergeFrom(from.unregister());
-  }
-  if (from.has_heart_beat()) {
-    mutable_heart_beat()->::Game::PSR::HeartbeatResponse::MergeFrom(from.heart_beat());
-  }
-  if (from.user_id() != 0) {
-    set_user_id(from.user_id());
-  }
-  if (from.kernel_id() != 0) {
-    set_kernel_id(from.kernel_id());
-  }
-  if (from.app_id() != 0) {
-    set_app_id(from.app_id());
-  }
-  if (from.result() != 0) {
-    set_result(from.result());
+  if (from.has_start()) {
+    mutable_start()->::Game::PSR::StartGameResponse::MergeFrom(from.start());
   }
 }
 
@@ -2921,14 +884,7 @@ void Response::Swap(Response* other) {
 }
 void Response::InternalSwap(Response* other) {
   using std::swap;
-  error_describe_.Swap(&other->error_describe_);
-  swap(register__, other->register__);
-  swap(unregister_, other->unregister_);
-  swap(heart_beat_, other->heart_beat_);
-  swap(user_id_, other->user_id_);
-  swap(kernel_id_, other->kernel_id_);
-  swap(app_id_, other->app_id_);
-  swap(result_, other->result_);
+  swap(start_, other->start_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }

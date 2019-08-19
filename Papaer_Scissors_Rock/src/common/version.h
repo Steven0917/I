@@ -7,14 +7,14 @@
 #define SUBVER2 13
 
 #define V_STR(s)     #s 
-#define GET_PUMA_KERNEL_VERSION(a,b,c)  "v" V_STR(a) "." V_STR(b) "." V_STR(c)
-#define GET_PUMA_KERNEL_BUILD(a,b,c)  "v" V_STR(a) "." V_STR(b) "." V_STR(c) " "__DATE__" " __TIME__
+#define GET_GAME_PSR_VERSION(a,b,c)  "v" V_STR(a) "." V_STR(b) "." V_STR(c)
+#define GET_GAME_PSR_BUILD(a,b,c)    "v" V_STR(a) "." V_STR(b) "." V_STR(c) " "__DATE__" " __TIME__
 
 namespace Game {
 namespace PSR {
 
-const std::string PUMA_KERNEL_VER   = GET_PUMA_KERNEL_VERSION(MAINVER, SUBVER1, SUBVER2);
-const std::string PUMA_KERNEL_BUILD = GET_PUMA_KERNEL_BUILD(MAINVER, SUBVER1, SUBVER2);
+const std::string GAME_PSR_VERSION = GET_GAME_PSR_VERSION(MAINVER, SUBVER1, SUBVER2);
+const std::string GAME_PSR_BUILD   = GET_GAME_PSR_BUILD(MAINVER, SUBVER1, SUBVER2);
 
 
 }

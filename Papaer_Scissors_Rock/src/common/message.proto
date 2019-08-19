@@ -14,94 +14,35 @@ package Game.PSR;
 option optimize_for = LITE_RUNTIME;
 
 /* Message Type Definitions
- * Message ID: xyzz
- * x:  Kernel/User/App/Cmd = 0/1/2/3
- * y:  Req/Rsp/Cmd/Ind  = 1/2/3/4
- * zz: Message Category = 00-99
  */
 enum MSG
 {
     unknown_message = 0;
 
-    Register_Request  = 101;
-    Register_Response = 201;
-
-    Unregister_Request  = 102;
-    Unregister_Response = 202;
-
-    Heartbeat_Request = 118;
-    Heartbeat_Response = 218;
-    Heartbeat_Indication = 419;
+    Start_Game_Request  = 11;
+    Start_Game_Response = 21;
 }
 
-message RegisterRequest
+message StartGameRequest
 {
-    bytes name = 1;
-    bytes user_id = 2;
-    bytes address = 3;
-    bytes version = 4;
-    bytes timestamp = 5;
+
 }
 
-message UnregisterRequest
+message StartGameResponse
 {
-    bytes name = 1;
-    string address = 2;
-    bytes version = 3;
-    string timestamp = 4;
-    string reason = 5;
+
 }
 
-message RegisterResponse
-{
-    int32 kernel_id = 1;
-}
-
-message UnregisterResponse
-{
-    int32 kernel_id = 1;
-}
-
-message HeartbeatIndication
-{
-    int32 kernel_id = 1;
-    int64 ts = 2;
-}
-
-message HeartbeatRequest
-{
-    int32 kernel_id = 1;
-    int64 ts = 2;
-}
-
-message HeartbeatResponse
-{
-    int32 kernel_id = 1;
-}
 message Request
 {
-    int32 user_id = 1;
-    int32 kernel_id = 2;
-    int32 app_id = 3;
-
-    RegisterRequest register = 11;
-    UnregisterRequest unregister = 12;
-    HeartbeatRequest heart_beat = 17;
+    StartGameRequest start = 11;
 }
 
 message Response
 {
-    int32 user_id = 1;
-    int32 kernel_id = 2;
-    int32 app_id = 3;
-
-    bool result = 6;
-    bytes error_describe = 7;
-    
-    RegisterResponse  register  = 11;
-    UnregisterResponse unregister = 12;
-    HeartbeatResponse heart_beat = 17;
+    StartGameResponse start = 11;
 }
+
 
 message Message
 {

@@ -51,9 +51,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="reg_rsp_handler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\common\client_config.h">
@@ -87,9 +84,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="client.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="reg_rsp_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

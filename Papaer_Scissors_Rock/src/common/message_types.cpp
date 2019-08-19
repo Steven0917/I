@@ -5,9 +5,7 @@ namespace Game {
 namespace PSR {
 
 std::map<MSG, std::string> MSG_TYPE = {
-    { unknown_message, "unknown_message" },
-    { Register_Request, "Register_Request" },
-    { Register_Response, "Register_Response" }
+    { unknown_message, "unknown_message" }
 };
 
 std::string MessageTypes::GetType(MSG type)

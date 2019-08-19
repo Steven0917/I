@@ -3,7 +3,6 @@
 #include "context.h"
 #include "networker.h"
 #include "thread_pool.h"
-#include "reg_rsp_handler.h"
 
 using namespace std;
 
@@ -23,8 +22,6 @@ public:
 private:
     bool   mStop;
 	Networker  mNetworker;
-
-	RegisterResponseHandler mRegRspHandler;
 
 };
 

@@ -188,7 +188,6 @@
     <ClCompile Include="idle_state.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
-    <ClCompile Include="reg_req_handler.cpp" />
     <ClCompile Include="server.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -208,7 +207,6 @@
     <ClInclude Include="game_state.h" />
     <ClInclude Include="idle_state.h" />
     <ClInclude Include="player.h" />
-    <ClInclude Include="reg_req_handler.h" />
     <ClInclude Include="server.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
