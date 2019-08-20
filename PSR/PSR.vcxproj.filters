@@ -54,6 +54,9 @@
     <ClCompile Include="shoot_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="human_player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="check_shoot_cmd.h">
@@ -90,6 +93,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="shot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="human_player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

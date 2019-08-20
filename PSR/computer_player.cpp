@@ -24,5 +24,11 @@ void ComputerPlayer::Shoot()
 	ExecuteCommand();
 }
 
+void ComputerPlayer::EndGame()
+{
+	//Nothing need to do for computer user.
+	ExecuteCommand();
+}
+
 }  // namespace PSR
 }  // namespace Game

@@ -155,6 +155,7 @@
     <ClCompile Include="computer_player.cpp" />
     <ClCompile Include="end_game_state.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="human_player.cpp" />
     <ClCompile Include="idle_state.cpp" />
     <ClCompile Include="i_player.cpp" />
     <ClCompile Include="i_state.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="computer_player.h" />
     <ClInclude Include="end_game_state.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="human_player.h" />
     <ClInclude Include="idle_state.h" />
     <ClInclude Include="i_player.h" />
     <ClInclude Include="i_state.h" />

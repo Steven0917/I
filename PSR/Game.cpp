@@ -3,6 +3,7 @@
 #include "check_start_cmd.h"
 #include "check_shoot_cmd.h"
 #include "computer_player.h"
+#include "human_player.h"
 #include <iostream>
 
 namespace Game {
@@ -10,7 +11,7 @@ namespace PSR {
 
 GameEngine::GameEngine() : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState), mTotalRound(3)
 {
-	IPlayer* player1 = new ComputerPlayer();
+	IPlayer* player1 = new HumanPlayer();
 	IPlayer* player2 = new ComputerPlayer();
 	mPlayers.push_back(player1);
 	mPlayers.push_back(player2);
@@ -52,6 +53,7 @@ void GameEngine::CheckStart()
 
 void GameEngine::Shoot()
 {
+	cout << "Round " << mCountRound + 1 << " / " << mTotalRound << endl;
 	for (auto p : mPlayers)
 	{
 		p->SetCommand(new CheckShootCmd(*this));
@@ -69,8 +71,20 @@ void GameEngine::CheckShoot()
 		return;
 	}
 
+	if (Invalid == shot1 || Invalid == shot2)
+	{
+		cout << "Invalid shot." << endl << endl;
+		ChangeState(mShootState);
+		return;
+	}
+
 	if (shot1 == shot2)
 	{
+		cout << endl << ToString(shot1) << " = " << ToString(shot2) << endl;
+
+		cout << "Score " << mPlayers.at(0)->GetScore().To_String()
+			 << "    [Round " << mCountRound + 1 << " / " << mTotalRound << "]" << endl << endl;
+
 		if (mCountRound < mTotalRound)
 		{
 			ChangeState(mShootState);
@@ -81,18 +95,21 @@ void GameEngine::CheckShoot()
 	/* Judge this round. 
 	   Update date score for players
 	   */
+	bool isP1Win;
 	switch (shot1)
 	{
 	case Paper:
 		switch (shot2)
 		{
 		case Scissors:
+			isP1Win = false;
 			mPlayers.at(0)->LoseRound();
 			mPlayers.at(1)->WinRound();
 			mCountRound++;
 			break;
 
 		case Rock:
+			isP1Win = true;
 			mPlayers.at(0)->WinRound();
 			mPlayers.at(1)->LoseRound();
 			mCountRound++;
@@ -110,15 +127,11 @@ void GameEngine::CheckShoot()
 		switch (shot2)
 		{
 		case Paper:
-			mPlayers.at(0)->WinRound();
-			mPlayers.at(1)->LoseRound();
-			mCountRound++;
+			isP1Win = true;
 			break;
 
 		case Rock:
-			mPlayers.at(0)->LoseRound();
-			mPlayers.at(1)->WinRound();
-			mCountRound++;
+			isP1Win = false;
 			break;
 
 		case Scissors:
@@ -133,15 +146,11 @@ void GameEngine::CheckShoot()
 		switch (shot2)
 		{
 		case Paper:
-			mPlayers.at(0)->LoseRound();
-			mPlayers.at(1)->WinRound();
-			mCountRound++;
+			isP1Win = false;
 			break;
 
 		case Scissors:
-			mPlayers.at(0)->WinRound();
-			mPlayers.at(1)->LoseRound();
-			mCountRound++;
+			isP1Win = true;
 			break;
 
 		case Rock:
@@ -157,9 +166,23 @@ void GameEngine::CheckShoot()
 		break;
 	}
 
-	cout << "Round " << mCountRound << " / " << mTotalRound << endl;
-	cout << "Score " << mPlayers.at(0)->GetScore().To_String() << endl << endl;
+	if (isP1Win)
+	{
+		mPlayers.at(0)->WinRound();
+		mPlayers.at(1)->LoseRound();
+		mCountRound++;
+	}
+	else
+	{
+		mPlayers.at(0)->LoseRound();
+		mPlayers.at(1)->WinRound();
+		mCountRound++;
+	}
 
+	cout << endl << ToString(shot1) << (isP1Win ? " <<<<<< " : " >>>>>> ") << ToString(shot2) << endl;
+
+	cout << "Score " << mPlayers.at(0)->GetScore().To_String()
+		<< "    [Round " << mCountRound << " / " << mTotalRound << "]" << endl << endl;
 
 	if (mCountRound < mTotalRound)
 	{
@@ -181,9 +204,12 @@ void GameEngine::ClearShoot()
 
 void GameEngine::EndGame()
 {
-
+	for (auto p : mPlayers)
+	{
+		p->SetCommand(nullptr);
+		p->EndGame();
+	}
 }
-
 
 void GameEngine::ChangeState(IState & state)
 {

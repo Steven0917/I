@@ -12,6 +12,7 @@ public:
 
 	virtual void StartGame();
 	virtual void Shoot();
+	virtual void EndGame();
 };
 
 
