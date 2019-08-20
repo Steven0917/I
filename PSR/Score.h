@@ -3,6 +3,10 @@
 #include <string>
 
 using namespace std;
+
+namespace Game {
+namespace PSR {
+
 class Score
 {
 public:
@@ -15,3 +19,6 @@ public:
 	string To_String();
 };
 
+
+}  // namespace PSR
+}  // namespace Game

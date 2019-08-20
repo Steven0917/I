@@ -3,11 +3,14 @@
 
 using namespace std;
 
-class Game;
+namespace Game {
+namespace PSR {
+
+class GameEngine;
 class IState
 {
 public:
-	IState(Game& game);
+	IState(GameEngine& game);
 	virtual ~IState();
 
 	virtual void Entry() = 0;
@@ -15,6 +18,9 @@ public:
 
 	virtual string ToString();
 protected:
-	Game& mGame;
+    GameEngine& mGame;
 };
 
+
+}  // namespace PSR
+}  // namespace Game

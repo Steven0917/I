@@ -1,6 +1,7 @@
-#include "ComputerPlayer.h"
+#include "computer_player.h"
 
-
+namespace Game {
+namespace PSR {
 
 ComputerPlayer::ComputerPlayer()
 {
@@ -22,3 +23,6 @@ void ComputerPlayer::Shoot()
 	mShot = static_cast<Shot>(rand() % Shot::Unknown);
 	ExecuteCommand();
 }
+
+}  // namespace PSR
+}  // namespace Game

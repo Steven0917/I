@@ -1,5 +1,8 @@
 #pragma once
-#include "IPlayer.h"
+#include "i_player.h"
+
+namespace Game {
+namespace PSR {
 
 class ComputerPlayer : public IPlayer
 {
@@ -11,3 +14,6 @@ public:
 	virtual void Shoot();
 };
 
+
+}  // namespace PSR
+}  // namespace Game

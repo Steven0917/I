@@ -1,10 +1,14 @@
 #pragma once
-#include "Shot.h"
-#include "Score.h"
-#include "Command.h"
+#include "shot.h"
+#include "score.h"
+#include "command.h"
 #include <memory>
 
 using namespace std;
+
+namespace Game {
+namespace PSR {
+
 class IPlayer
 {
 public:
@@ -33,3 +37,6 @@ protected:
 	Command* mCmd;
 };
 
+
+}  // namespace PSR
+}  // namespace Game

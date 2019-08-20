@@ -1,11 +1,14 @@
-#include "Game.h"
-#include "IPlayer.h"
-#include "CheckStartCmd.h"
-#include "CheckShootCmd.h"
-#include "ComputerPlayer.h"
+#include "game.h"
+#include "i_player.h"
+#include "check_start_cmd.h"
+#include "check_shoot_cmd.h"
+#include "computer_player.h"
 #include <iostream>
 
-Game::Game() : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState), mTotalRound(3)
+namespace Game {
+namespace PSR {
+
+GameEngine::GameEngine() : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState), mTotalRound(3)
 {
 	IPlayer* player1 = new ComputerPlayer();
 	IPlayer* player2 = new ComputerPlayer();
@@ -13,7 +16,7 @@ Game::Game() : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpSt
 	mPlayers.push_back(player2);
 }
 
-Game::~Game()
+GameEngine::~GameEngine()
 {
 	for (auto p : mPlayers)
 	{
@@ -25,7 +28,7 @@ Game::~Game()
 	mPlayers.clear();
 }
 
-void Game::StartGame()
+void GameEngine::StartGame()
 {
 	for (auto p : mPlayers)
 	{
@@ -34,7 +37,7 @@ void Game::StartGame()
 	}
 }
 
-void Game::CheckStart()
+void GameEngine::CheckStart()
 {
 	for (auto p : mPlayers)
 	{
@@ -47,7 +50,7 @@ void Game::CheckStart()
 	ChangeState(mShootState);
 }
 
-void Game::Shoot()
+void GameEngine::Shoot()
 {
 	for (auto p : mPlayers)
 	{
@@ -56,7 +59,7 @@ void Game::Shoot()
 	}
 }
 
-void Game::CheckShoot()
+void GameEngine::CheckShoot()
 {
 	Shot shot1 = mPlayers.at(0)->CheckShoot();
 	Shot shot2 = mPlayers.at(1)->CheckShoot();
@@ -168,7 +171,7 @@ void Game::CheckShoot()
 	}
 }
 
-void Game::ClearShoot()
+void GameEngine::ClearShoot()
 {
 	for (auto p : mPlayers)
 	{
@@ -176,16 +179,19 @@ void Game::ClearShoot()
 	}
 }
 
-void Game::EndGame()
+void GameEngine::EndGame()
 {
 
 }
 
 
-void Game::ChangeState(IState & state)
+void GameEngine::ChangeState(IState & state)
 {
 	//cout << "Change Status from " << mpState->ToString() << " to " << state.ToString() << endl;
 	mpState->Exit();
 	mpState = &state;
 	mpState->Entry();
 }
+
+}  // namespace PSR
+}  // namespace Game

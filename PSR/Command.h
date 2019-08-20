@@ -1,15 +1,21 @@
 #pragma once
-#include "Game.h"
+#include "game.h"
+
+namespace Game {
+namespace PSR {
 
 class Command
 {
 public:
-	Command(Game& game);
+	Command(GameEngine& game);
 	virtual ~Command();
 
 	virtual void Execute() {};
 
 protected:
-	Game* mReceiver;
+    GameEngine* mReceiver;
 };
 
+
+}  // namespace PSR
+}  // namespace Game

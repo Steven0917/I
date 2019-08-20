@@ -1,10 +1,13 @@
 #pragma once
-#include "IState.h"
+#include "i_state.h"
+
+namespace Game {
+namespace PSR {
 
 class ShootState : public IState
 {
 public:
-	ShootState(Game& game);
+	ShootState(GameEngine& game);
 	virtual ~ShootState();
 
 	virtual void Entry();
@@ -13,3 +16,6 @@ public:
 	virtual string ToString();
 };
 
+
+}  // namespace PSR
+}  // namespace Game

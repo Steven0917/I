@@ -1,7 +1,10 @@
-#include "ShootState.h"
-#include "Game.h"
+#include "shoot_state.h"
+#include "game.h"
 
-ShootState::ShootState(Game& game) : IState(game)
+namespace Game {
+namespace PSR {
+
+ShootState::ShootState(GameEngine& game) : IState(game)
 {
 }
 
@@ -23,3 +26,6 @@ string ShootState::ToString()
 {
 	return "ShootState";
 }
+
+}  // namespace PSR
+}  // namespace Game

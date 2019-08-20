@@ -1,10 +1,15 @@
-#include "Command.h"
+#include "command.h"
 
+namespace Game {
+namespace PSR {
 
-Command::Command(Game& game) : mReceiver(&game)
+Command::Command(GameEngine& game) : mReceiver(&game)
 {
 }
 
 Command::~Command()
 {
 }
+
+}  // namespace PSR
+}  // namespace Game

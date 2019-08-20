@@ -1,7 +1,10 @@
-#include "EndGameState.h"
-#include "Game.h"
+#include "end_game_state.h"
+#include "game.h"
 
-EndGameState::EndGameState(Game& game) : IState(game)
+namespace Game {
+namespace PSR {
+
+EndGameState::EndGameState(GameEngine& game) : IState(game)
 {
 }
 
@@ -22,3 +25,6 @@ string EndGameState::ToString()
 {
 	return "EndGameState";
 }
+
+}  // namespace PSR
+}  // namespace Game

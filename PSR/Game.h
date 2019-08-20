@@ -1,20 +1,24 @@
 #pragma once
-#include "IdleState.h"
-#include "ShootState.h"
-#include "EndGameState.h"
+
+#include "idle_state.h"
+#include "shoot_state.h"
+#include "end_game_state.h"
 #include <vector>
 #include <memory>
 
 using namespace std;
 
+namespace Game {
+namespace PSR {
+
 class CheckStartCmd;
 class CheckShootCmd;
 class IPlayer;
-class Game
+class GameEngine
 {
 public:
-	Game();
-	~Game();
+    GameEngine();
+	~GameEngine();
 
 	void StartGame();
 	void CheckStart();
@@ -38,3 +42,6 @@ protected:
 	vector<IPlayer*> mPlayers;
 };
 
+
+}  // namespace PSR
+}  // namespace Game

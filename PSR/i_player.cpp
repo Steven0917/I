@@ -1,5 +1,7 @@
-#include "IPlayer.h"
+#include "i_player.h"
 
+namespace Game {
+namespace PSR {
 
 IPlayer::IPlayer() : mShot(Shot::Unknown), mCmd(nullptr)
 {
@@ -56,3 +58,6 @@ void IPlayer::ExecuteCommand()
 		mCmd = nullptr;
 	}
 }
+
+}  // namespace PSR
+}  // namespace Game

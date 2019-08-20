@@ -1,8 +1,10 @@
-#include "Game.h"
+#include "game.h"
+
+using namespace Game::PSR;
 
 int main()
 {
-	Game game;
+    GameEngine game;
 	game.StartGame();
 
 	return 0;

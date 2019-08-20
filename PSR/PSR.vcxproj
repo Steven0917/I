@@ -149,32 +149,32 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CheckShootCmd.h" />
-    <ClInclude Include="CheckStartCmd.h" />
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="ComputerPlayer.h" />
-    <ClInclude Include="EndGameState.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="IdleState.h" />
-    <ClInclude Include="IPlayer.h" />
-    <ClInclude Include="IState.h" />
-    <ClInclude Include="Score.h" />
-    <ClInclude Include="ShootState.h" />
-    <ClInclude Include="Shot.h" />
+    <ClCompile Include="check_shoot_cmd.cpp" />
+    <ClCompile Include="check_start_cmd.cpp" />
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="computer_player.cpp" />
+    <ClCompile Include="end_game_state.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="idle_state.cpp" />
+    <ClCompile Include="i_player.cpp" />
+    <ClCompile Include="i_state.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="score.cpp" />
+    <ClCompile Include="shoot_state.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CheckShootCmd.cpp" />
-    <ClCompile Include="CheckStartCmd.cpp" />
-    <ClCompile Include="Command.cpp" />
-    <ClCompile Include="ComputerPlayer.cpp" />
-    <ClCompile Include="EndGameState.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="IdleState.cpp" />
-    <ClCompile Include="IPlayer.cpp" />
-    <ClCompile Include="IState.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Score.cpp" />
-    <ClCompile Include="ShootState.cpp" />
+    <ClInclude Include="check_shoot_cmd.h" />
+    <ClInclude Include="check_start_cmd.h" />
+    <ClInclude Include="command.h" />
+    <ClInclude Include="computer_player.h" />
+    <ClInclude Include="end_game_state.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="idle_state.h" />
+    <ClInclude Include="i_player.h" />
+    <ClInclude Include="i_state.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="shoot_state.h" />
+    <ClInclude Include="shot.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
