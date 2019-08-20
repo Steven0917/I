@@ -71,10 +71,11 @@ void Game::CheckShoot()
 		if (mCountRound < mTotalRound)
 		{
 			ChangeState(mShootState);
+            return;
 		}
 	}
 
-	/* Judge the round. 
+	/* Judge this round. 
 	   Update date score for players
 	   */
 	switch (shot1)
@@ -154,7 +155,6 @@ void Game::CheckShoot()
 	}
 
 	cout << "Round " << mCountRound << " / " << mTotalRound << endl;
-	cout << shot1 << " : " << shot2 << endl;
 	cout << "Score " << mPlayers.at(0)->GetScore().To_String() << endl << endl;
 
 
@@ -164,7 +164,7 @@ void Game::CheckShoot()
 	}
 	else if (mCountRound == mTotalRound)
 	{
-		//ChangeState(mEndGameState);
+		ChangeState(mEndGameState);
 	}
 }
 
@@ -184,7 +184,7 @@ void Game::EndGame()
 
 void Game::ChangeState(IState & state)
 {
-	cout << "Change Status from " << mpState->ToString() << " to " << state.ToString() << endl;
+	//cout << "Change Status from " << mpState->ToString() << " to " << state.ToString() << endl;
 	mpState->Exit();
 	mpState = &state;
 	mpState->Entry();
