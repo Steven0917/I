@@ -4,6 +4,7 @@
 #include "message.pb.h"
 #include "message_handler.h"
 #include "glog/logging.h"
+#include <thread>
 #include <google/protobuf/message.h>
 
 namespace Game {
@@ -43,7 +44,6 @@ bool Client::Start(void)
 
 void Client::Run(void)
 {
-    mMsgSender.SendStartGameReq();
     while (!mStop)
     {
 		shared_ptr<Message> msg = mMsgHandler.RecvMsg();

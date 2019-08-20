@@ -9,9 +9,9 @@
 namespace Game {
 namespace PSR {
 
-GameEngine::GameEngine() : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState), mTotalRound(3)
+GameEngine::GameEngine(Networker& networker) : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState), mTotalRound(3)
 {
-	IPlayer* player1 = new HumanPlayer();
+	IPlayer* player1 = new HumanPlayer(networker);
 	IPlayer* player2 = new ComputerPlayer();
 	mPlayers.push_back(player1);
 	mPlayers.push_back(player2);
@@ -109,8 +109,6 @@ void GameEngine::CheckShoot()
 			isP1Win = true;
 			break;
 
-		case Paper:
-		case Unknown:
 		default:
 			cout << "Error: " << shot1 << " : " << shot2 << endl;
 			break;
@@ -128,8 +126,6 @@ void GameEngine::CheckShoot()
 			isP1Win = false;
 			break;
 
-		case Scissors:
-		case Unknown:
 		default:
 			cout << "Error: " << shot1 << " : " << shot2 << endl;
 			break;
@@ -147,8 +143,6 @@ void GameEngine::CheckShoot()
 			isP1Win = true;
 			break;
 
-		case Rock:
-		case Unknown:
 		default:
 			cout << "Error: " << shot1 << " : " << shot2 << endl;
 			break;

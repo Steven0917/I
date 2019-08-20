@@ -3,8 +3,8 @@
 #include "idle_state.h"
 #include "shoot_state.h"
 #include "end_game_state.h"
+#include "networker.h"
 #include <vector>
-#include <memory>
 
 using namespace std;
 
@@ -17,7 +17,7 @@ class IPlayer;
 class GameEngine
 {
 public:
-    GameEngine();
+    GameEngine(Networker& networker);
 	~GameEngine();
 
 	void StartGame();

@@ -18,7 +18,6 @@ public:
     bool Start();
     void Run();
 
-
 private:
     bool   mStop;
 	Networker  mNetworker;

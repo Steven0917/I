@@ -46,7 +46,7 @@ int main()
 			client.Run();
         }
 
-        LOG(INFO) << "Game Paper Scissors Rock is terminated.";
+        LOG(INFO) << "Game is terminated.";
         Clearup();
 
         return 0;

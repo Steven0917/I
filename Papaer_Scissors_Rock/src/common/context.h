@@ -18,6 +18,7 @@ public:
     virtual void Process();
 
     void SetNetworker(Networker& networker);
+
 //protected:
 	NetworkHandler mMsgHandler;
     MessageSender  mMsgSender;

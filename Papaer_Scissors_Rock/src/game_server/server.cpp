@@ -14,7 +14,7 @@ class ClientConnection
 public:
     void operator() (Networker& networker, Server& server)
     {
-		GameEngine game;
+		GameEngine game(networker);
         game.StartGame();
     }
 };
