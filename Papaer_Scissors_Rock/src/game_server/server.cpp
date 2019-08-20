@@ -1,7 +1,7 @@
 #include "server.h"
 #include "server_config.h"
 #include "networker.h"
-#include "game_engine.h"
+#include "game.h"
 #include "message.pb.h"
 #include "glog/logging.h"
 #include <google/protobuf/message.h>
@@ -14,9 +14,8 @@ class ClientConnection
 public:
     void operator() (Networker& networker, Server& server)
     {
-		GameEngine game(networker);
-        game.Start();
-        //superNode.Run();
+		GameEngine game;
+        game.StartGame();
     }
 };
 

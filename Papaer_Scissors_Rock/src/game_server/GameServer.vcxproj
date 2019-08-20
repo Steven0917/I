@@ -89,7 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -109,7 +109,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -131,7 +131,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -155,7 +155,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -173,28 +173,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\common\context.cpp" />
-    <ClCompile Include="..\common\client_config.cpp" />
-    <ClCompile Include="..\common\event_queue.cpp" />
-    <ClCompile Include="..\common\message.pb.cc" />
-    <ClCompile Include="..\common\message_handler.cpp" />
-    <ClCompile Include="..\common\message_sender.cpp" />
-    <ClCompile Include="..\common\message_types.cpp" />
-    <ClCompile Include="..\common\networker.cpp" />
-    <ClCompile Include="..\common\network_handler.cpp" />
-    <ClCompile Include="..\common\server_config.cpp" />
-    <ClCompile Include="game_engine.cpp" />
-    <ClCompile Include="game_started_state.cpp" />
-    <ClCompile Include="game_state.cpp" />
-    <ClCompile Include="idle_state.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="server.cpp" />
-    <ClCompile Include="start_game_req_handler.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\common\context.h" />
     <ClInclude Include="..\common\client_config.h" />
+    <ClInclude Include="..\common\context.h" />
     <ClInclude Include="..\common\event_queue.h" />
     <ClInclude Include="..\common\if_networker.h" />
     <ClInclude Include="..\common\message.pb.h" />
@@ -204,14 +184,53 @@
     <ClInclude Include="..\common\networker.h" />
     <ClInclude Include="..\common\network_handler.h" />
     <ClInclude Include="..\common\server_config.h" />
+    <ClInclude Include="..\common\thread_pool.h" />
     <ClInclude Include="..\common\version.h" />
-    <ClInclude Include="game_engine.h" />
-    <ClInclude Include="game_started_state.h" />
-    <ClInclude Include="game_state.h" />
-    <ClInclude Include="idle_state.h" />
-    <ClInclude Include="player.h" />
+    <ClInclude Include="PSR\check_shoot_cmd.h" />
+    <ClInclude Include="PSR\check_start_cmd.h" />
+    <ClInclude Include="PSR\command.h" />
+    <ClInclude Include="PSR\computer_player.h" />
+    <ClInclude Include="PSR\end_game_state.h" />
+    <ClInclude Include="PSR\game.h" />
+    <ClInclude Include="PSR\human_player.h" />
+    <ClInclude Include="PSR\idle_state.h" />
+    <ClInclude Include="PSR\i_player.h" />
+    <ClInclude Include="PSR\i_state.h" />
+    <ClInclude Include="PSR\score.h" />
+    <ClInclude Include="PSR\shoot_state.h" />
+    <ClInclude Include="PSR\shot.h" />
     <ClInclude Include="server.h" />
     <ClInclude Include="start_game_req_handler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\client_config.cpp" />
+    <ClCompile Include="..\common\context.cpp" />
+    <ClCompile Include="..\common\event_queue.cpp" />
+    <ClCompile Include="..\common\message.pb.cc" />
+    <ClCompile Include="..\common\message_handler.cpp" />
+    <ClCompile Include="..\common\message_sender.cpp" />
+    <ClCompile Include="..\common\message_types.cpp" />
+    <ClCompile Include="..\common\networker.cpp" />
+    <ClCompile Include="..\common\network_handler.cpp" />
+    <ClCompile Include="..\common\server_config.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PSR\check_shoot_cmd.cpp" />
+    <ClCompile Include="PSR\check_start_cmd.cpp" />
+    <ClCompile Include="PSR\command.cpp" />
+    <ClCompile Include="PSR\computer_player.cpp" />
+    <ClCompile Include="PSR\end_game_state.cpp" />
+    <ClCompile Include="PSR\game.cpp" />
+    <ClCompile Include="PSR\human_player.cpp" />
+    <ClCompile Include="PSR\idle_state.cpp" />
+    <ClCompile Include="PSR\i_player.cpp" />
+    <ClCompile Include="PSR\i_state.cpp" />
+    <ClCompile Include="PSR\score.cpp" />
+    <ClCompile Include="PSR\shoot_state.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="start_game_req_handler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\common\message.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,7 +8,7 @@ using namespace Game::PSR;
 /* Start google log system */
 void InitLogger()
 {
-    FLAGS_alsologtostderr = 1;
+    FLAGS_alsologtostderr = 0;
     InitGoogleLogging("Game.PSR.Srv");
     SetStderrLogging(GLOG_ERROR);
     FLAGS_colorlogtostderr = true;
