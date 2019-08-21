@@ -4,17 +4,17 @@
 #include "check_shoot_cmd.h"
 #include "computer_player.h"
 #include "human_player.h"
+#include "human_remote_player.h"
 #include <iostream>
 
 namespace Game {
 namespace PSR {
 
-GameEngine::GameEngine(Networker& networker) : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState), mTotalRound(3)
+GameEngine::GameEngine(Networker& networker) : mIdleState(*this), mShootState(*this), mEndGameState(*this), mpState(&mIdleState),
+            mCurrentRound(1), mTotalRound(3)
 {
-	IPlayer* player1 = new HumanPlayer(networker);
-	IPlayer* player2 = new ComputerPlayer();
-	mPlayers.push_back(player1);
-	mPlayers.push_back(player2);
+	mPlayers.push_back(new HumanRemotePlayer(networker));
+	mPlayers.push_back(new ComputerPlayer());
 }
 
 GameEngine::~GameEngine()
@@ -31,10 +31,10 @@ GameEngine::~GameEngine()
 
 void GameEngine::StartGame()
 {
-	for (auto p : mPlayers)
+    for (int i = 0; i < mPlayers.size(); i++)
 	{
-		p->SetCommand(new CheckStartCmd(*this));
-		p->StartGame();
+        mPlayers.at(i)->SetCommand(new CheckStartCmd(*this));
+        mPlayers.at(i)->StartGame(this, i);
 	}
 }
 
@@ -53,7 +53,7 @@ void GameEngine::CheckStart()
 
 void GameEngine::Shoot()
 {
-	cout << "Round " << mCountRound + 1 << " / " << mTotalRound << endl;
+	cout << "Round " << mCurrentRound + 1 << " / " << mTotalRound << endl;
 	for (auto p : mPlayers)
 	{
 		p->SetCommand(new CheckShootCmd(*this));
@@ -68,12 +68,14 @@ void GameEngine::CheckShoot()
 
 	if (Unknown == shot1 || Unknown == shot2)
 	{
+        RoundUpdate(shot1, shot2, Try_Again);
 		return;
 	}
 
 	if (Invalid == shot1 || Invalid == shot2)
 	{
 		cout << "Invalid shot." << endl << endl;
+        RoundUpdate(shot1, shot2, Try_Again);
 		ChangeState(mShootState);
 		return;
 	}
@@ -83,9 +85,11 @@ void GameEngine::CheckShoot()
 		cout << endl << ToString(shot1) << " = " << ToString(shot2) << endl;
 
 		cout << "Score " << mPlayers.at(0)->GetScore().To_String()
-			 << "    [Round " << mCountRound + 1 << " / " << mTotalRound << "]" << endl << endl;
+			 << "    [Round " << mCurrentRound + 1 << " / " << mTotalRound << "]" << endl << endl;
+        
+        RoundUpdate(shot1, shot2, Try_Again);
 
-		if (mCountRound < mTotalRound)
+		if (mCurrentRound <= mTotalRound)
 		{
 			ChangeState(mShootState);
             return;
@@ -156,27 +160,30 @@ void GameEngine::CheckShoot()
 
 	if (isP1Win)
 	{
+        mScore._score[0] += 1;
 		mPlayers.at(0)->WinRound();
 		mPlayers.at(1)->LoseRound();
-		mCountRound++;
 	}
 	else
 	{
-		mPlayers.at(0)->LoseRound();
+        mScore._score[1] += 1;
+        mPlayers.at(0)->LoseRound();
 		mPlayers.at(1)->WinRound();
-		mCountRound++;
 	}
 
 	cout << endl << ToString(shot1) << (isP1Win ? " <<<<<< " : " >>>>>> ") << ToString(shot2) << endl;
 
 	cout << "Score " << mPlayers.at(0)->GetScore().To_String()
-		<< "    [Round " << mCountRound << " / " << mTotalRound << "]" << endl << endl;
+		<< "    [Round " << mCurrentRound << " / " << mTotalRound << "]" << endl << endl;
 
-	if (mCountRound < mTotalRound)
+    RoundUpdate(shot1, shot2, isP1Win? P1_Win: P1_Lose);
+    mCurrentRound++;
+
+	if (mCurrentRound <= mTotalRound)
 	{
 		ChangeState(mShootState);
 	}
-	else if (mCountRound == mTotalRound)
+	else if (mCurrentRound > mTotalRound)
 	{
 		ChangeState(mEndGameState);
 	}
@@ -188,6 +195,15 @@ void GameEngine::ClearShoot()
 	{
 		p->ClearShoot();
 	}
+}
+
+void GameEngine::RoundUpdate(Shot shot1, Shot shot2, RoundResult result)
+{
+    Shot shots[2] = { shot1, shot2 };
+    for (auto p : mPlayers)
+    {
+        p->UpdateRound(mCurrentRound, mTotalRound, shots, result, mScore);
+    }
 }
 
 void GameEngine::EndGame()

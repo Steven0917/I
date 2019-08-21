@@ -19,6 +19,16 @@ public:
 	string To_String();
 };
 
+class GameScore
+{
+public:
+    GameScore();
+    ~GameScore();
+
+    int _score[2];
+
+    bool GetScore(int player_id, int& self_score, int& counterpart_score);
+};
 
 }  // namespace PSR
 }  // namespace Game

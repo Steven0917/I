@@ -52,6 +52,46 @@ void MessageSender::SendStartGameRsp()
     SendResponse(rsp, MSG::Start_Game_Response);
 }
 
+void MessageSender::SendShootReq()
+{
+    Request* req = new Request();
+    ShootRequest* shoot = new ShootRequest();
+    req->set_allocated_shoot(shoot);
+
+    SendRequest(req, MSG::Shoot_Request);
+}
+
+void MessageSender::SendShootRsp(SHOT_TYPE shot)
+{
+    Response* rsp = new Response();
+    ShootResponse* shoot = new ShootResponse();
+    shoot->set_shot(shot);
+    rsp->set_allocated_shoot(shoot);
+
+    SendResponse(rsp, MSG::Shoot_Response);
+}
+
+void MessageSender::SendEndGameReq()
+{
+    Request* req = new Request();
+    EndGameRequest* end = new EndGameRequest();
+    req->set_allocated_end(end);
+
+    SendRequest(req, MSG::End_Game_Request);
+}
+
+void MessageSender::SendEndGameRsp()
+{
+    Response* rsp = new Response();
+    EndGameResponse* end = new EndGameResponse();
+    rsp->set_allocated_end(end);
+
+    SendResponse(rsp, MSG::End_Game_Response);
+}
+
+void MessageSender::SendRoundNotification(int round, int total, SHOT_TYPE self, SHOT_TYPE counterpart, ROUND_RESULT_TYPE result)
+{
+}
 
 /* Common Sender Operations */
 void MessageSender::SendRequest(Request* req, MSG type)
@@ -69,6 +109,15 @@ void MessageSender::SendResponse(Response* rsp, MSG type)
     msg->set_type(type);
     msg->set_description(MessageTypes::GetType(type));
     msg->set_allocated_response(rsp);
+    SendMsg(msg);
+}
+
+void MessageSender::SendNotification(Notification* notify, MSG type)
+{
+    shared_ptr<Message> msg(new Message());
+    msg->set_type(type);
+    msg->set_description(MessageTypes::GetType(type));
+    msg->set_allocated_notification(notify);
     SendMsg(msg);
 }
 

@@ -4,6 +4,7 @@ namespace Game {
 namespace PSR {
 
 enum Shot { Paper, Scissors, Rock, Unknown, Invalid };
+enum RoundResult { P1_Win, P1_Lose, Try_Again };
 
 inline const char* ToString(Shot s)
 {

@@ -3,7 +3,7 @@
 namespace Game {
 namespace PSR {
 
-IPlayer::IPlayer() : mShot(Shot::Unknown), mCmd(nullptr)
+IPlayer::IPlayer() : mId(-1), mShot(Shot::Unknown), mCmd(nullptr), mGame(nullptr)
 {
 }
 
@@ -23,7 +23,16 @@ Shot IPlayer::CheckShoot()
 
 void IPlayer::ClearShoot()
 {
-	mShot = Shot::Unknown;
+    mShot = Shot::Unknown;
+}
+
+void IPlayer::UpdateRound(int round, int total, Shot shots[2],
+    RoundResult result, GameScore& score)
+{
+}
+
+void IPlayer::NotifyGame(int round, int total, int self_score, int counterpart_score)
+{
 }
 
 void IPlayer::WinRound()

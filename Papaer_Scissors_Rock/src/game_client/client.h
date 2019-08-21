@@ -18,8 +18,8 @@ public:
     bool Start();
     void Run();
 
-private:
-    bool   mStop;
+protected:
+    bool       mStop;
 	Networker  mNetworker;
 
 };

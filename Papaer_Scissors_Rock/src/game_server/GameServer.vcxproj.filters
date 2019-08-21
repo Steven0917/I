@@ -102,6 +102,12 @@
     <ClInclude Include="PSR\shot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PSR\human_remote_player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PSR\start_game_rsp_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -177,6 +183,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PSR\shoot_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PSR\human_remote_player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PSR\start_game_rsp_handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

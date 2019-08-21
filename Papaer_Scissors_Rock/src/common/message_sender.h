@@ -20,10 +20,19 @@ public:
 
     void SendStartGameReq();
     void SendStartGameRsp();
+    void SendShootReq();
+    void SendShootRsp(SHOT_TYPE shot);
+    void SendEndGameReq();
+    void SendEndGameRsp();
+
+    void SendRoundNotification(int round, int total,
+        SHOT_TYPE self, SHOT_TYPE counterpart, ROUND_RESULT_TYPE result);
 
 private:
     void SendRequest(Request* req, MSG type);
     void SendResponse(Response* rsp, MSG type);
+    void SendNotification(Notification* notify, MSG type);
+
     void SendMsg(shared_ptr<Message>& msg);
 
 private:

@@ -12,9 +12,10 @@ ComputerPlayer::~ComputerPlayer()
 {
 }
 
-void ComputerPlayer::StartGame()
+void ComputerPlayer::StartGame(GameEngine* game, int id)
 {
 	mStarted = true;
+    IPlayer::StartGame(game, id);
 	ExecuteCommand();
 }
 
@@ -28,6 +29,10 @@ void ComputerPlayer::EndGame()
 {
 	//Nothing need to do for computer user.
 	ExecuteCommand();
+}
+
+void ComputerPlayer::UpdateRound(int round, int total, Shot shots[2], RoundResult result, GameScore & score)
+{
 }
 
 }  // namespace PSR

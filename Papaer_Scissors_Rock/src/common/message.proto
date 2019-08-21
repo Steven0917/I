@@ -20,7 +20,25 @@ enum MSG
     unknown_message = 0;
 
     Start_Game_Request  = 11;
-    Start_Game_Response = 21;
+    Start_Game_Response = 12;
+    Shoot_Request  = 21;
+    Shoot_Response = 22;
+    End_Game_Request  = 31;
+    End_Game_Response = 32;
+}
+
+enum SHOT_TYPE
+{
+    PAPER = 0;
+    SCISSORS = 1;
+    ROCK = 2;
+}
+
+enum ROUND_RESULT_TYPE
+{
+    WIN = 0;
+    LOSE = 1;
+    SHOOT_AGAIN = 2;
 }
 
 message StartGameRequest
@@ -33,14 +51,64 @@ message StartGameResponse
 
 }
 
+message ShootRequest
+{
+    int32 player_id = 1;
+    int32 round = 2;
+}
+
+message ShootResponse
+{
+    int32 player_id = 1;
+    int32 round = 2;
+    SHOT_TYPE shot = 3;
+}
+
+message EndGameRequest
+{
+
+}
+
+message EndGameResponse
+{
+
+}
+
+message RoundNotification
+{
+    int32 round = 1;
+    int32 total_round = 2;
+    SHOT_TYPE self_shot = 3;
+    SHOT_TYPE counterpart_shot = 4;
+    ROUND_RESULT_TYPE result = 5;
+    int32 self_score = 6;
+    int32 counterpart_score = 7;
+}
+
+message GameResultNotification
+{
+    int32 round = 1;
+    int32 total_round = 2;
+    int32 self_score = 3;
+    int32 counterpart_score = 4;
+}
+
 message Request
 {
-    StartGameRequest start = 11;
+    StartGameRequest start = 1;
+    ShootRequest     shoot = 2;
+    EndGameRequest   end = 3;
 }
 
 message Response
 {
-    StartGameResponse start = 11;
+    StartGameResponse start = 1;
+    ShootResponse     shoot = 2;
+    EndGameResponse   end = 3;
+}
+
+message Notification
+{
 }
 
 
@@ -50,8 +118,9 @@ message Message
     fixed32 sequence = 2;
     string description = 3;
 
-    Request    request = 6;
-    Response   response = 7;
+    Request      request = 6;
+    Response     response = 7;
+    Notification notification = 8;
 }
 
 // [END messages]

@@ -15,13 +15,17 @@ public:
 	IPlayer();
 	virtual ~IPlayer();
 
-	virtual void StartGame() {};
+    virtual void StartGame(GameEngine* game, int id) { mGame = game; mId = id; };
 	virtual void Shoot() {};
 	virtual void EndGame() {};
+    virtual void UpdateRound(int round, int total, Shot shots[2],
+        RoundResult result, GameScore& score);
+    virtual void NotifyGame(int round, int total, int self_score, int counterpart_score);
 
 	bool CheckStart();
 	Shot CheckShoot();
 	void ClearShoot();
+
 
 	void WinRound();
 	void LoseRound();
@@ -32,11 +36,13 @@ public:
 	void ExecuteCommand();
 
 protected:
-	bool mStarted;
+    int  mId;
+    bool mStarted;
 	Shot mShot;
 	Score mScore;
 
 	Command* mCmd;
+    GameEngine* mGame;
 };
 
 

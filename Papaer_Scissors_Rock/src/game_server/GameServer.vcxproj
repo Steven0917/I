@@ -89,7 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\;$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -109,7 +109,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\;$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -131,7 +131,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\;$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -155,7 +155,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\game_server\;$(SolutionDir)\src\game_server\PSR\;$(SolutionDir)\src\common\;$(SolutionDir)\src\protobuf\install\include\;$(SolutionDir)\src\glog\;</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4146</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -193,12 +193,14 @@
     <ClInclude Include="PSR\end_game_state.h" />
     <ClInclude Include="PSR\game.h" />
     <ClInclude Include="PSR\human_player.h" />
+    <ClInclude Include="PSR\human_remote_player.h" />
     <ClInclude Include="PSR\idle_state.h" />
     <ClInclude Include="PSR\i_player.h" />
     <ClInclude Include="PSR\i_state.h" />
     <ClInclude Include="PSR\score.h" />
     <ClInclude Include="PSR\shoot_state.h" />
     <ClInclude Include="PSR\shot.h" />
+    <ClInclude Include="PSR\start_game_rsp_handler.h" />
     <ClInclude Include="server.h" />
     <ClInclude Include="start_game_req_handler.h" />
   </ItemGroup>
@@ -221,11 +223,13 @@
     <ClCompile Include="PSR\end_game_state.cpp" />
     <ClCompile Include="PSR\game.cpp" />
     <ClCompile Include="PSR\human_player.cpp" />
+    <ClCompile Include="PSR\human_remote_player.cpp" />
     <ClCompile Include="PSR\idle_state.cpp" />
     <ClCompile Include="PSR\i_player.cpp" />
     <ClCompile Include="PSR\i_state.cpp" />
     <ClCompile Include="PSR\score.cpp" />
     <ClCompile Include="PSR\shoot_state.cpp" />
+    <ClCompile Include="PSR\start_game_rsp_handler.cpp" />
     <ClCompile Include="server.cpp" />
     <ClCompile Include="start_game_req_handler.cpp" />
   </ItemGroup>

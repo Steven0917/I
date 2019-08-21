@@ -5,17 +5,17 @@
 namespace Game {
 namespace PSR {
 
-HumanPlayer::HumanPlayer(Networker& networker) : Context(networker)
+HumanPlayer::HumanPlayer()
 {
 }
+
 
 HumanPlayer::~HumanPlayer()
 {
 }
 
-void HumanPlayer::StartGame()
+void HumanPlayer::StartGame(GameEngine* game, int id)
 {
-#if 0
 	cout << "**********************************************" << endl
 		 << "Welcome to Paper Scissors Rock Game!" << endl << endl
 		 << "You will play the game with computer. Rules:" << endl << endl
@@ -29,16 +29,13 @@ void HumanPlayer::StartGame()
 	cout << "Press Enter to start the game.";
 	cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
 	cout << "Game Started!" << endl << endl << endl;
-	mStarted = true;
+    IPlayer::StartGame(game, id);
+    mStarted = true;
 	ExecuteCommand();
-#else
-	mMsgSender.SendStartGameReq();
-#endif
 }
 
 void HumanPlayer::Shoot()
 {
-#if 0
 	cout << "Please Shoot [P, S, R]: ";
 	char c;
 	cin >> c;
@@ -64,14 +61,10 @@ void HumanPlayer::Shoot()
 	}
 
 	ExecuteCommand();
-#else
-	mMsgSender.SendShootReq();
-#endif
 }
 
 void HumanPlayer::EndGame()
 {
-#if 0
 	this_thread::sleep_for(1s);
 
 	cout << endl;
@@ -88,21 +81,10 @@ void HumanPlayer::EndGame()
 	cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
 
 	ExecuteCommand();
-#else
-	mMsgSender.SendEndGameReq();
-#endif
 }
 
-void HumanPlayer::OnStartGame()
+void HumanPlayer::UpdateRound(int round, int total, Shot shots[2], RoundResult result, GameScore & score)
 {
-	mStarted = true;
-	ExecuteCommand();
-}
-
-void HumanPlayer::OnShoot(Shot shot)
-{
-	mShot = shot;
-	ExecuteCommand();
 }
 
 }  // namespace PSR

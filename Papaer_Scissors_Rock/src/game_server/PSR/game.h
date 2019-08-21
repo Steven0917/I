@@ -2,6 +2,8 @@
 
 #include "idle_state.h"
 #include "shoot_state.h"
+#include "shot.h"
+#include "score.h"
 #include "end_game_state.h"
 #include "networker.h"
 #include <vector>
@@ -25,12 +27,12 @@ public:
 	void Shoot();
 	void CheckShoot();
 	void ClearShoot();
-	void EndGame();
-
+    void RoundUpdate(Shot shot1, Shot shot2, RoundResult result);
+    void EndGame();
 
 protected:
 	int mTotalRound;
-	int mCountRound;
+	int mCurrentRound;
 
 	IState*    mpState;
 	IdleState  mIdleState;
@@ -40,6 +42,7 @@ protected:
 	void ChangeState(IState& state);
 
 	vector<IPlayer*> mPlayers;
+    GameScore mScore;
 };
 
 

@@ -1,5 +1,5 @@
 #include "start_game_rsp_handler.h"
-#include "human_player.h"
+#include "human_remote_player.h"
 #include "glog/logging.h"
 
 namespace Game {
@@ -16,7 +16,7 @@ StartGameResponseHandler::~StartGameResponseHandler()
 void StartGameResponseHandler::Process(const Message& msg, Context& context)
 {
     LOG(INFO) << msg.type();
-    HumanPlayer& player = dynamic_cast<HumanPlayer&>(context);
+    HumanRemotePlayer& player = dynamic_cast<HumanRemotePlayer&>(context);
 
     //client.mMsgSender.SendStartGameRsp();
 }

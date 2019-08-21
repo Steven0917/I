@@ -28,6 +28,36 @@ class StartGameResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<StartGameResponse>
       _instance;
 } _StartGameResponse_default_instance_;
+class ShootRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<ShootRequest>
+      _instance;
+} _ShootRequest_default_instance_;
+class ShootResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<ShootResponse>
+      _instance;
+} _ShootResponse_default_instance_;
+class EndGameRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<EndGameRequest>
+      _instance;
+} _EndGameRequest_default_instance_;
+class EndGameResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<EndGameResponse>
+      _instance;
+} _EndGameResponse_default_instance_;
+class RoundNotificationDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<RoundNotification>
+      _instance;
+} _RoundNotification_default_instance_;
+class GameResultNotificationDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<GameResultNotification>
+      _instance;
+} _GameResultNotification_default_instance_;
 class RequestDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Request>
@@ -38,6 +68,11 @@ class ResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<Response>
       _instance;
 } _Response_default_instance_;
+class NotificationDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<Notification>
+      _instance;
+} _Notification_default_instance_;
 class MessageDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Message>
@@ -88,6 +123,132 @@ void InitDefaultsStartGameResponse() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsStartGameResponseImpl);
 }
 
+void InitDefaultsShootRequestImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_ShootRequest_default_instance_;
+    new (ptr) ::Game::PSR::ShootRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::ShootRequest::InitAsDefaultInstance();
+}
+
+void InitDefaultsShootRequest() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsShootRequestImpl);
+}
+
+void InitDefaultsShootResponseImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_ShootResponse_default_instance_;
+    new (ptr) ::Game::PSR::ShootResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::ShootResponse::InitAsDefaultInstance();
+}
+
+void InitDefaultsShootResponse() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsShootResponseImpl);
+}
+
+void InitDefaultsEndGameRequestImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_EndGameRequest_default_instance_;
+    new (ptr) ::Game::PSR::EndGameRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::EndGameRequest::InitAsDefaultInstance();
+}
+
+void InitDefaultsEndGameRequest() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsEndGameRequestImpl);
+}
+
+void InitDefaultsEndGameResponseImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_EndGameResponse_default_instance_;
+    new (ptr) ::Game::PSR::EndGameResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::EndGameResponse::InitAsDefaultInstance();
+}
+
+void InitDefaultsEndGameResponse() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsEndGameResponseImpl);
+}
+
+void InitDefaultsRoundNotificationImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_RoundNotification_default_instance_;
+    new (ptr) ::Game::PSR::RoundNotification();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::RoundNotification::InitAsDefaultInstance();
+}
+
+void InitDefaultsRoundNotification() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsRoundNotificationImpl);
+}
+
+void InitDefaultsGameResultNotificationImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_GameResultNotification_default_instance_;
+    new (ptr) ::Game::PSR::GameResultNotification();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::GameResultNotification::InitAsDefaultInstance();
+}
+
+void InitDefaultsGameResultNotification() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsGameResultNotificationImpl);
+}
+
 void InitDefaultsRequestImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -97,6 +258,8 @@ void InitDefaultsRequestImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   protobuf_message_2eproto::InitDefaultsStartGameRequest();
+  protobuf_message_2eproto::InitDefaultsShootRequest();
+  protobuf_message_2eproto::InitDefaultsEndGameRequest();
   {
     void* ptr = &::Game::PSR::_Request_default_instance_;
     new (ptr) ::Game::PSR::Request();
@@ -119,6 +282,8 @@ void InitDefaultsResponseImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   protobuf_message_2eproto::InitDefaultsStartGameResponse();
+  protobuf_message_2eproto::InitDefaultsShootResponse();
+  protobuf_message_2eproto::InitDefaultsEndGameResponse();
   {
     void* ptr = &::Game::PSR::_Response_default_instance_;
     new (ptr) ::Game::PSR::Response();
@@ -132,6 +297,27 @@ void InitDefaultsResponse() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsResponseImpl);
 }
 
+void InitDefaultsNotificationImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::Game::PSR::_Notification_default_instance_;
+    new (ptr) ::Game::PSR::Notification();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game::PSR::Notification::InitAsDefaultInstance();
+}
+
+void InitDefaultsNotification() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsNotificationImpl);
+}
+
 void InitDefaultsMessageImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -142,6 +328,7 @@ void InitDefaultsMessageImpl() {
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   protobuf_message_2eproto::InitDefaultsRequest();
   protobuf_message_2eproto::InitDefaultsResponse();
+  protobuf_message_2eproto::InitDefaultsNotification();
   {
     void* ptr = &::Game::PSR::_Message_default_instance_;
     new (ptr) ::Game::PSR::Message();
@@ -162,7 +349,33 @@ bool MSG_IsValid(int value) {
   switch (value) {
     case 0:
     case 11:
+    case 12:
     case 21:
+    case 22:
+    case 31:
+    case 32:
+      return true;
+    default:
+      return false;
+  }
+}
+
+bool SHOT_TYPE_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+bool ROUND_RESULT_TYPE_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
       return true;
     default:
       return false;
@@ -486,12 +699,1485 @@ void StartGameResponse::InternalSwap(StartGameResponse* other) {
 
 // ===================================================================
 
+void ShootRequest::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ShootRequest::kPlayerIdFieldNumber;
+const int ShootRequest::kRoundFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+ShootRequest::ShootRequest()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsShootRequest();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.ShootRequest)
+}
+ShootRequest::ShootRequest(const ShootRequest& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&player_id_, &from.player_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&round_) -
+    reinterpret_cast<char*>(&player_id_)) + sizeof(round_));
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.ShootRequest)
+}
+
+void ShootRequest::SharedCtor() {
+  ::memset(&player_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&round_) -
+      reinterpret_cast<char*>(&player_id_)) + sizeof(round_));
+  _cached_size_ = 0;
+}
+
+ShootRequest::~ShootRequest() {
+  // @@protoc_insertion_point(destructor:Game.PSR.ShootRequest)
+  SharedDtor();
+}
+
+void ShootRequest::SharedDtor() {
+}
+
+void ShootRequest::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ShootRequest& ShootRequest::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsShootRequest();
+  return *internal_default_instance();
+}
+
+ShootRequest* ShootRequest::New(::google::protobuf::Arena* arena) const {
+  ShootRequest* n = new ShootRequest;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void ShootRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.ShootRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&player_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&round_) -
+      reinterpret_cast<char*>(&player_id_)) + sizeof(round_));
+  _internal_metadata_.Clear();
+}
+
+bool ShootRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.ShootRequest)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 player_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &player_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 round = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &round_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+            input, tag, &unknown_fields_stream));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.ShootRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.ShootRequest)
+  return false;
+#undef DO_
+}
+
+void ShootRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.ShootRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 player_id = 1;
+  if (this->player_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->player_id(), output);
+  }
+
+  // int32 round = 2;
+  if (this->round() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->round(), output);
+  }
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.ShootRequest)
+}
+
+size_t ShootRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.ShootRequest)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  // int32 player_id = 1;
+  if (this->player_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->player_id());
+  }
+
+  // int32 round = 2;
+  if (this->round() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->round());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void ShootRequest::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const ShootRequest*>(&from));
+}
+
+void ShootRequest::MergeFrom(const ShootRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.ShootRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.player_id() != 0) {
+    set_player_id(from.player_id());
+  }
+  if (from.round() != 0) {
+    set_round(from.round());
+  }
+}
+
+void ShootRequest::CopyFrom(const ShootRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.ShootRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ShootRequest::IsInitialized() const {
+  return true;
+}
+
+void ShootRequest::Swap(ShootRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ShootRequest::InternalSwap(ShootRequest* other) {
+  using std::swap;
+  swap(player_id_, other->player_id_);
+  swap(round_, other->round_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string ShootRequest::GetTypeName() const {
+  return "Game.PSR.ShootRequest";
+}
+
+
+// ===================================================================
+
+void ShootResponse::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ShootResponse::kPlayerIdFieldNumber;
+const int ShootResponse::kRoundFieldNumber;
+const int ShootResponse::kShotFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+ShootResponse::ShootResponse()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsShootResponse();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.ShootResponse)
+}
+ShootResponse::ShootResponse(const ShootResponse& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&player_id_, &from.player_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&shot_) -
+    reinterpret_cast<char*>(&player_id_)) + sizeof(shot_));
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.ShootResponse)
+}
+
+void ShootResponse::SharedCtor() {
+  ::memset(&player_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&shot_) -
+      reinterpret_cast<char*>(&player_id_)) + sizeof(shot_));
+  _cached_size_ = 0;
+}
+
+ShootResponse::~ShootResponse() {
+  // @@protoc_insertion_point(destructor:Game.PSR.ShootResponse)
+  SharedDtor();
+}
+
+void ShootResponse::SharedDtor() {
+}
+
+void ShootResponse::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ShootResponse& ShootResponse::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsShootResponse();
+  return *internal_default_instance();
+}
+
+ShootResponse* ShootResponse::New(::google::protobuf::Arena* arena) const {
+  ShootResponse* n = new ShootResponse;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void ShootResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.ShootResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&player_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&shot_) -
+      reinterpret_cast<char*>(&player_id_)) + sizeof(shot_));
+  _internal_metadata_.Clear();
+}
+
+bool ShootResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.ShootResponse)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 player_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &player_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 round = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &round_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.SHOT_TYPE shot = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_shot(static_cast< ::Game::PSR::SHOT_TYPE >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+            input, tag, &unknown_fields_stream));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.ShootResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.ShootResponse)
+  return false;
+#undef DO_
+}
+
+void ShootResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.ShootResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 player_id = 1;
+  if (this->player_id() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->player_id(), output);
+  }
+
+  // int32 round = 2;
+  if (this->round() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->round(), output);
+  }
+
+  // .Game.PSR.SHOT_TYPE shot = 3;
+  if (this->shot() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      3, this->shot(), output);
+  }
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.ShootResponse)
+}
+
+size_t ShootResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.ShootResponse)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  // int32 player_id = 1;
+  if (this->player_id() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->player_id());
+  }
+
+  // int32 round = 2;
+  if (this->round() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->round());
+  }
+
+  // .Game.PSR.SHOT_TYPE shot = 3;
+  if (this->shot() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->shot());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void ShootResponse::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const ShootResponse*>(&from));
+}
+
+void ShootResponse::MergeFrom(const ShootResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.ShootResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.player_id() != 0) {
+    set_player_id(from.player_id());
+  }
+  if (from.round() != 0) {
+    set_round(from.round());
+  }
+  if (from.shot() != 0) {
+    set_shot(from.shot());
+  }
+}
+
+void ShootResponse::CopyFrom(const ShootResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.ShootResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ShootResponse::IsInitialized() const {
+  return true;
+}
+
+void ShootResponse::Swap(ShootResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ShootResponse::InternalSwap(ShootResponse* other) {
+  using std::swap;
+  swap(player_id_, other->player_id_);
+  swap(round_, other->round_);
+  swap(shot_, other->shot_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string ShootResponse::GetTypeName() const {
+  return "Game.PSR.ShootResponse";
+}
+
+
+// ===================================================================
+
+void EndGameRequest::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+EndGameRequest::EndGameRequest()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsEndGameRequest();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.EndGameRequest)
+}
+EndGameRequest::EndGameRequest(const EndGameRequest& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.EndGameRequest)
+}
+
+void EndGameRequest::SharedCtor() {
+  _cached_size_ = 0;
+}
+
+EndGameRequest::~EndGameRequest() {
+  // @@protoc_insertion_point(destructor:Game.PSR.EndGameRequest)
+  SharedDtor();
+}
+
+void EndGameRequest::SharedDtor() {
+}
+
+void EndGameRequest::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const EndGameRequest& EndGameRequest::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsEndGameRequest();
+  return *internal_default_instance();
+}
+
+EndGameRequest* EndGameRequest::New(::google::protobuf::Arena* arena) const {
+  EndGameRequest* n = new EndGameRequest;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void EndGameRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.EndGameRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool EndGameRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.EndGameRequest)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+        input, tag, &unknown_fields_stream));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.EndGameRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.EndGameRequest)
+  return false;
+#undef DO_
+}
+
+void EndGameRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.EndGameRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.EndGameRequest)
+}
+
+size_t EndGameRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.EndGameRequest)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void EndGameRequest::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const EndGameRequest*>(&from));
+}
+
+void EndGameRequest::MergeFrom(const EndGameRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.EndGameRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void EndGameRequest::CopyFrom(const EndGameRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.EndGameRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EndGameRequest::IsInitialized() const {
+  return true;
+}
+
+void EndGameRequest::Swap(EndGameRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void EndGameRequest::InternalSwap(EndGameRequest* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string EndGameRequest::GetTypeName() const {
+  return "Game.PSR.EndGameRequest";
+}
+
+
+// ===================================================================
+
+void EndGameResponse::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+EndGameResponse::EndGameResponse()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsEndGameResponse();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.EndGameResponse)
+}
+EndGameResponse::EndGameResponse(const EndGameResponse& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.EndGameResponse)
+}
+
+void EndGameResponse::SharedCtor() {
+  _cached_size_ = 0;
+}
+
+EndGameResponse::~EndGameResponse() {
+  // @@protoc_insertion_point(destructor:Game.PSR.EndGameResponse)
+  SharedDtor();
+}
+
+void EndGameResponse::SharedDtor() {
+}
+
+void EndGameResponse::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const EndGameResponse& EndGameResponse::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsEndGameResponse();
+  return *internal_default_instance();
+}
+
+EndGameResponse* EndGameResponse::New(::google::protobuf::Arena* arena) const {
+  EndGameResponse* n = new EndGameResponse;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void EndGameResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.EndGameResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool EndGameResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.EndGameResponse)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+        input, tag, &unknown_fields_stream));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.EndGameResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.EndGameResponse)
+  return false;
+#undef DO_
+}
+
+void EndGameResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.EndGameResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.EndGameResponse)
+}
+
+size_t EndGameResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.EndGameResponse)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void EndGameResponse::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const EndGameResponse*>(&from));
+}
+
+void EndGameResponse::MergeFrom(const EndGameResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.EndGameResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void EndGameResponse::CopyFrom(const EndGameResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.EndGameResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EndGameResponse::IsInitialized() const {
+  return true;
+}
+
+void EndGameResponse::Swap(EndGameResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void EndGameResponse::InternalSwap(EndGameResponse* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string EndGameResponse::GetTypeName() const {
+  return "Game.PSR.EndGameResponse";
+}
+
+
+// ===================================================================
+
+void RoundNotification::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RoundNotification::kRoundFieldNumber;
+const int RoundNotification::kTotalRoundFieldNumber;
+const int RoundNotification::kSelfShotFieldNumber;
+const int RoundNotification::kCounterpartShotFieldNumber;
+const int RoundNotification::kResultFieldNumber;
+const int RoundNotification::kSelfScoreFieldNumber;
+const int RoundNotification::kCounterpartScoreFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+RoundNotification::RoundNotification()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsRoundNotification();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.RoundNotification)
+}
+RoundNotification::RoundNotification(const RoundNotification& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&round_, &from.round_,
+    static_cast<size_t>(reinterpret_cast<char*>(&counterpart_score_) -
+    reinterpret_cast<char*>(&round_)) + sizeof(counterpart_score_));
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.RoundNotification)
+}
+
+void RoundNotification::SharedCtor() {
+  ::memset(&round_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&counterpart_score_) -
+      reinterpret_cast<char*>(&round_)) + sizeof(counterpart_score_));
+  _cached_size_ = 0;
+}
+
+RoundNotification::~RoundNotification() {
+  // @@protoc_insertion_point(destructor:Game.PSR.RoundNotification)
+  SharedDtor();
+}
+
+void RoundNotification::SharedDtor() {
+}
+
+void RoundNotification::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const RoundNotification& RoundNotification::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsRoundNotification();
+  return *internal_default_instance();
+}
+
+RoundNotification* RoundNotification::New(::google::protobuf::Arena* arena) const {
+  RoundNotification* n = new RoundNotification;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void RoundNotification::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.RoundNotification)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&round_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&counterpart_score_) -
+      reinterpret_cast<char*>(&round_)) + sizeof(counterpart_score_));
+  _internal_metadata_.Clear();
+}
+
+bool RoundNotification::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.RoundNotification)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 round = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &round_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 total_round = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &total_round_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.SHOT_TYPE self_shot = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_self_shot(static_cast< ::Game::PSR::SHOT_TYPE >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.SHOT_TYPE counterpart_shot = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_counterpart_shot(static_cast< ::Game::PSR::SHOT_TYPE >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.ROUND_RESULT_TYPE result = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_result(static_cast< ::Game::PSR::ROUND_RESULT_TYPE >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 self_score = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &self_score_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 counterpart_score = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &counterpart_score_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+            input, tag, &unknown_fields_stream));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.RoundNotification)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.RoundNotification)
+  return false;
+#undef DO_
+}
+
+void RoundNotification::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.RoundNotification)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 round = 1;
+  if (this->round() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->round(), output);
+  }
+
+  // int32 total_round = 2;
+  if (this->total_round() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->total_round(), output);
+  }
+
+  // .Game.PSR.SHOT_TYPE self_shot = 3;
+  if (this->self_shot() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      3, this->self_shot(), output);
+  }
+
+  // .Game.PSR.SHOT_TYPE counterpart_shot = 4;
+  if (this->counterpart_shot() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      4, this->counterpart_shot(), output);
+  }
+
+  // .Game.PSR.ROUND_RESULT_TYPE result = 5;
+  if (this->result() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      5, this->result(), output);
+  }
+
+  // int32 self_score = 6;
+  if (this->self_score() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->self_score(), output);
+  }
+
+  // int32 counterpart_score = 7;
+  if (this->counterpart_score() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(7, this->counterpart_score(), output);
+  }
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.RoundNotification)
+}
+
+size_t RoundNotification::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.RoundNotification)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  // int32 round = 1;
+  if (this->round() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->round());
+  }
+
+  // int32 total_round = 2;
+  if (this->total_round() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->total_round());
+  }
+
+  // .Game.PSR.SHOT_TYPE self_shot = 3;
+  if (this->self_shot() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->self_shot());
+  }
+
+  // .Game.PSR.SHOT_TYPE counterpart_shot = 4;
+  if (this->counterpart_shot() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->counterpart_shot());
+  }
+
+  // .Game.PSR.ROUND_RESULT_TYPE result = 5;
+  if (this->result() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->result());
+  }
+
+  // int32 self_score = 6;
+  if (this->self_score() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->self_score());
+  }
+
+  // int32 counterpart_score = 7;
+  if (this->counterpart_score() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->counterpart_score());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void RoundNotification::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const RoundNotification*>(&from));
+}
+
+void RoundNotification::MergeFrom(const RoundNotification& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.RoundNotification)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.round() != 0) {
+    set_round(from.round());
+  }
+  if (from.total_round() != 0) {
+    set_total_round(from.total_round());
+  }
+  if (from.self_shot() != 0) {
+    set_self_shot(from.self_shot());
+  }
+  if (from.counterpart_shot() != 0) {
+    set_counterpart_shot(from.counterpart_shot());
+  }
+  if (from.result() != 0) {
+    set_result(from.result());
+  }
+  if (from.self_score() != 0) {
+    set_self_score(from.self_score());
+  }
+  if (from.counterpart_score() != 0) {
+    set_counterpart_score(from.counterpart_score());
+  }
+}
+
+void RoundNotification::CopyFrom(const RoundNotification& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.RoundNotification)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RoundNotification::IsInitialized() const {
+  return true;
+}
+
+void RoundNotification::Swap(RoundNotification* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void RoundNotification::InternalSwap(RoundNotification* other) {
+  using std::swap;
+  swap(round_, other->round_);
+  swap(total_round_, other->total_round_);
+  swap(self_shot_, other->self_shot_);
+  swap(counterpart_shot_, other->counterpart_shot_);
+  swap(result_, other->result_);
+  swap(self_score_, other->self_score_);
+  swap(counterpart_score_, other->counterpart_score_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string RoundNotification::GetTypeName() const {
+  return "Game.PSR.RoundNotification";
+}
+
+
+// ===================================================================
+
+void GameResultNotification::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int GameResultNotification::kTotalRoundFieldNumber;
+const int GameResultNotification::kSelfScoreFieldNumber;
+const int GameResultNotification::kCounterpartScoreFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+GameResultNotification::GameResultNotification()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsGameResultNotification();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.GameResultNotification)
+}
+GameResultNotification::GameResultNotification(const GameResultNotification& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&total_round_, &from.total_round_,
+    static_cast<size_t>(reinterpret_cast<char*>(&counterpart_score_) -
+    reinterpret_cast<char*>(&total_round_)) + sizeof(counterpart_score_));
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.GameResultNotification)
+}
+
+void GameResultNotification::SharedCtor() {
+  ::memset(&total_round_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&counterpart_score_) -
+      reinterpret_cast<char*>(&total_round_)) + sizeof(counterpart_score_));
+  _cached_size_ = 0;
+}
+
+GameResultNotification::~GameResultNotification() {
+  // @@protoc_insertion_point(destructor:Game.PSR.GameResultNotification)
+  SharedDtor();
+}
+
+void GameResultNotification::SharedDtor() {
+}
+
+void GameResultNotification::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const GameResultNotification& GameResultNotification::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsGameResultNotification();
+  return *internal_default_instance();
+}
+
+GameResultNotification* GameResultNotification::New(::google::protobuf::Arena* arena) const {
+  GameResultNotification* n = new GameResultNotification;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void GameResultNotification::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.GameResultNotification)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&total_round_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&counterpart_score_) -
+      reinterpret_cast<char*>(&total_round_)) + sizeof(counterpart_score_));
+  _internal_metadata_.Clear();
+}
+
+bool GameResultNotification::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.GameResultNotification)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 total_round = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &total_round_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 self_score = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &self_score_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 counterpart_score = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &counterpart_score_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+            input, tag, &unknown_fields_stream));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.GameResultNotification)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.GameResultNotification)
+  return false;
+#undef DO_
+}
+
+void GameResultNotification::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.GameResultNotification)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 total_round = 1;
+  if (this->total_round() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->total_round(), output);
+  }
+
+  // int32 self_score = 2;
+  if (this->self_score() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->self_score(), output);
+  }
+
+  // int32 counterpart_score = 3;
+  if (this->counterpart_score() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->counterpart_score(), output);
+  }
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.GameResultNotification)
+}
+
+size_t GameResultNotification::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.GameResultNotification)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  // int32 total_round = 1;
+  if (this->total_round() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->total_round());
+  }
+
+  // int32 self_score = 2;
+  if (this->self_score() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->self_score());
+  }
+
+  // int32 counterpart_score = 3;
+  if (this->counterpart_score() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->counterpart_score());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void GameResultNotification::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const GameResultNotification*>(&from));
+}
+
+void GameResultNotification::MergeFrom(const GameResultNotification& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.GameResultNotification)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.total_round() != 0) {
+    set_total_round(from.total_round());
+  }
+  if (from.self_score() != 0) {
+    set_self_score(from.self_score());
+  }
+  if (from.counterpart_score() != 0) {
+    set_counterpart_score(from.counterpart_score());
+  }
+}
+
+void GameResultNotification::CopyFrom(const GameResultNotification& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.GameResultNotification)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GameResultNotification::IsInitialized() const {
+  return true;
+}
+
+void GameResultNotification::Swap(GameResultNotification* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void GameResultNotification::InternalSwap(GameResultNotification* other) {
+  using std::swap;
+  swap(total_round_, other->total_round_);
+  swap(self_score_, other->self_score_);
+  swap(counterpart_score_, other->counterpart_score_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string GameResultNotification::GetTypeName() const {
+  return "Game.PSR.GameResultNotification";
+}
+
+
+// ===================================================================
+
 void Request::InitAsDefaultInstance() {
   ::Game::PSR::_Request_default_instance_._instance.get_mutable()->start_ = const_cast< ::Game::PSR::StartGameRequest*>(
       ::Game::PSR::StartGameRequest::internal_default_instance());
+  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->shoot_ = const_cast< ::Game::PSR::ShootRequest*>(
+      ::Game::PSR::ShootRequest::internal_default_instance());
+  ::Game::PSR::_Request_default_instance_._instance.get_mutable()->end_ = const_cast< ::Game::PSR::EndGameRequest*>(
+      ::Game::PSR::EndGameRequest::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Request::kStartFieldNumber;
+const int Request::kShootFieldNumber;
+const int Request::kEndFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Request::Request()
@@ -512,11 +2198,23 @@ Request::Request(const Request& from)
   } else {
     start_ = NULL;
   }
+  if (from.has_shoot()) {
+    shoot_ = new ::Game::PSR::ShootRequest(*from.shoot_);
+  } else {
+    shoot_ = NULL;
+  }
+  if (from.has_end()) {
+    end_ = new ::Game::PSR::EndGameRequest(*from.end_);
+  } else {
+    end_ = NULL;
+  }
   // @@protoc_insertion_point(copy_constructor:Game.PSR.Request)
 }
 
 void Request::SharedCtor() {
-  start_ = NULL;
+  ::memset(&start_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&end_) -
+      reinterpret_cast<char*>(&start_)) + sizeof(end_));
   _cached_size_ = 0;
 }
 
@@ -527,6 +2225,8 @@ Request::~Request() {
 
 void Request::SharedDtor() {
   if (this != internal_default_instance()) delete start_;
+  if (this != internal_default_instance()) delete shoot_;
+  if (this != internal_default_instance()) delete end_;
 }
 
 void Request::SetCachedSize(int size) const {
@@ -557,6 +2257,14 @@ void Request::Clear() {
     delete start_;
   }
   start_ = NULL;
+  if (GetArenaNoVirtual() == NULL && shoot_ != NULL) {
+    delete shoot_;
+  }
+  shoot_ = NULL;
+  if (GetArenaNoVirtual() == NULL && end_ != NULL) {
+    delete end_;
+  }
+  end_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -576,12 +2284,36 @@ bool Request::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Game.PSR.StartGameRequest start = 11;
-      case 11: {
+      // .Game.PSR.StartGameRequest start = 1;
+      case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_start()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.ShootRequest shoot = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_shoot()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.EndGameRequest end = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_end()));
         } else {
           goto handle_unusual;
         }
@@ -614,10 +2346,22 @@ void Request::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Game.PSR.StartGameRequest start = 11;
+  // .Game.PSR.StartGameRequest start = 1;
   if (this->has_start()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      11, *this->start_, output);
+      1, *this->start_, output);
+  }
+
+  // .Game.PSR.ShootRequest shoot = 2;
+  if (this->has_shoot()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessage(
+      2, *this->shoot_, output);
+  }
+
+  // .Game.PSR.EndGameRequest end = 3;
+  if (this->has_end()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessage(
+      3, *this->end_, output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
@@ -631,11 +2375,25 @@ size_t Request::ByteSizeLong() const {
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // .Game.PSR.StartGameRequest start = 11;
+  // .Game.PSR.StartGameRequest start = 1;
   if (this->has_start()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->start_);
+  }
+
+  // .Game.PSR.ShootRequest shoot = 2;
+  if (this->has_shoot()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->shoot_);
+  }
+
+  // .Game.PSR.EndGameRequest end = 3;
+  if (this->has_end()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->end_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -660,6 +2418,12 @@ void Request::MergeFrom(const Request& from) {
   if (from.has_start()) {
     mutable_start()->::Game::PSR::StartGameRequest::MergeFrom(from.start());
   }
+  if (from.has_shoot()) {
+    mutable_shoot()->::Game::PSR::ShootRequest::MergeFrom(from.shoot());
+  }
+  if (from.has_end()) {
+    mutable_end()->::Game::PSR::EndGameRequest::MergeFrom(from.end());
+  }
 }
 
 void Request::CopyFrom(const Request& from) {
@@ -680,6 +2444,8 @@ void Request::Swap(Request* other) {
 void Request::InternalSwap(Request* other) {
   using std::swap;
   swap(start_, other->start_);
+  swap(shoot_, other->shoot_);
+  swap(end_, other->end_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
@@ -694,9 +2460,15 @@ void Request::InternalSwap(Request* other) {
 void Response::InitAsDefaultInstance() {
   ::Game::PSR::_Response_default_instance_._instance.get_mutable()->start_ = const_cast< ::Game::PSR::StartGameResponse*>(
       ::Game::PSR::StartGameResponse::internal_default_instance());
+  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->shoot_ = const_cast< ::Game::PSR::ShootResponse*>(
+      ::Game::PSR::ShootResponse::internal_default_instance());
+  ::Game::PSR::_Response_default_instance_._instance.get_mutable()->end_ = const_cast< ::Game::PSR::EndGameResponse*>(
+      ::Game::PSR::EndGameResponse::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Response::kStartFieldNumber;
+const int Response::kShootFieldNumber;
+const int Response::kEndFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Response::Response()
@@ -717,11 +2489,23 @@ Response::Response(const Response& from)
   } else {
     start_ = NULL;
   }
+  if (from.has_shoot()) {
+    shoot_ = new ::Game::PSR::ShootResponse(*from.shoot_);
+  } else {
+    shoot_ = NULL;
+  }
+  if (from.has_end()) {
+    end_ = new ::Game::PSR::EndGameResponse(*from.end_);
+  } else {
+    end_ = NULL;
+  }
   // @@protoc_insertion_point(copy_constructor:Game.PSR.Response)
 }
 
 void Response::SharedCtor() {
-  start_ = NULL;
+  ::memset(&start_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&end_) -
+      reinterpret_cast<char*>(&start_)) + sizeof(end_));
   _cached_size_ = 0;
 }
 
@@ -732,6 +2516,8 @@ Response::~Response() {
 
 void Response::SharedDtor() {
   if (this != internal_default_instance()) delete start_;
+  if (this != internal_default_instance()) delete shoot_;
+  if (this != internal_default_instance()) delete end_;
 }
 
 void Response::SetCachedSize(int size) const {
@@ -762,6 +2548,14 @@ void Response::Clear() {
     delete start_;
   }
   start_ = NULL;
+  if (GetArenaNoVirtual() == NULL && shoot_ != NULL) {
+    delete shoot_;
+  }
+  shoot_ = NULL;
+  if (GetArenaNoVirtual() == NULL && end_ != NULL) {
+    delete end_;
+  }
+  end_ = NULL;
   _internal_metadata_.Clear();
 }
 
@@ -781,12 +2575,36 @@ bool Response::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Game.PSR.StartGameResponse start = 11;
-      case 11: {
+      // .Game.PSR.StartGameResponse start = 1;
+      case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_start()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.ShootResponse shoot = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_shoot()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Game.PSR.EndGameResponse end = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_end()));
         } else {
           goto handle_unusual;
         }
@@ -819,10 +2637,22 @@ void Response::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Game.PSR.StartGameResponse start = 11;
+  // .Game.PSR.StartGameResponse start = 1;
   if (this->has_start()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      11, *this->start_, output);
+      1, *this->start_, output);
+  }
+
+  // .Game.PSR.ShootResponse shoot = 2;
+  if (this->has_shoot()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessage(
+      2, *this->shoot_, output);
+  }
+
+  // .Game.PSR.EndGameResponse end = 3;
+  if (this->has_end()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessage(
+      3, *this->end_, output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
@@ -836,11 +2666,25 @@ size_t Response::ByteSizeLong() const {
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // .Game.PSR.StartGameResponse start = 11;
+  // .Game.PSR.StartGameResponse start = 1;
   if (this->has_start()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->start_);
+  }
+
+  // .Game.PSR.ShootResponse shoot = 2;
+  if (this->has_shoot()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->shoot_);
+  }
+
+  // .Game.PSR.EndGameResponse end = 3;
+  if (this->has_end()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->end_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -865,6 +2709,12 @@ void Response::MergeFrom(const Response& from) {
   if (from.has_start()) {
     mutable_start()->::Game::PSR::StartGameResponse::MergeFrom(from.start());
   }
+  if (from.has_shoot()) {
+    mutable_shoot()->::Game::PSR::ShootResponse::MergeFrom(from.shoot());
+  }
+  if (from.has_end()) {
+    mutable_end()->::Game::PSR::EndGameResponse::MergeFrom(from.end());
+  }
 }
 
 void Response::CopyFrom(const Response& from) {
@@ -885,6 +2735,8 @@ void Response::Swap(Response* other) {
 void Response::InternalSwap(Response* other) {
   using std::swap;
   swap(start_, other->start_);
+  swap(shoot_, other->shoot_);
+  swap(end_, other->end_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
@@ -896,11 +2748,170 @@ void Response::InternalSwap(Response* other) {
 
 // ===================================================================
 
+void Notification::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Notification::Notification()
+  : ::google::protobuf::MessageLite(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_message_2eproto::InitDefaultsNotification();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Game.PSR.Notification)
+}
+Notification::Notification(const Notification& from)
+  : ::google::protobuf::MessageLite(),
+      _internal_metadata_(NULL),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:Game.PSR.Notification)
+}
+
+void Notification::SharedCtor() {
+  _cached_size_ = 0;
+}
+
+Notification::~Notification() {
+  // @@protoc_insertion_point(destructor:Game.PSR.Notification)
+  SharedDtor();
+}
+
+void Notification::SharedDtor() {
+}
+
+void Notification::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const Notification& Notification::default_instance() {
+  ::protobuf_message_2eproto::InitDefaultsNotification();
+  return *internal_default_instance();
+}
+
+Notification* Notification::New(::google::protobuf::Arena* arena) const {
+  Notification* n = new Notification;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Notification::Clear() {
+// @@protoc_insertion_point(message_clear_start:Game.PSR.Notification)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool Notification::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::LiteUnknownFieldSetter unknown_fields_setter(
+      &_internal_metadata_);
+  ::google::protobuf::io::StringOutputStream unknown_fields_output(
+      unknown_fields_setter.buffer());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_output, false);
+  // @@protoc_insertion_point(parse_start:Game.PSR.Notification)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+        input, tag, &unknown_fields_stream));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Game.PSR.Notification)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Game.PSR.Notification)
+  return false;
+#undef DO_
+}
+
+void Notification::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Game.PSR.Notification)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
+                   static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
+  // @@protoc_insertion_point(serialize_end:Game.PSR.Notification)
+}
+
+size_t Notification::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Game.PSR.Notification)
+  size_t total_size = 0;
+
+  total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Notification::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const Notification*>(&from));
+}
+
+void Notification::MergeFrom(const Notification& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Game.PSR.Notification)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void Notification::CopyFrom(const Notification& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Game.PSR.Notification)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Notification::IsInitialized() const {
+  return true;
+}
+
+void Notification::Swap(Notification* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Notification::InternalSwap(Notification* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::std::string Notification::GetTypeName() const {
+  return "Game.PSR.Notification";
+}
+
+
+// ===================================================================
+
 void Message::InitAsDefaultInstance() {
   ::Game::PSR::_Message_default_instance_._instance.get_mutable()->request_ = const_cast< ::Game::PSR::Request*>(
       ::Game::PSR::Request::internal_default_instance());
   ::Game::PSR::_Message_default_instance_._instance.get_mutable()->response_ = const_cast< ::Game::PSR::Response*>(
       ::Game::PSR::Response::internal_default_instance());
+  ::Game::PSR::_Message_default_instance_._instance.get_mutable()->notification_ = const_cast< ::Game::PSR::Notification*>(
+      ::Game::PSR::Notification::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Message::kTypeFieldNumber;
@@ -908,6 +2919,7 @@ const int Message::kSequenceFieldNumber;
 const int Message::kDescriptionFieldNumber;
 const int Message::kRequestFieldNumber;
 const int Message::kResponseFieldNumber;
+const int Message::kNotificationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Message::Message()
@@ -937,6 +2949,11 @@ Message::Message(const Message& from)
   } else {
     response_ = NULL;
   }
+  if (from.has_notification()) {
+    notification_ = new ::Game::PSR::Notification(*from.notification_);
+  } else {
+    notification_ = NULL;
+  }
   ::memcpy(&type_, &from.type_,
     static_cast<size_t>(reinterpret_cast<char*>(&sequence_) -
     reinterpret_cast<char*>(&type_)) + sizeof(sequence_));
@@ -960,6 +2977,7 @@ void Message::SharedDtor() {
   description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete request_;
   if (this != internal_default_instance()) delete response_;
+  if (this != internal_default_instance()) delete notification_;
 }
 
 void Message::SetCachedSize(int size) const {
@@ -995,6 +3013,10 @@ void Message::Clear() {
     delete response_;
   }
   response_ = NULL;
+  if (GetArenaNoVirtual() == NULL && notification_ != NULL) {
+    delete notification_;
+  }
+  notification_ = NULL;
   ::memset(&type_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&sequence_) -
       reinterpret_cast<char*>(&type_)) + sizeof(sequence_));
@@ -1086,6 +3108,18 @@ bool Message::MergePartialFromCodedStream(
         break;
       }
 
+      // .Game.PSR.Notification notification = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_notification()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1145,6 +3179,12 @@ void Message::SerializeWithCachedSizes(
       7, *this->response_, output);
   }
 
+  // .Game.PSR.Notification notification = 8;
+  if (this->has_notification()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessage(
+      8, *this->notification_, output);
+  }
+
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
   // @@protoc_insertion_point(serialize_end:Game.PSR.Message)
@@ -1175,6 +3215,13 @@ size_t Message::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->response_);
+  }
+
+  // .Game.PSR.Notification notification = 8;
+  if (this->has_notification()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->notification_);
   }
 
   // .Game.PSR.MSG type = 1;
@@ -1217,6 +3264,9 @@ void Message::MergeFrom(const Message& from) {
   if (from.has_response()) {
     mutable_response()->::Game::PSR::Response::MergeFrom(from.response());
   }
+  if (from.has_notification()) {
+    mutable_notification()->::Game::PSR::Notification::MergeFrom(from.notification());
+  }
   if (from.type() != 0) {
     set_type(from.type());
   }
@@ -1245,6 +3295,7 @@ void Message::InternalSwap(Message* other) {
   description_.Swap(&other->description_);
   swap(request_, other->request_);
   swap(response_, other->response_);
+  swap(notification_, other->notification_);
   swap(type_, other->type_);
   swap(sequence_, other->sequence_);
   _internal_metadata_.Swap(&other->_internal_metadata_);

@@ -36,7 +36,7 @@ namespace protobuf_message_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[5];
+  static const ::google::protobuf::internal::ParseTable schema[12];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -45,31 +45,73 @@ void InitDefaultsStartGameRequestImpl();
 void InitDefaultsStartGameRequest();
 void InitDefaultsStartGameResponseImpl();
 void InitDefaultsStartGameResponse();
+void InitDefaultsShootRequestImpl();
+void InitDefaultsShootRequest();
+void InitDefaultsShootResponseImpl();
+void InitDefaultsShootResponse();
+void InitDefaultsEndGameRequestImpl();
+void InitDefaultsEndGameRequest();
+void InitDefaultsEndGameResponseImpl();
+void InitDefaultsEndGameResponse();
+void InitDefaultsRoundNotificationImpl();
+void InitDefaultsRoundNotification();
+void InitDefaultsGameResultNotificationImpl();
+void InitDefaultsGameResultNotification();
 void InitDefaultsRequestImpl();
 void InitDefaultsRequest();
 void InitDefaultsResponseImpl();
 void InitDefaultsResponse();
+void InitDefaultsNotificationImpl();
+void InitDefaultsNotification();
 void InitDefaultsMessageImpl();
 void InitDefaultsMessage();
 inline void InitDefaults() {
   InitDefaultsStartGameRequest();
   InitDefaultsStartGameResponse();
+  InitDefaultsShootRequest();
+  InitDefaultsShootResponse();
+  InitDefaultsEndGameRequest();
+  InitDefaultsEndGameResponse();
+  InitDefaultsRoundNotification();
+  InitDefaultsGameResultNotification();
   InitDefaultsRequest();
   InitDefaultsResponse();
+  InitDefaultsNotification();
   InitDefaultsMessage();
 }
 }  // namespace protobuf_message_2eproto
 namespace Game {
 namespace PSR {
+class EndGameRequest;
+class EndGameRequestDefaultTypeInternal;
+extern EndGameRequestDefaultTypeInternal _EndGameRequest_default_instance_;
+class EndGameResponse;
+class EndGameResponseDefaultTypeInternal;
+extern EndGameResponseDefaultTypeInternal _EndGameResponse_default_instance_;
+class GameResultNotification;
+class GameResultNotificationDefaultTypeInternal;
+extern GameResultNotificationDefaultTypeInternal _GameResultNotification_default_instance_;
 class Message;
 class MessageDefaultTypeInternal;
 extern MessageDefaultTypeInternal _Message_default_instance_;
+class Notification;
+class NotificationDefaultTypeInternal;
+extern NotificationDefaultTypeInternal _Notification_default_instance_;
 class Request;
 class RequestDefaultTypeInternal;
 extern RequestDefaultTypeInternal _Request_default_instance_;
 class Response;
 class ResponseDefaultTypeInternal;
 extern ResponseDefaultTypeInternal _Response_default_instance_;
+class RoundNotification;
+class RoundNotificationDefaultTypeInternal;
+extern RoundNotificationDefaultTypeInternal _RoundNotification_default_instance_;
+class ShootRequest;
+class ShootRequestDefaultTypeInternal;
+extern ShootRequestDefaultTypeInternal _ShootRequest_default_instance_;
+class ShootResponse;
+class ShootResponseDefaultTypeInternal;
+extern ShootResponseDefaultTypeInternal _ShootResponse_default_instance_;
 class StartGameRequest;
 class StartGameRequestDefaultTypeInternal;
 extern StartGameRequestDefaultTypeInternal _StartGameRequest_default_instance_;
@@ -84,14 +126,42 @@ namespace PSR {
 enum MSG {
   unknown_message = 0,
   Start_Game_Request = 11,
-  Start_Game_Response = 21,
+  Start_Game_Response = 12,
+  Shoot_Request = 21,
+  Shoot_Response = 22,
+  End_Game_Request = 31,
+  End_Game_Response = 32,
   MSG_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   MSG_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool MSG_IsValid(int value);
 const MSG MSG_MIN = unknown_message;
-const MSG MSG_MAX = Start_Game_Response;
+const MSG MSG_MAX = End_Game_Response;
 const int MSG_ARRAYSIZE = MSG_MAX + 1;
+
+enum SHOT_TYPE {
+  PAPER = 0,
+  SCISSORS = 1,
+  ROCK = 2,
+  SHOT_TYPE_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  SHOT_TYPE_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool SHOT_TYPE_IsValid(int value);
+const SHOT_TYPE SHOT_TYPE_MIN = PAPER;
+const SHOT_TYPE SHOT_TYPE_MAX = ROCK;
+const int SHOT_TYPE_ARRAYSIZE = SHOT_TYPE_MAX + 1;
+
+enum ROUND_RESULT_TYPE {
+  WIN = 0,
+  LOSE = 1,
+  SHOOT_AGAIN = 2,
+  ROUND_RESULT_TYPE_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  ROUND_RESULT_TYPE_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool ROUND_RESULT_TYPE_IsValid(int value);
+const ROUND_RESULT_TYPE ROUND_RESULT_TYPE_MIN = WIN;
+const ROUND_RESULT_TYPE ROUND_RESULT_TYPE_MAX = SHOOT_AGAIN;
+const int ROUND_RESULT_TYPE_ARRAYSIZE = ROUND_RESULT_TYPE_MAX + 1;
 
 // ===================================================================
 
@@ -275,6 +345,651 @@ class StartGameResponse : public ::google::protobuf::MessageLite /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
+class ShootRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.ShootRequest) */ {
+ public:
+  ShootRequest();
+  virtual ~ShootRequest();
+
+  ShootRequest(const ShootRequest& from);
+
+  inline ShootRequest& operator=(const ShootRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  ShootRequest(ShootRequest&& from) noexcept
+    : ShootRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ShootRequest& operator=(ShootRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ShootRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ShootRequest* internal_default_instance() {
+    return reinterpret_cast<const ShootRequest*>(
+               &_ShootRequest_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    2;
+
+  void Swap(ShootRequest* other);
+  friend void swap(ShootRequest& a, ShootRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ShootRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  ShootRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const ShootRequest& from);
+  void MergeFrom(const ShootRequest& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(ShootRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 player_id = 1;
+  void clear_player_id();
+  static const int kPlayerIdFieldNumber = 1;
+  ::google::protobuf::int32 player_id() const;
+  void set_player_id(::google::protobuf::int32 value);
+
+  // int32 round = 2;
+  void clear_round();
+  static const int kRoundFieldNumber = 2;
+  ::google::protobuf::int32 round() const;
+  void set_round(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.ShootRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  ::google::protobuf::int32 player_id_;
+  ::google::protobuf::int32 round_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsShootRequestImpl();
+};
+// -------------------------------------------------------------------
+
+class ShootResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.ShootResponse) */ {
+ public:
+  ShootResponse();
+  virtual ~ShootResponse();
+
+  ShootResponse(const ShootResponse& from);
+
+  inline ShootResponse& operator=(const ShootResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  ShootResponse(ShootResponse&& from) noexcept
+    : ShootResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ShootResponse& operator=(ShootResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ShootResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ShootResponse* internal_default_instance() {
+    return reinterpret_cast<const ShootResponse*>(
+               &_ShootResponse_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    3;
+
+  void Swap(ShootResponse* other);
+  friend void swap(ShootResponse& a, ShootResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ShootResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  ShootResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const ShootResponse& from);
+  void MergeFrom(const ShootResponse& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(ShootResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 player_id = 1;
+  void clear_player_id();
+  static const int kPlayerIdFieldNumber = 1;
+  ::google::protobuf::int32 player_id() const;
+  void set_player_id(::google::protobuf::int32 value);
+
+  // int32 round = 2;
+  void clear_round();
+  static const int kRoundFieldNumber = 2;
+  ::google::protobuf::int32 round() const;
+  void set_round(::google::protobuf::int32 value);
+
+  // .Game.PSR.SHOT_TYPE shot = 3;
+  void clear_shot();
+  static const int kShotFieldNumber = 3;
+  ::Game::PSR::SHOT_TYPE shot() const;
+  void set_shot(::Game::PSR::SHOT_TYPE value);
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.ShootResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  ::google::protobuf::int32 player_id_;
+  ::google::protobuf::int32 round_;
+  int shot_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsShootResponseImpl();
+};
+// -------------------------------------------------------------------
+
+class EndGameRequest : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.EndGameRequest) */ {
+ public:
+  EndGameRequest();
+  virtual ~EndGameRequest();
+
+  EndGameRequest(const EndGameRequest& from);
+
+  inline EndGameRequest& operator=(const EndGameRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  EndGameRequest(EndGameRequest&& from) noexcept
+    : EndGameRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline EndGameRequest& operator=(EndGameRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const EndGameRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const EndGameRequest* internal_default_instance() {
+    return reinterpret_cast<const EndGameRequest*>(
+               &_EndGameRequest_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    4;
+
+  void Swap(EndGameRequest* other);
+  friend void swap(EndGameRequest& a, EndGameRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline EndGameRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  EndGameRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const EndGameRequest& from);
+  void MergeFrom(const EndGameRequest& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(EndGameRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.EndGameRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsEndGameRequestImpl();
+};
+// -------------------------------------------------------------------
+
+class EndGameResponse : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.EndGameResponse) */ {
+ public:
+  EndGameResponse();
+  virtual ~EndGameResponse();
+
+  EndGameResponse(const EndGameResponse& from);
+
+  inline EndGameResponse& operator=(const EndGameResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  EndGameResponse(EndGameResponse&& from) noexcept
+    : EndGameResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline EndGameResponse& operator=(EndGameResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const EndGameResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const EndGameResponse* internal_default_instance() {
+    return reinterpret_cast<const EndGameResponse*>(
+               &_EndGameResponse_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    5;
+
+  void Swap(EndGameResponse* other);
+  friend void swap(EndGameResponse& a, EndGameResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline EndGameResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  EndGameResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const EndGameResponse& from);
+  void MergeFrom(const EndGameResponse& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(EndGameResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.EndGameResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsEndGameResponseImpl();
+};
+// -------------------------------------------------------------------
+
+class RoundNotification : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.RoundNotification) */ {
+ public:
+  RoundNotification();
+  virtual ~RoundNotification();
+
+  RoundNotification(const RoundNotification& from);
+
+  inline RoundNotification& operator=(const RoundNotification& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  RoundNotification(RoundNotification&& from) noexcept
+    : RoundNotification() {
+    *this = ::std::move(from);
+  }
+
+  inline RoundNotification& operator=(RoundNotification&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const RoundNotification& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const RoundNotification* internal_default_instance() {
+    return reinterpret_cast<const RoundNotification*>(
+               &_RoundNotification_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    6;
+
+  void Swap(RoundNotification* other);
+  friend void swap(RoundNotification& a, RoundNotification& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RoundNotification* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  RoundNotification* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const RoundNotification& from);
+  void MergeFrom(const RoundNotification& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(RoundNotification* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 round = 1;
+  void clear_round();
+  static const int kRoundFieldNumber = 1;
+  ::google::protobuf::int32 round() const;
+  void set_round(::google::protobuf::int32 value);
+
+  // int32 total_round = 2;
+  void clear_total_round();
+  static const int kTotalRoundFieldNumber = 2;
+  ::google::protobuf::int32 total_round() const;
+  void set_total_round(::google::protobuf::int32 value);
+
+  // .Game.PSR.SHOT_TYPE self_shot = 3;
+  void clear_self_shot();
+  static const int kSelfShotFieldNumber = 3;
+  ::Game::PSR::SHOT_TYPE self_shot() const;
+  void set_self_shot(::Game::PSR::SHOT_TYPE value);
+
+  // .Game.PSR.SHOT_TYPE counterpart_shot = 4;
+  void clear_counterpart_shot();
+  static const int kCounterpartShotFieldNumber = 4;
+  ::Game::PSR::SHOT_TYPE counterpart_shot() const;
+  void set_counterpart_shot(::Game::PSR::SHOT_TYPE value);
+
+  // .Game.PSR.ROUND_RESULT_TYPE result = 5;
+  void clear_result();
+  static const int kResultFieldNumber = 5;
+  ::Game::PSR::ROUND_RESULT_TYPE result() const;
+  void set_result(::Game::PSR::ROUND_RESULT_TYPE value);
+
+  // int32 self_score = 6;
+  void clear_self_score();
+  static const int kSelfScoreFieldNumber = 6;
+  ::google::protobuf::int32 self_score() const;
+  void set_self_score(::google::protobuf::int32 value);
+
+  // int32 counterpart_score = 7;
+  void clear_counterpart_score();
+  static const int kCounterpartScoreFieldNumber = 7;
+  ::google::protobuf::int32 counterpart_score() const;
+  void set_counterpart_score(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.RoundNotification)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  ::google::protobuf::int32 round_;
+  ::google::protobuf::int32 total_round_;
+  int self_shot_;
+  int counterpart_shot_;
+  int result_;
+  ::google::protobuf::int32 self_score_;
+  ::google::protobuf::int32 counterpart_score_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsRoundNotificationImpl();
+};
+// -------------------------------------------------------------------
+
+class GameResultNotification : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.GameResultNotification) */ {
+ public:
+  GameResultNotification();
+  virtual ~GameResultNotification();
+
+  GameResultNotification(const GameResultNotification& from);
+
+  inline GameResultNotification& operator=(const GameResultNotification& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  GameResultNotification(GameResultNotification&& from) noexcept
+    : GameResultNotification() {
+    *this = ::std::move(from);
+  }
+
+  inline GameResultNotification& operator=(GameResultNotification&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const GameResultNotification& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const GameResultNotification* internal_default_instance() {
+    return reinterpret_cast<const GameResultNotification*>(
+               &_GameResultNotification_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    7;
+
+  void Swap(GameResultNotification* other);
+  friend void swap(GameResultNotification& a, GameResultNotification& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GameResultNotification* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  GameResultNotification* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const GameResultNotification& from);
+  void MergeFrom(const GameResultNotification& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(GameResultNotification* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // int32 total_round = 1;
+  void clear_total_round();
+  static const int kTotalRoundFieldNumber = 1;
+  ::google::protobuf::int32 total_round() const;
+  void set_total_round(::google::protobuf::int32 value);
+
+  // int32 self_score = 2;
+  void clear_self_score();
+  static const int kSelfScoreFieldNumber = 2;
+  ::google::protobuf::int32 self_score() const;
+  void set_self_score(::google::protobuf::int32 value);
+
+  // int32 counterpart_score = 3;
+  void clear_counterpart_score();
+  static const int kCounterpartScoreFieldNumber = 3;
+  ::google::protobuf::int32 counterpart_score() const;
+  void set_counterpart_score(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.GameResultNotification)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  ::google::protobuf::int32 total_round_;
+  ::google::protobuf::int32 self_score_;
+  ::google::protobuf::int32 counterpart_score_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsGameResultNotificationImpl();
+};
+// -------------------------------------------------------------------
+
 class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.Request) */ {
  public:
   Request();
@@ -309,7 +1024,7 @@ class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
                &_Request_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    2;
+    8;
 
   void Swap(Request* other);
   friend void swap(Request& a, Request& b) {
@@ -355,20 +1070,40 @@ class Request : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 
   // accessors -------------------------------------------------------
 
-  // .Game.PSR.StartGameRequest start = 11;
+  // .Game.PSR.StartGameRequest start = 1;
   bool has_start() const;
   void clear_start();
-  static const int kStartFieldNumber = 11;
+  static const int kStartFieldNumber = 1;
   const ::Game::PSR::StartGameRequest& start() const;
   ::Game::PSR::StartGameRequest* release_start();
   ::Game::PSR::StartGameRequest* mutable_start();
   void set_allocated_start(::Game::PSR::StartGameRequest* start);
+
+  // .Game.PSR.ShootRequest shoot = 2;
+  bool has_shoot() const;
+  void clear_shoot();
+  static const int kShootFieldNumber = 2;
+  const ::Game::PSR::ShootRequest& shoot() const;
+  ::Game::PSR::ShootRequest* release_shoot();
+  ::Game::PSR::ShootRequest* mutable_shoot();
+  void set_allocated_shoot(::Game::PSR::ShootRequest* shoot);
+
+  // .Game.PSR.EndGameRequest end = 3;
+  bool has_end() const;
+  void clear_end();
+  static const int kEndFieldNumber = 3;
+  const ::Game::PSR::EndGameRequest& end() const;
+  ::Game::PSR::EndGameRequest* release_end();
+  ::Game::PSR::EndGameRequest* mutable_end();
+  void set_allocated_end(::Game::PSR::EndGameRequest* end);
 
   // @@protoc_insertion_point(class_scope:Game.PSR.Request)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
   ::Game::PSR::StartGameRequest* start_;
+  ::Game::PSR::ShootRequest* shoot_;
+  ::Game::PSR::EndGameRequest* end_;
   mutable int _cached_size_;
   friend struct ::protobuf_message_2eproto::TableStruct;
   friend void ::protobuf_message_2eproto::InitDefaultsRequestImpl();
@@ -409,7 +1144,7 @@ class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_po
                &_Response_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    3;
+    9;
 
   void Swap(Response* other);
   friend void swap(Response& a, Response& b) {
@@ -455,23 +1190,133 @@ class Response : public ::google::protobuf::MessageLite /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
-  // .Game.PSR.StartGameResponse start = 11;
+  // .Game.PSR.StartGameResponse start = 1;
   bool has_start() const;
   void clear_start();
-  static const int kStartFieldNumber = 11;
+  static const int kStartFieldNumber = 1;
   const ::Game::PSR::StartGameResponse& start() const;
   ::Game::PSR::StartGameResponse* release_start();
   ::Game::PSR::StartGameResponse* mutable_start();
   void set_allocated_start(::Game::PSR::StartGameResponse* start);
+
+  // .Game.PSR.ShootResponse shoot = 2;
+  bool has_shoot() const;
+  void clear_shoot();
+  static const int kShootFieldNumber = 2;
+  const ::Game::PSR::ShootResponse& shoot() const;
+  ::Game::PSR::ShootResponse* release_shoot();
+  ::Game::PSR::ShootResponse* mutable_shoot();
+  void set_allocated_shoot(::Game::PSR::ShootResponse* shoot);
+
+  // .Game.PSR.EndGameResponse end = 3;
+  bool has_end() const;
+  void clear_end();
+  static const int kEndFieldNumber = 3;
+  const ::Game::PSR::EndGameResponse& end() const;
+  ::Game::PSR::EndGameResponse* release_end();
+  ::Game::PSR::EndGameResponse* mutable_end();
+  void set_allocated_end(::Game::PSR::EndGameResponse* end);
 
   // @@protoc_insertion_point(class_scope:Game.PSR.Response)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
   ::Game::PSR::StartGameResponse* start_;
+  ::Game::PSR::ShootResponse* shoot_;
+  ::Game::PSR::EndGameResponse* end_;
   mutable int _cached_size_;
   friend struct ::protobuf_message_2eproto::TableStruct;
   friend void ::protobuf_message_2eproto::InitDefaultsResponseImpl();
+};
+// -------------------------------------------------------------------
+
+class Notification : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:Game.PSR.Notification) */ {
+ public:
+  Notification();
+  virtual ~Notification();
+
+  Notification(const Notification& from);
+
+  inline Notification& operator=(const Notification& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  Notification(Notification&& from) noexcept
+    : Notification() {
+    *this = ::std::move(from);
+  }
+
+  inline Notification& operator=(Notification&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const Notification& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const Notification* internal_default_instance() {
+    return reinterpret_cast<const Notification*>(
+               &_Notification_default_instance_);
+  }
+  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
+    10;
+
+  void Swap(Notification* other);
+  friend void swap(Notification& a, Notification& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline Notification* New() const PROTOBUF_FINAL { return New(NULL); }
+
+  Notification* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CheckTypeAndMergeFrom(const ::google::protobuf::MessageLite& from)
+    PROTOBUF_FINAL;
+  void CopyFrom(const Notification& from);
+  void MergeFrom(const Notification& from);
+  void Clear() PROTOBUF_FINAL;
+  bool IsInitialized() const PROTOBUF_FINAL;
+
+  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  void DiscardUnknownFields();
+  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(Notification* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::std::string GetTypeName() const PROTOBUF_FINAL;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:Game.PSR.Notification)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  mutable int _cached_size_;
+  friend struct ::protobuf_message_2eproto::TableStruct;
+  friend void ::protobuf_message_2eproto::InitDefaultsNotificationImpl();
 };
 // -------------------------------------------------------------------
 
@@ -509,7 +1354,7 @@ class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
                &_Message_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    4;
+    11;
 
   void Swap(Message* other);
   friend void swap(Message& a, Message& b) {
@@ -587,6 +1432,15 @@ class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   ::Game::PSR::Response* mutable_response();
   void set_allocated_response(::Game::PSR::Response* response);
 
+  // .Game.PSR.Notification notification = 8;
+  bool has_notification() const;
+  void clear_notification();
+  static const int kNotificationFieldNumber = 8;
+  const ::Game::PSR::Notification& notification() const;
+  ::Game::PSR::Notification* release_notification();
+  ::Game::PSR::Notification* mutable_notification();
+  void set_allocated_notification(::Game::PSR::Notification* notification);
+
   // .Game.PSR.MSG type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
@@ -606,6 +1460,7 @@ class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   ::google::protobuf::internal::ArenaStringPtr description_;
   ::Game::PSR::Request* request_;
   ::Game::PSR::Response* response_;
+  ::Game::PSR::Notification* notification_;
   int type_;
   ::google::protobuf::uint32 sequence_;
   mutable int _cached_size_;
@@ -629,9 +1484,243 @@ class Message : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 
 // -------------------------------------------------------------------
 
+// ShootRequest
+
+// int32 player_id = 1;
+inline void ShootRequest::clear_player_id() {
+  player_id_ = 0;
+}
+inline ::google::protobuf::int32 ShootRequest::player_id() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.ShootRequest.player_id)
+  return player_id_;
+}
+inline void ShootRequest::set_player_id(::google::protobuf::int32 value) {
+  
+  player_id_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.ShootRequest.player_id)
+}
+
+// int32 round = 2;
+inline void ShootRequest::clear_round() {
+  round_ = 0;
+}
+inline ::google::protobuf::int32 ShootRequest::round() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.ShootRequest.round)
+  return round_;
+}
+inline void ShootRequest::set_round(::google::protobuf::int32 value) {
+  
+  round_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.ShootRequest.round)
+}
+
+// -------------------------------------------------------------------
+
+// ShootResponse
+
+// int32 player_id = 1;
+inline void ShootResponse::clear_player_id() {
+  player_id_ = 0;
+}
+inline ::google::protobuf::int32 ShootResponse::player_id() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.ShootResponse.player_id)
+  return player_id_;
+}
+inline void ShootResponse::set_player_id(::google::protobuf::int32 value) {
+  
+  player_id_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.ShootResponse.player_id)
+}
+
+// int32 round = 2;
+inline void ShootResponse::clear_round() {
+  round_ = 0;
+}
+inline ::google::protobuf::int32 ShootResponse::round() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.ShootResponse.round)
+  return round_;
+}
+inline void ShootResponse::set_round(::google::protobuf::int32 value) {
+  
+  round_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.ShootResponse.round)
+}
+
+// .Game.PSR.SHOT_TYPE shot = 3;
+inline void ShootResponse::clear_shot() {
+  shot_ = 0;
+}
+inline ::Game::PSR::SHOT_TYPE ShootResponse::shot() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.ShootResponse.shot)
+  return static_cast< ::Game::PSR::SHOT_TYPE >(shot_);
+}
+inline void ShootResponse::set_shot(::Game::PSR::SHOT_TYPE value) {
+  
+  shot_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.ShootResponse.shot)
+}
+
+// -------------------------------------------------------------------
+
+// EndGameRequest
+
+// -------------------------------------------------------------------
+
+// EndGameResponse
+
+// -------------------------------------------------------------------
+
+// RoundNotification
+
+// int32 round = 1;
+inline void RoundNotification::clear_round() {
+  round_ = 0;
+}
+inline ::google::protobuf::int32 RoundNotification::round() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.round)
+  return round_;
+}
+inline void RoundNotification::set_round(::google::protobuf::int32 value) {
+  
+  round_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.round)
+}
+
+// int32 total_round = 2;
+inline void RoundNotification::clear_total_round() {
+  total_round_ = 0;
+}
+inline ::google::protobuf::int32 RoundNotification::total_round() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.total_round)
+  return total_round_;
+}
+inline void RoundNotification::set_total_round(::google::protobuf::int32 value) {
+  
+  total_round_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.total_round)
+}
+
+// .Game.PSR.SHOT_TYPE self_shot = 3;
+inline void RoundNotification::clear_self_shot() {
+  self_shot_ = 0;
+}
+inline ::Game::PSR::SHOT_TYPE RoundNotification::self_shot() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.self_shot)
+  return static_cast< ::Game::PSR::SHOT_TYPE >(self_shot_);
+}
+inline void RoundNotification::set_self_shot(::Game::PSR::SHOT_TYPE value) {
+  
+  self_shot_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.self_shot)
+}
+
+// .Game.PSR.SHOT_TYPE counterpart_shot = 4;
+inline void RoundNotification::clear_counterpart_shot() {
+  counterpart_shot_ = 0;
+}
+inline ::Game::PSR::SHOT_TYPE RoundNotification::counterpart_shot() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.counterpart_shot)
+  return static_cast< ::Game::PSR::SHOT_TYPE >(counterpart_shot_);
+}
+inline void RoundNotification::set_counterpart_shot(::Game::PSR::SHOT_TYPE value) {
+  
+  counterpart_shot_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.counterpart_shot)
+}
+
+// .Game.PSR.ROUND_RESULT_TYPE result = 5;
+inline void RoundNotification::clear_result() {
+  result_ = 0;
+}
+inline ::Game::PSR::ROUND_RESULT_TYPE RoundNotification::result() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.result)
+  return static_cast< ::Game::PSR::ROUND_RESULT_TYPE >(result_);
+}
+inline void RoundNotification::set_result(::Game::PSR::ROUND_RESULT_TYPE value) {
+  
+  result_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.result)
+}
+
+// int32 self_score = 6;
+inline void RoundNotification::clear_self_score() {
+  self_score_ = 0;
+}
+inline ::google::protobuf::int32 RoundNotification::self_score() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.self_score)
+  return self_score_;
+}
+inline void RoundNotification::set_self_score(::google::protobuf::int32 value) {
+  
+  self_score_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.self_score)
+}
+
+// int32 counterpart_score = 7;
+inline void RoundNotification::clear_counterpart_score() {
+  counterpart_score_ = 0;
+}
+inline ::google::protobuf::int32 RoundNotification::counterpart_score() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.RoundNotification.counterpart_score)
+  return counterpart_score_;
+}
+inline void RoundNotification::set_counterpart_score(::google::protobuf::int32 value) {
+  
+  counterpart_score_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.RoundNotification.counterpart_score)
+}
+
+// -------------------------------------------------------------------
+
+// GameResultNotification
+
+// int32 total_round = 1;
+inline void GameResultNotification::clear_total_round() {
+  total_round_ = 0;
+}
+inline ::google::protobuf::int32 GameResultNotification::total_round() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.GameResultNotification.total_round)
+  return total_round_;
+}
+inline void GameResultNotification::set_total_round(::google::protobuf::int32 value) {
+  
+  total_round_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.GameResultNotification.total_round)
+}
+
+// int32 self_score = 2;
+inline void GameResultNotification::clear_self_score() {
+  self_score_ = 0;
+}
+inline ::google::protobuf::int32 GameResultNotification::self_score() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.GameResultNotification.self_score)
+  return self_score_;
+}
+inline void GameResultNotification::set_self_score(::google::protobuf::int32 value) {
+  
+  self_score_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.GameResultNotification.self_score)
+}
+
+// int32 counterpart_score = 3;
+inline void GameResultNotification::clear_counterpart_score() {
+  counterpart_score_ = 0;
+}
+inline ::google::protobuf::int32 GameResultNotification::counterpart_score() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.GameResultNotification.counterpart_score)
+  return counterpart_score_;
+}
+inline void GameResultNotification::set_counterpart_score(::google::protobuf::int32 value) {
+  
+  counterpart_score_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.GameResultNotification.counterpart_score)
+}
+
+// -------------------------------------------------------------------
+
 // Request
 
-// .Game.PSR.StartGameRequest start = 11;
+// .Game.PSR.StartGameRequest start = 1;
 inline bool Request::has_start() const {
   return this != internal_default_instance() && start_ != NULL;
 }
@@ -681,11 +1770,111 @@ inline void Request::set_allocated_start(::Game::PSR::StartGameRequest* start) {
   // @@protoc_insertion_point(field_set_allocated:Game.PSR.Request.start)
 }
 
+// .Game.PSR.ShootRequest shoot = 2;
+inline bool Request::has_shoot() const {
+  return this != internal_default_instance() && shoot_ != NULL;
+}
+inline void Request::clear_shoot() {
+  if (GetArenaNoVirtual() == NULL && shoot_ != NULL) {
+    delete shoot_;
+  }
+  shoot_ = NULL;
+}
+inline const ::Game::PSR::ShootRequest& Request::shoot() const {
+  const ::Game::PSR::ShootRequest* p = shoot_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.shoot)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::ShootRequest*>(
+      &::Game::PSR::_ShootRequest_default_instance_);
+}
+inline ::Game::PSR::ShootRequest* Request::release_shoot() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Request.shoot)
+  
+  ::Game::PSR::ShootRequest* temp = shoot_;
+  shoot_ = NULL;
+  return temp;
+}
+inline ::Game::PSR::ShootRequest* Request::mutable_shoot() {
+  
+  if (shoot_ == NULL) {
+    shoot_ = new ::Game::PSR::ShootRequest;
+  }
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Request.shoot)
+  return shoot_;
+}
+inline void Request::set_allocated_shoot(::Game::PSR::ShootRequest* shoot) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete shoot_;
+  }
+  if (shoot) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      shoot = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, shoot, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  shoot_ = shoot;
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Request.shoot)
+}
+
+// .Game.PSR.EndGameRequest end = 3;
+inline bool Request::has_end() const {
+  return this != internal_default_instance() && end_ != NULL;
+}
+inline void Request::clear_end() {
+  if (GetArenaNoVirtual() == NULL && end_ != NULL) {
+    delete end_;
+  }
+  end_ = NULL;
+}
+inline const ::Game::PSR::EndGameRequest& Request::end() const {
+  const ::Game::PSR::EndGameRequest* p = end_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Request.end)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::EndGameRequest*>(
+      &::Game::PSR::_EndGameRequest_default_instance_);
+}
+inline ::Game::PSR::EndGameRequest* Request::release_end() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Request.end)
+  
+  ::Game::PSR::EndGameRequest* temp = end_;
+  end_ = NULL;
+  return temp;
+}
+inline ::Game::PSR::EndGameRequest* Request::mutable_end() {
+  
+  if (end_ == NULL) {
+    end_ = new ::Game::PSR::EndGameRequest;
+  }
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Request.end)
+  return end_;
+}
+inline void Request::set_allocated_end(::Game::PSR::EndGameRequest* end) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete end_;
+  }
+  if (end) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      end = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, end, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  end_ = end;
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Request.end)
+}
+
 // -------------------------------------------------------------------
 
 // Response
 
-// .Game.PSR.StartGameResponse start = 11;
+// .Game.PSR.StartGameResponse start = 1;
 inline bool Response::has_start() const {
   return this != internal_default_instance() && start_ != NULL;
 }
@@ -734,6 +1923,110 @@ inline void Response::set_allocated_start(::Game::PSR::StartGameResponse* start)
   start_ = start;
   // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.start)
 }
+
+// .Game.PSR.ShootResponse shoot = 2;
+inline bool Response::has_shoot() const {
+  return this != internal_default_instance() && shoot_ != NULL;
+}
+inline void Response::clear_shoot() {
+  if (GetArenaNoVirtual() == NULL && shoot_ != NULL) {
+    delete shoot_;
+  }
+  shoot_ = NULL;
+}
+inline const ::Game::PSR::ShootResponse& Response::shoot() const {
+  const ::Game::PSR::ShootResponse* p = shoot_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.shoot)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::ShootResponse*>(
+      &::Game::PSR::_ShootResponse_default_instance_);
+}
+inline ::Game::PSR::ShootResponse* Response::release_shoot() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Response.shoot)
+  
+  ::Game::PSR::ShootResponse* temp = shoot_;
+  shoot_ = NULL;
+  return temp;
+}
+inline ::Game::PSR::ShootResponse* Response::mutable_shoot() {
+  
+  if (shoot_ == NULL) {
+    shoot_ = new ::Game::PSR::ShootResponse;
+  }
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Response.shoot)
+  return shoot_;
+}
+inline void Response::set_allocated_shoot(::Game::PSR::ShootResponse* shoot) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete shoot_;
+  }
+  if (shoot) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      shoot = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, shoot, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  shoot_ = shoot;
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.shoot)
+}
+
+// .Game.PSR.EndGameResponse end = 3;
+inline bool Response::has_end() const {
+  return this != internal_default_instance() && end_ != NULL;
+}
+inline void Response::clear_end() {
+  if (GetArenaNoVirtual() == NULL && end_ != NULL) {
+    delete end_;
+  }
+  end_ = NULL;
+}
+inline const ::Game::PSR::EndGameResponse& Response::end() const {
+  const ::Game::PSR::EndGameResponse* p = end_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Response.end)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::EndGameResponse*>(
+      &::Game::PSR::_EndGameResponse_default_instance_);
+}
+inline ::Game::PSR::EndGameResponse* Response::release_end() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Response.end)
+  
+  ::Game::PSR::EndGameResponse* temp = end_;
+  end_ = NULL;
+  return temp;
+}
+inline ::Game::PSR::EndGameResponse* Response::mutable_end() {
+  
+  if (end_ == NULL) {
+    end_ = new ::Game::PSR::EndGameResponse;
+  }
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Response.end)
+  return end_;
+}
+inline void Response::set_allocated_end(::Game::PSR::EndGameResponse* end) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete end_;
+  }
+  if (end) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      end = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, end, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  end_ = end;
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Response.end)
+}
+
+// -------------------------------------------------------------------
+
+// Notification
 
 // -------------------------------------------------------------------
 
@@ -920,9 +2213,73 @@ inline void Message::set_allocated_response(::Game::PSR::Response* response) {
   // @@protoc_insertion_point(field_set_allocated:Game.PSR.Message.response)
 }
 
+// .Game.PSR.Notification notification = 8;
+inline bool Message::has_notification() const {
+  return this != internal_default_instance() && notification_ != NULL;
+}
+inline void Message::clear_notification() {
+  if (GetArenaNoVirtual() == NULL && notification_ != NULL) {
+    delete notification_;
+  }
+  notification_ = NULL;
+}
+inline const ::Game::PSR::Notification& Message::notification() const {
+  const ::Game::PSR::Notification* p = notification_;
+  // @@protoc_insertion_point(field_get:Game.PSR.Message.notification)
+  return p != NULL ? *p : *reinterpret_cast<const ::Game::PSR::Notification*>(
+      &::Game::PSR::_Notification_default_instance_);
+}
+inline ::Game::PSR::Notification* Message::release_notification() {
+  // @@protoc_insertion_point(field_release:Game.PSR.Message.notification)
+  
+  ::Game::PSR::Notification* temp = notification_;
+  notification_ = NULL;
+  return temp;
+}
+inline ::Game::PSR::Notification* Message::mutable_notification() {
+  
+  if (notification_ == NULL) {
+    notification_ = new ::Game::PSR::Notification;
+  }
+  // @@protoc_insertion_point(field_mutable:Game.PSR.Message.notification)
+  return notification_;
+}
+inline void Message::set_allocated_notification(::Game::PSR::Notification* notification) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete notification_;
+  }
+  if (notification) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      notification = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, notification, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  notification_ = notification;
+  // @@protoc_insertion_point(field_set_allocated:Game.PSR.Message.notification)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -941,6 +2298,8 @@ namespace google {
 namespace protobuf {
 
 template <> struct is_proto_enum< ::Game::PSR::MSG> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::Game::PSR::SHOT_TYPE> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::Game::PSR::ROUND_RESULT_TYPE> : ::google::protobuf::internal::true_type {};
 
 }  // namespace protobuf
 }  // namespace google
