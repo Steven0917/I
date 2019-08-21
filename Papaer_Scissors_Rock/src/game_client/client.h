@@ -2,7 +2,7 @@
 
 #include "context.h"
 #include "networker.h"
-#include "thread_pool.h"
+#include "start_game_req_handler.h"
 
 using namespace std;
 
@@ -22,6 +22,7 @@ protected:
     bool       mStop;
 	Networker  mNetworker;
 
+	StartGameRequestHandler mStartGameRequestHandler;
 };
 
 

@@ -1,6 +1,5 @@
 #include "start_game_req_handler.h"
 #include "context.h"
-#include "game.h"
 #include "glog/logging.h"
 
 namespace Game {

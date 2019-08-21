@@ -959,21 +959,27 @@ class GameResultNotification : public ::google::protobuf::MessageLite /* @@proto
 
   // accessors -------------------------------------------------------
 
-  // int32 total_round = 1;
+  // int32 round = 1;
+  void clear_round();
+  static const int kRoundFieldNumber = 1;
+  ::google::protobuf::int32 round() const;
+  void set_round(::google::protobuf::int32 value);
+
+  // int32 total_round = 2;
   void clear_total_round();
-  static const int kTotalRoundFieldNumber = 1;
+  static const int kTotalRoundFieldNumber = 2;
   ::google::protobuf::int32 total_round() const;
   void set_total_round(::google::protobuf::int32 value);
 
-  // int32 self_score = 2;
+  // int32 self_score = 3;
   void clear_self_score();
-  static const int kSelfScoreFieldNumber = 2;
+  static const int kSelfScoreFieldNumber = 3;
   ::google::protobuf::int32 self_score() const;
   void set_self_score(::google::protobuf::int32 value);
 
-  // int32 counterpart_score = 3;
+  // int32 counterpart_score = 4;
   void clear_counterpart_score();
-  static const int kCounterpartScoreFieldNumber = 3;
+  static const int kCounterpartScoreFieldNumber = 4;
   ::google::protobuf::int32 counterpart_score() const;
   void set_counterpart_score(::google::protobuf::int32 value);
 
@@ -981,6 +987,7 @@ class GameResultNotification : public ::google::protobuf::MessageLite /* @@proto
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
+  ::google::protobuf::int32 round_;
   ::google::protobuf::int32 total_round_;
   ::google::protobuf::int32 self_score_;
   ::google::protobuf::int32 counterpart_score_;
@@ -1674,7 +1681,21 @@ inline void RoundNotification::set_counterpart_score(::google::protobuf::int32 v
 
 // GameResultNotification
 
-// int32 total_round = 1;
+// int32 round = 1;
+inline void GameResultNotification::clear_round() {
+  round_ = 0;
+}
+inline ::google::protobuf::int32 GameResultNotification::round() const {
+  // @@protoc_insertion_point(field_get:Game.PSR.GameResultNotification.round)
+  return round_;
+}
+inline void GameResultNotification::set_round(::google::protobuf::int32 value) {
+  
+  round_ = value;
+  // @@protoc_insertion_point(field_set:Game.PSR.GameResultNotification.round)
+}
+
+// int32 total_round = 2;
 inline void GameResultNotification::clear_total_round() {
   total_round_ = 0;
 }
@@ -1688,7 +1709,7 @@ inline void GameResultNotification::set_total_round(::google::protobuf::int32 va
   // @@protoc_insertion_point(field_set:Game.PSR.GameResultNotification.total_round)
 }
 
-// int32 self_score = 2;
+// int32 self_score = 3;
 inline void GameResultNotification::clear_self_score() {
   self_score_ = 0;
 }
@@ -1702,7 +1723,7 @@ inline void GameResultNotification::set_self_score(::google::protobuf::int32 val
   // @@protoc_insertion_point(field_set:Game.PSR.GameResultNotification.self_score)
 }
 
-// int32 counterpart_score = 3;
+// int32 counterpart_score = 4;
 inline void GameResultNotification::clear_counterpart_score() {
   counterpart_score_ = 0;
 }

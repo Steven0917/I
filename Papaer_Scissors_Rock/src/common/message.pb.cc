@@ -1905,6 +1905,7 @@ void RoundNotification::InternalSwap(RoundNotification* other) {
 void GameResultNotification::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int GameResultNotification::kRoundFieldNumber;
 const int GameResultNotification::kTotalRoundFieldNumber;
 const int GameResultNotification::kSelfScoreFieldNumber;
 const int GameResultNotification::kCounterpartScoreFieldNumber;
@@ -1923,16 +1924,16 @@ GameResultNotification::GameResultNotification(const GameResultNotification& fro
       _internal_metadata_(NULL),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&total_round_, &from.total_round_,
+  ::memcpy(&round_, &from.round_,
     static_cast<size_t>(reinterpret_cast<char*>(&counterpart_score_) -
-    reinterpret_cast<char*>(&total_round_)) + sizeof(counterpart_score_));
+    reinterpret_cast<char*>(&round_)) + sizeof(counterpart_score_));
   // @@protoc_insertion_point(copy_constructor:Game.PSR.GameResultNotification)
 }
 
 void GameResultNotification::SharedCtor() {
-  ::memset(&total_round_, 0, static_cast<size_t>(
+  ::memset(&round_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&counterpart_score_) -
-      reinterpret_cast<char*>(&total_round_)) + sizeof(counterpart_score_));
+      reinterpret_cast<char*>(&round_)) + sizeof(counterpart_score_));
   _cached_size_ = 0;
 }
 
@@ -1968,9 +1969,9 @@ void GameResultNotification::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&total_round_, 0, static_cast<size_t>(
+  ::memset(&round_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&counterpart_score_) -
-      reinterpret_cast<char*>(&total_round_)) + sizeof(counterpart_score_));
+      reinterpret_cast<char*>(&round_)) + sizeof(counterpart_score_));
   _internal_metadata_.Clear();
 }
 
@@ -1990,10 +1991,24 @@ bool GameResultNotification::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 total_round = 1;
+      // int32 round = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &round_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 total_round = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2004,10 +2019,10 @@ bool GameResultNotification::MergePartialFromCodedStream(
         break;
       }
 
-      // int32 self_score = 2;
-      case 2: {
+      // int32 self_score = 3;
+      case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2018,10 +2033,10 @@ bool GameResultNotification::MergePartialFromCodedStream(
         break;
       }
 
-      // int32 counterpart_score = 3;
-      case 3: {
+      // int32 counterpart_score = 4;
+      case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2058,19 +2073,24 @@ void GameResultNotification::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 total_round = 1;
+  // int32 round = 1;
+  if (this->round() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->round(), output);
+  }
+
+  // int32 total_round = 2;
   if (this->total_round() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->total_round(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->total_round(), output);
   }
 
-  // int32 self_score = 2;
+  // int32 self_score = 3;
   if (this->self_score() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->self_score(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->self_score(), output);
   }
 
-  // int32 counterpart_score = 3;
+  // int32 counterpart_score = 4;
   if (this->counterpart_score() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->counterpart_score(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->counterpart_score(), output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
@@ -2084,21 +2104,28 @@ size_t GameResultNotification::ByteSizeLong() const {
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // int32 total_round = 1;
+  // int32 round = 1;
+  if (this->round() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->round());
+  }
+
+  // int32 total_round = 2;
   if (this->total_round() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->total_round());
   }
 
-  // int32 self_score = 2;
+  // int32 self_score = 3;
   if (this->self_score() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->self_score());
   }
 
-  // int32 counterpart_score = 3;
+  // int32 counterpart_score = 4;
   if (this->counterpart_score() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -2124,6 +2151,9 @@ void GameResultNotification::MergeFrom(const GameResultNotification& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.round() != 0) {
+    set_round(from.round());
+  }
   if (from.total_round() != 0) {
     set_total_round(from.total_round());
   }
@@ -2152,6 +2182,7 @@ void GameResultNotification::Swap(GameResultNotification* other) {
 }
 void GameResultNotification::InternalSwap(GameResultNotification* other) {
   using std::swap;
+  swap(round_, other->round_);
   swap(total_round_, other->total_round_);
   swap(self_score_, other->self_score_);
   swap(counterpart_score_, other->counterpart_score_);

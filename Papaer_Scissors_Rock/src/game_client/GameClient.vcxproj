@@ -184,6 +184,7 @@
     <ClCompile Include="..\common\server_config.cpp" />
     <ClCompile Include="client.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="start_game_req_handler.cpp" />
     <ClCompile Include="start_game_rsp_handler.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +199,7 @@
     <ClInclude Include="..\common\server_config.h" />
     <ClInclude Include="..\common\version.h" />
     <ClInclude Include="client.h" />
+    <ClInclude Include="start_game_req_handler.h" />
     <ClInclude Include="start_game_rsp_handler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
